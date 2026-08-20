@@ -1,0 +1,12 @@
+name = "legendarymonuments-cobbleverse"
+filename = "LegendaryMonuments-Cobbleverse.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9c86e9dfda8be63bbc01ab03160c8bf5ae8185ac"
+
+[update]
+[update.modrinth]
+mod-id = "legendarymonuments-cobbleverse"
+version = "7c62183d6ef32ca4"

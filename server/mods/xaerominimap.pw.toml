@@ -1,0 +1,12 @@
+name = "xaerominimap"
+filename = "xaerominimap-fabric-1.21.1-26.4.2.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "9293ef9b2626ae3180625c003290a838879cc0b4"
+
+[update]
+[update.modrinth]
+mod-id = "xaerominimap"
+version = "153c2273971f2a8b"

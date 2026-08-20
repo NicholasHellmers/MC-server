@@ -1,0 +1,14 @@
+[
+  {
+    "species": "slugma",
+    "weight": 12,
+    "min_level": 1,
+    "max_level": 45
+  },
+  {
+    "species": "magcargo",
+    "weight": 5,
+    "min_level": 30,
+    "max_level": 65
+  }
+]

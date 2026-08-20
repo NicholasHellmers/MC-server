@@ -1,0 +1,12 @@
+name = "essential_commands"
+filename = "essential_commands-0.35.2-mc1.21.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1dda78e1ecace03b1a622611ef8783bb1259dc91"
+
+[update]
+[update.modrinth]
+mod-id = "essential_commands"
+version = "02fb11a58df14955"

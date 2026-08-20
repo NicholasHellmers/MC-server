@@ -1,0 +1,12 @@
+name = "defaultoptions"
+filename = "defaultoptions-fabric-1.21.1-21.1.7.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "1eed10a37b1f4a45f51e76044beb44e23b6bd678"
+
+[update]
+[update.modrinth]
+mod-id = "defaultoptions"
+version = "1aae0d6af43c1b4b"

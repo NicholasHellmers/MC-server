@@ -1,0 +1,12 @@
+name = "moar-concrete"
+filename = "moar-concrete-1.3.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "541410660ff1198e24b99e007267a7ec256498e2"
+
+[update]
+[update.modrinth]
+mod-id = "moar-concrete"
+version = "9edf8775a2c3ceb8"

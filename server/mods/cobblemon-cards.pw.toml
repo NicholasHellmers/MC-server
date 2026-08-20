@@ -1,0 +1,12 @@
+name = "cobblemon-cards"
+filename = "cobblemon-cards-fabric-1.0.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "767b7d93ee1342852cc92b89e4d163f3e142b368"
+
+[update]
+[update.modrinth]
+mod-id = "cobblemon-cards"
+version = "1a18e40f1803daa4"

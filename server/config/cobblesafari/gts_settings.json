@@ -1,0 +1,10 @@
+{
+  "tradeNotification": true,
+  "tradeReminder": true,
+  "pokemonBestBefore": 7,
+  "personalOfferAdminMaxPerPlayer": 20,
+  "maxOffersPerPlayer": 1,
+  "maxOffersWithUpgrades": 3,
+  "bannedPokemons": [],
+  "bannedHeldItems": []
+}

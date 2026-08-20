@@ -1,0 +1,12 @@
+name = "cobblemoncharms"
+filename = "cobblemoncharms-1.2.0-fabric.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "35f58134f6965cf4fb741ee0cd3091493ee01924"
+
+[update]
+[update.modrinth]
+mod-id = "cobblemoncharms"
+version = "5fcbdbbb7c614ef0"

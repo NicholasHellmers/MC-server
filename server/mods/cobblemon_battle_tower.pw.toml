@@ -1,0 +1,12 @@
+name = "cobblemon_battle_tower"
+filename = "cobblemon_battle_tower-fabric-1.10.22.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "8821e865948c0760355b1d380610a13b3c8904e0"
+
+[update]
+[update.modrinth]
+mod-id = "cobblemon_battle_tower"
+version = "20616890daa978ca"

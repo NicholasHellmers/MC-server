@@ -1,0 +1,12 @@
+name = "shinyreroll"
+filename = "ShinyReroll-1.1.0+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "368808c9e63acc32c2db725124cddbeadb2e3b1e"
+
+[update]
+[update.modrinth]
+mod-id = "shinyreroll"
+version = "08fdcd2691fe5d1c"

@@ -1,0 +1,16 @@
+{
+  "target": "cobblemon:genesect",
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:metal_coat",
+        "quantityRange": "1"
+      },
+      {
+        "item": "minecraft:netherite_scrap",
+        "quantityRange": "1-2"
+      }
+    ]
+  }
+}

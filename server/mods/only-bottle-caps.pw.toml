@@ -1,0 +1,12 @@
+name = "only-bottle-caps"
+filename = "Only Bottle Caps-1.3.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "23ef87de0db4ec6914b67ad96d72c204874dc613"
+
+[update]
+[update.modrinth]
+mod-id = "only-bottle-caps"
+version = "2af1de10a2f5be03"

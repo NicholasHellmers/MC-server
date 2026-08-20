@@ -1,0 +1,12 @@
+name = "infinite-music"
+filename = "infinite-music-0.4.6.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "72ac27231cd80aab7ea509da6694c3696dc4c96a"
+
+[update]
+[update.modrinth]
+mod-id = "infinite-music"
+version = "b5281b32b1d2eb9c"

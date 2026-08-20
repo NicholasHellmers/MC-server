@@ -1,0 +1,12 @@
+name = "cobblemon-go-catch"
+filename = "cobblemon-go-catch-1.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "abccb719b0b679479bdb34b7b365b2adcc080394"
+
+[update]
+[update.modrinth]
+mod-id = "cobblemon-go-catch"
+version = "609a079b5750de17"

@@ -1,0 +1,12 @@
+name = "mousetweaks"
+filename = "MouseTweaks-fabric-mc1.21-2.26.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "ee81af33a5606ef2cd057e075833d7c69836c210"
+
+[update]
+[update.modrinth]
+mod-id = "mousetweaks"
+version = "1744a48a47aedcbf"

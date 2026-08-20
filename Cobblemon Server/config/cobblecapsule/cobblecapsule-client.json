@@ -1,0 +1,6 @@
+{
+  "ui": {
+    "enable_cloth_config_screen": true,
+    "show_client_debug_tooltips": false
+  }
+}

@@ -1,0 +1,12 @@
+name = "toms_storage"
+filename = "toms_storage_fabric-1.21-2.3.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3f851ab4ba33b0efca0a03f3aa92a266415f5a87"
+
+[update]
+[update.modrinth]
+mod-id = "toms_storage"
+version = "e7bc2828cbf7cda7"

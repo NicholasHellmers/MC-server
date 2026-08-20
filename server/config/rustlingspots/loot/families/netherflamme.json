@@ -1,0 +1,19 @@
+[
+  { "item": "minecraft:magma_cream", "min": 1, "max": 3, "weight": 5 },
+  { "item": "minecraft:blaze_powder", "min": 1, "max": 2, "weight": 4 },
+  { "item": "minecraft:nether_wart", "min": 1, "max": 4, "weight": 4 },
+  { "item": "minecraft:coal", "min": 2, "max": 6, "weight": 4 },
+  { "item": "minecraft:fire_charge", "min": 1, "max": 2, "weight": 3 },
+  { "item": "minecraft:basalt", "min": 2, "max": 6, "weight": 4 },
+  { "item": "minecraft:blackstone", "min": 2, "max": 6, "weight": 4 },
+  { "item": "minecraft:gold_nugget", "min": 2, "max": 6, "weight": 3 },
+  { "item": "cobblemon:razz_berry", "min": 1, "max": 3, "weight": 4 },
+  { "item": "cobblemon:figy_berry", "min": 1, "max": 2, "weight": 3 },
+  { "item": "cobblemon:fire_gem", "min": 1, "max": 1, "weight": 2 },
+  { "item": "cobblemon:poke_ball", "min": 1, "max": 2, "weight": 3 },
+  { "item": "cobblemon:great_ball", "min": 1, "max": 1, "weight": 2 },
+  { "item": "cobblemon:potion", "min": 1, "max": 2, "weight": 3 },
+  { "item": "cobblemon:burn_heal", "min": 1, "max": 2, "weight": 3 },
+  { "item": "cobblemon:exp_candy_xs", "min": 1, "max": 1, "weight": 2 },
+  { "item": "cobblemon:fire_stone", "min": 1, "max": 1, "weight": 1 }
+]

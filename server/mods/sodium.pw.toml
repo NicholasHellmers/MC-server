@@ -1,0 +1,12 @@
+name = "sodium"
+filename = "sodium-fabric-0.8.12+mc1.21.1.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "70381d969eb63c0aa09dc581ef4b9a79782c0123"
+
+[update]
+[update.modrinth]
+mod-id = "sodium"
+version = "8afe411eec65a9f6"

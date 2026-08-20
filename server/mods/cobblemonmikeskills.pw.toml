@@ -1,0 +1,12 @@
+name = "cobblemonmikeskills"
+filename = "cobblemonmikeskills-fabric-5.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d409307b359d15152ad8bd1110ac3b81e4ed337a"
+
+[update]
+[update.modrinth]
+mod-id = "cobblemonmikeskills"
+version = "ba9fc6a0ca0eb373"

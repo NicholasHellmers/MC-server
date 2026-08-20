@@ -1,0 +1,23 @@
+{
+	// Whether joining a remote raid requires a separate Remote Key (cobblemonraiddens:remote_key). Default: false
+	"requires_remote_key": false,
+	// Limit the number of requests a host can receive. Default: 10
+	"max_requests": 10,
+	// Enable raid spawns to be announced in chat at a configurable range (NONE / RANGE / DIMENSION / SERVER). Default: RANGE
+	"spawn_announcements": "RANGE",
+	"min_tier": "TIER_FIVE",
+	"announcement_range": 640,
+	// Use placeholders to include specific information. %TIER%: Raid Tier / %BOSS%: Raid Boss / %POS%: Block Position / %BIOME%: Biome
+	"announcement_message": "A %BOSS% raid has spawned in the %BIOME%!",
+	// Enable players to broadcast their raid at a configurable range (NONE / RANGE / DIMENSION / SERVER). Default: RANGE
+	"enable_broadcast": "RANGE",
+	"broadcast_range": 1280,
+	// Use placeholders to include specific information. %PLAYER%: Player Name / %TIER%: Raid Tier / %BOSS%: Raid Boss
+	"broadcast_message": "%PLAYER% has started a %BOSS% raid!",
+	// Enable players to invite other players to their raid. Default: true
+	"enable_invite": true,
+	"invite_message": "%PLAYER% has invited you to a %BOSS% raid!",
+	// Extra Messages
+	"no_key_message": "You do not have a Remote Key!",
+	"request_button": " [Request]"
+}

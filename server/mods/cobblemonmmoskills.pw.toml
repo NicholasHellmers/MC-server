@@ -1,0 +1,12 @@
+name = "cobblemonmmoskills"
+filename = "cobblemonmmoskills-1.21.1-fabric-1.2.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "541c48f67cfc66ee581b9bf23ef8e97131c73930"
+
+[update]
+[update.modrinth]
+mod-id = "cobblemonmmoskills"
+version = "4816a5b023b1860e"

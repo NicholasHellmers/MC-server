@@ -1,0 +1,12 @@
+name = "huge-structure-blocks"
+filename = "huge-structure-blocks-fabric-1.1.6.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e47182aa7c96a04e79eab7db8851f4d7615d3f40"
+
+[update]
+[update.modrinth]
+mod-id = "huge-structure-blocks"
+version = "1dc8769007e3f410"

@@ -1,0 +1,12 @@
+name = "respackopts"
+filename = "respackopts-4.14.0+1.21.1.4.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "f32957a737d953a0422d4aaa5111ed1c1fe4a2ba"
+
+[update]
+[update.modrinth]
+mod-id = "respackopts"
+version = "7cf3eae0f90a8e8d"

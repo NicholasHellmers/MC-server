@@ -1,0 +1,12 @@
+name = "biomereplacer"
+filename = "biomereplacer-2.1-hippo-fabric.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "8e3573f3384e7031afa663d7fe3dbbd0011bae9c"
+
+[update]
+[update.modrinth]
+mod-id = "biomereplacer"
+version = "97219d3e9591468e"

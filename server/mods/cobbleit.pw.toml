@@ -1,0 +1,12 @@
+name = "cobbleit"
+filename = "Cobbleit-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5e4872b5e1122a53477ed773c35db35d844528bc"
+
+[update]
+[update.modrinth]
+mod-id = "cobbleit"
+version = "8b6679f99e89b154"

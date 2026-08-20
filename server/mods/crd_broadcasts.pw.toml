@@ -1,0 +1,12 @@
+name = "crd_broadcasts"
+filename = "crd_broadcasts-fabric-1.4.1+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "11a52f24e8e7d36607e754e93ad3eb4fe687692a"
+
+[update]
+[update.modrinth]
+mod-id = "crd_broadcasts"
+version = "c19fe1f1fef8cd60"

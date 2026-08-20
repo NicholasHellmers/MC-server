@@ -1,0 +1,12 @@
+name = "particlerain"
+filename = "particlerain-4.0.0-beta.10+1.21.1-fabric.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "348a457458609372069b4101a6c88a12b55211a7"
+
+[update]
+[update.modrinth]
+mod-id = "particlerain"
+version = "26f80b1bc1644f90"

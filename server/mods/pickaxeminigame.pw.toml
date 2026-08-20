@@ -1,0 +1,12 @@
+name = "pickaxeminigame"
+filename = "pickaxeminigame-2.1.5.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b10adb0b6b2628aeb6cad4accdf2679e85ca8281"
+
+[update]
+[update.modrinth]
+mod-id = "pickaxeminigame"
+version = "5a523aee416ee320"

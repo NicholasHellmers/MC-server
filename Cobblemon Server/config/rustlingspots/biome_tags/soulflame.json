@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:soul_sand_valley",
+    "minecraft:warped_forest",
+    "byg:weeping_mire",
+    "byg:withering_woods",
+    "byg:subzero_hypogeal",
+    "biomesoplenty:undergrowth",
+    "biomesoplenty:withered_abyss",
+    "regions_unexplored:soul_barrens",
+    "regions_unexplored:withered_chasm",
+    "regions_unexplored:ghostly_forest",
+    "incendium:ashen_sands",
+    "incendium:soul_wastes",
+    "incendium:forgotten_tombs",
+    "incendium:haunted_basins"
+  ]
+}

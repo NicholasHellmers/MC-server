@@ -1,0 +1,19 @@
+{
+  "doAlphaSpawning": true,
+  "retainAlphaStatus": true,
+  "alphaSpawnChance": 0.01,
+  "alphaSizeMultiplier": 2.0,
+  "maximumBestIvs": 3,
+  "doHerdSpawning": true,
+  "secondsBetweenSpawns": 300,
+  "spawnAttempts": 10,
+  "requiredPlayerAmount": 1,
+  "shinyOdds": 4096,
+  "minimumSpawnDistance": 30,
+  "maximumSpawnDistance": 60,
+  "doSpawnAnnouncementMessage": true,
+  "spawnAnnouncementMessage": "An Alpha Pokemon has spawned near somebody!",
+  "showCoordinatesInAnnouncement": false,
+  "spawnBehavior": "world",
+  "perPlayerSpawnChanceBoost": 0.02
+}

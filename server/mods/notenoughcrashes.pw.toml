@@ -1,0 +1,12 @@
+name = "notenoughcrashes"
+filename = "notenoughcrashes-fabric-4.4.9+1.21.1.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "0de122f1e94b85308bcecb0ebc40ac48c13367a9"
+
+[update]
+[update.modrinth]
+mod-id = "notenoughcrashes"
+version = "fb9036e3415352af"

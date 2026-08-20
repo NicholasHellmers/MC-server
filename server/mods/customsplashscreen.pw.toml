@@ -1,0 +1,12 @@
+name = "customsplashscreen"
+filename = "customsplashscreen-2.2.0.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "bb79f8974e619e077d60a6bdffe389913b84defd"
+
+[update]
+[update.modrinth]
+mod-id = "customsplashscreen"
+version = "08c99c6eb998ce7c"

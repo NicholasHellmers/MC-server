@@ -1,0 +1,12 @@
+name = "betterf3"
+filename = "BetterF3-11.0.3-Fabric-1.21.1.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "22442f5594bd537ab603cb36fba70363ebb7992a"
+
+[update]
+[update.modrinth]
+mod-id = "betterf3"
+version = "c90c9ed5e2860c99"

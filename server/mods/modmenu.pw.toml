@@ -1,0 +1,12 @@
+name = "modmenu"
+filename = "modmenu-11.0.4.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "8af1b0b9ee18eab5cd5e5c97c497f0e473c49e9a"
+
+[update]
+[update.modrinth]
+mod-id = "modmenu"
+version = "45ea8f7e0749bc0e"

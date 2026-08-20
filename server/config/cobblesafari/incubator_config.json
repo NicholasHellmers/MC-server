@@ -1,0 +1,6 @@
+{
+  "cobbreedingHatchSpeedMultiplier": 0.66,
+  "defaultWildEggHatchTimeTicks": 14400,
+  "eggNestMinRefillTicks": 36000,
+  "eggNestMaxRefillTicks": 72000
+}

@@ -1,0 +1,12 @@
+name = "storagedrawers"
+filename = "StorageDrawers-fabric-1.21.1-13.11.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "180483e5f8360cc56a0eafe9765b81ff14920653"
+
+[update]
+[update.modrinth]
+mod-id = "storagedrawers"
+version = "1ec2f81b50708b61"

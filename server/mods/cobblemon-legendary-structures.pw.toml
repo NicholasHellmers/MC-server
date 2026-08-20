@@ -1,0 +1,12 @@
+name = "cobblemon-legendary-structures"
+filename = "cobblemon-legendary-structures-2.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "28e1edbc2b3ee55399221f78635ba92c2878118b"
+
+[update]
+[update.modrinth]
+mod-id = "cobblemon-legendary-structures"
+version = "2440abd89f1399a6"

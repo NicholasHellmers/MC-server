@@ -1,0 +1,11 @@
+{
+  "globalStatMultiplier": 10.0,
+  "recyclerProcessTime": 40,
+  "godPackTicketChance": 1.0,
+  "gradingStationProcessTime": 100,
+  "cardDropChance": 1.0,
+  "gradingStationDustCost": 5,
+  "enableBoosterChestSpawn": true,
+  "boosterChestSpawnChance": 2.0,
+  "allowFakemonCards": false
+}

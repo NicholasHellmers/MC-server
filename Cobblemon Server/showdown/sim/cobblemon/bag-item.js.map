@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../sim/cobblemon/bag-item.ts"],
+  "sourcesContent": ["import { Pokemon } from \"../pokemon\";\n\nexport interface BagItem {\n\tuse: (battle: Battle, pokemon: Pokemon, itemId: string, data: string[]) => void;\n};\n\n"],
+  "mappings": ";;;;;;;;;;;;;;AAAA;AAAA;AAIC;",
+  "names": []
+}

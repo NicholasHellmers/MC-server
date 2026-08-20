@@ -1,0 +1,326 @@
+[
+  {
+    "species": "sandshrew",
+    "weight": 12,
+    "min_level": 1,
+    "max_level": 22
+  },
+  {
+    "species": "diglett",
+    "weight": 12,
+    "min_level": 1,
+    "max_level": 20
+  },
+  {
+    "species": "sandile",
+    "weight": 11,
+    "min_level": 1,
+    "max_level": 24
+  },
+  {
+    "species": "trapinch",
+    "weight": 11,
+    "min_level": 1,
+    "max_level": 24
+  },
+  {
+    "species": "hippopotas",
+    "weight": 10,
+    "min_level": 1,
+    "max_level": 26
+  },
+  {
+    "species": "drilbur",
+    "weight": 10,
+    "min_level": 1,
+    "max_level": 24
+  },
+  {
+    "species": "cacnea",
+    "weight": 9,
+    "min_level": 1,
+    "max_level": 24
+  },
+  {
+    "species": "helioptile",
+    "weight": 9,
+    "min_level": 1,
+    "max_level": 22
+  },
+  {
+    "species": "numel",
+    "weight": 9,
+    "min_level": 1,
+    "max_level": 24
+  },
+  {
+    "species": "vulpix",
+    "weight": 8,
+    "min_level": 1,
+    "max_level": 22
+  },
+  {
+    "species": "growlithe",
+    "weight": 8,
+    "min_level": 1,
+    "max_level": 22
+  },
+  {
+    "species": "slugma",
+    "weight": 7,
+    "min_level": 5,
+    "max_level": 28
+  },
+  {
+    "species": "houndour",
+    "weight": 7,
+    "min_level": 5,
+    "max_level": 30
+  },
+  {
+    "species": "baltoy",
+    "weight": 8,
+    "min_level": 1,
+    "max_level": 26
+  },
+  {
+    "species": "yamask",
+    "weight": 6,
+    "min_level": 10,
+    "max_level": 30
+  },
+  {
+    "species": "geodude",
+    "weight": 8,
+    "min_level": 1,
+    "max_level": 26
+  },
+  {
+    "species": "rockruff",
+    "weight": 8,
+    "min_level": 1,
+    "max_level": 24
+  },
+  {
+    "species": "rhyhorn",
+    "weight": 7,
+    "min_level": 10,
+    "max_level": 35
+  },
+  {
+    "species": "skorupi",
+    "weight": 7,
+    "min_level": 8,
+    "max_level": 26
+  },
+  {
+    "species": "stunky",
+    "weight": 7,
+    "min_level": 8,
+    "max_level": 24
+  },
+  {
+    "species": "grimer",
+    "weight": 7,
+    "min_level": 10,
+    "max_level": 26
+  },
+  {
+    "species": "maractus",
+    "weight": 5,
+    "min_level": 20,
+    "max_level": 45
+  },
+  {
+    "species": "dugtrio",
+    "weight": 6,
+    "min_level": 20,
+    "max_level": 50
+  },
+  {
+    "species": "krokorok",
+    "weight": 6,
+    "min_level": 20,
+    "max_level": 50
+  },
+  {
+    "species": "vibrava",
+    "weight": 6,
+    "min_level": 20,
+    "max_level": 50
+  },
+  {
+    "species": "hippowdon",
+    "weight": 5,
+    "min_level": 30,
+    "max_level": 60
+  },
+  {
+    "species": "excadrill",
+    "weight": 5,
+    "min_level": 30,
+    "max_level": 60
+  },
+  {
+    "species": "camerupt",
+    "weight": 5,
+    "min_level": 30,
+    "max_level": 60
+  },
+  {
+    "species": "lycanroc",
+    "weight": 4,
+    "min_level": 25,
+    "max_level": 55
+  },
+  {
+    "species": "onix",
+    "weight": 4,
+    "min_level": 20,
+    "max_level": 50
+  },
+  {
+    "species": "cacturne",
+    "weight": 4,
+    "min_level": 25,
+    "max_level": 55
+  },
+  {
+    "species": "heliolisk",
+    "weight": 4,
+    "min_level": 25,
+    "max_level": 55
+  },
+  {
+    "species": "flygon",
+    "weight": 2,
+    "min_level": 40,
+    "max_level": 70
+  },
+  {
+    "species": "krookodile",
+    "weight": 2,
+    "min_level": 40,
+    "max_level": 70
+  },
+  {
+    "species": "rhyperior",
+    "weight": 2,
+    "min_level": 45,
+    "max_level": 75
+  },
+  {
+    "species": "volcarona",
+    "weight": 1,
+    "min_level": 50,
+    "max_level": 75
+  },
+  {
+    "species": "sandslash",
+    "weight": 5,
+    "min_level": 22,
+    "max_level": 55
+  },
+  {
+    "species": "silicobra",
+    "weight": 9,
+    "min_level": 1,
+    "max_level": 24
+  },
+  {
+    "species": "sandaconda",
+    "weight": 3,
+    "min_level": 28,
+    "max_level": 60
+  },
+  {
+    "species": "claydol",
+    "weight": 3,
+    "min_level": 25,
+    "max_level": 60
+  },
+  {
+    "species": "graveler",
+    "weight": 5,
+    "min_level": 22,
+    "max_level": 55
+  },
+  {
+    "species": "golem",
+    "weight": 2,
+    "min_level": 35,
+    "max_level": 70
+  },
+  {
+    "species": "glimmet",
+    "weight": 5,
+    "min_level": 10,
+    "max_level": 35
+  },
+  {
+    "species": "glimmora",
+    "weight": 2,
+    "min_level": 35,
+    "max_level": 65
+  },
+  {
+    "species": "drapion",
+    "weight": 2,
+    "min_level": 35,
+    "max_level": 65
+  },
+  {
+    "species": "skuntank",
+    "weight": 3,
+    "min_level": 25,
+    "max_level": 55
+  },
+  {
+    "species": "muk",
+    "weight": 3,
+    "min_level": 25,
+    "max_level": 55
+  },
+  {
+    "species": "meowth",
+    "weight": 7,
+    "min_level": 1,
+    "max_level": 22
+  },
+  {
+    "species": "persian",
+    "weight": 3,
+    "min_level": 22,
+    "max_level": 50
+  },
+  {
+    "species": "rhydon",
+    "weight": 4,
+    "min_level": 30,
+    "max_level": 60
+  },
+  {
+    "species": "cubone",
+    "weight": 7,
+    "min_level": 1,
+    "max_level": 25
+  },
+  {
+    "species": "marowak",
+    "weight": 3,
+    "min_level": 25,
+    "max_level": 55
+  },
+  {
+    "species": "magcargo",
+    "weight": 3,
+    "min_level": 30,
+    "max_level": 65
+  },
+  {
+    "species": "orthworm",
+    "weight": 3,
+    "min_level": 20,
+    "max_level": 55
+  }
+]

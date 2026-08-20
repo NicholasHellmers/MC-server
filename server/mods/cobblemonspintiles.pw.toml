@@ -1,0 +1,12 @@
+name = "cobblemonspintiles"
+filename = "CobblemonSpinTiles-1.0.0-fabric-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "69576a02909dedeb82bcc35f63d7ba47f8b0ff1f"
+
+[update]
+[update.modrinth]
+mod-id = "cobblemonspintiles"
+version = "e0d45cd37ad7fbb5"

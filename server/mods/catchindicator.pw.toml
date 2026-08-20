@@ -1,0 +1,12 @@
+name = "catchindicator"
+filename = "catchindicator-fabric-1.7.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "afe92fe750372efe83d9d85480f0e98401fdef1b"
+
+[update]
+[update.modrinth]
+mod-id = "catchindicator"
+version = "583600364c1c72dc"

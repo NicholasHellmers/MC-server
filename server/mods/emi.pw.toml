@@ -1,0 +1,12 @@
+name = "emi"
+filename = "emi-1.1.24+1.21.1+fabric.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6abcf2a10a629e401bff73a8fd1ad328a72b1482"
+
+[update]
+[update.modrinth]
+mod-id = "emi"
+version = "2680e7b0a93152d4"

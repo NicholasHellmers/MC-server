@@ -1,0 +1,12 @@
+name = "cobblemontrialsedition"
+filename = "CobblemonTrialsEdition-fabric-2.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "41daf3267c07b9d8e1e9fe65d83d7ccf7a668fc7"
+
+[update]
+[update.modrinth]
+mod-id = "cobblemontrialsedition"
+version = "a97ef30784b55436"

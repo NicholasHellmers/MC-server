@@ -1,0 +1,20 @@
+[
+  { "item": "minecraft:soul_sand", "min": 2, "max": 6, "weight": 5 },
+  { "item": "minecraft:soul_soil", "min": 2, "max": 6, "weight": 5 },
+  { "item": "minecraft:bone_meal", "min": 2, "max": 6, "weight": 3 },
+  { "item": "minecraft:soul_torch", "min": 1, "max": 3, "weight": 4 },
+  { "item": "minecraft:bone", "min": 1, "max": 3, "weight": 4 },
+  { "item": "minecraft:coal", "min": 2, "max": 5, "weight": 3 },
+  { "item": "minecraft:echo_shard", "min": 1, "max": 1, "weight": 1 },
+  { "item": "cobblemon:spell_tag", "min": 1, "max": 1, "weight": 2 },
+  { "item": "cobblemon:ghost_gem", "min": 1, "max": 1, "weight": 2 },
+  { "item": "cobblemon:dark_gem", "min": 1, "max": 1, "weight": 2 },
+  { "item": "cobblemon:razz_berry", "min": 1, "max": 2, "weight": 3 },
+  { "item": "cobblemon:kasib_berry", "min": 1, "max": 2, "weight": 3 },
+  { "item": "cobblemon:poke_ball", "min": 1, "max": 2, "weight": 3 },
+  { "item": "cobblemon:dusk_ball", "min": 1, "max": 1, "weight": 2 },
+  { "item": "cobblemon:potion", "min": 1, "max": 2, "weight": 3 },
+  { "item": "cobblemon:full_heal", "min": 1, "max": 1, "weight": 2 },
+  { "item": "cobblemon:exp_candy_xs", "min": 1, "max": 1, "weight": 2 },
+  { "item": "cobblemon:dusk_stone", "min": 1, "max": 1, "weight": 1 }
+]

@@ -1,0 +1,2866 @@
+{
+  "_README": [
+    "════════════════════════════════════════════════════════════════════════",
+    "CobblemonMikeSkills — Spawn Table",
+    "Edit this file to customise encounters. Reload in-game with:",
+    "  /pokeskill config → Reload Tables",
+    "A read-only backup of the original defaults is always kept in the",
+    "  defaults/ sub-folder next to this file.",
+    "════════════════════════════════════════════════════════════════════════",
+    "",
+    "FILE STRUCTURE",
+    "  Top-level keys are biome selectors (e.g. \"is_forest\", \"is_desert\", \"any\").",
+    "  The key \"any\" matches every biome and is merged with biome-specific groups.",
+    "  Each key maps to an ARRAY of Spawn Groups.",
+    "",
+    "SPAWN GROUP FIELDS",
+    "  rarity      Display label only (COMMON | UNCOMMON | RARE | VERY_RARE | ULTRA_RARE | LEGENDARY).",
+    "              Does not affect logic — purely cosmetic in GUIs and logs.",
+    "  weight      Relative selection probability for this group vs. other eligible groups.",
+    "              Higher \u003d more likely to be chosen. Groups are NOT cumulative.",
+    "              Exactly ONE group is selected per encounter roll.",
+    "              Recommended ranges: COMMON\u003d60 | UNCOMMON\u003d25 | RARE\u003d15 | EPIC\u003d10 | LEGENDARY\u003d0.2",
+    "  conditions  All fields are optional. Omitting a field means \u0027no restriction\u0027.",
+    "  rewards     Array of possible rewards inside this group. One reward is picked",
+    "              via its own weighted random among the group\u0027s entries.",
+    "",
+    "CONDITIONS FIELDS (all optional)",
+    "  minSkillLevel / maxSkillLevel   Player skill level required (integer, 0–100).",
+    "  minWaterPool  / maxWaterPool    Adjacent water blocks at the bobber (fishing only).",
+    "  blockMinedAny                   Array of block registry keys (digging only).",
+    "                                  Example: [\"minecraft:gravel\", \"minecraft:red_sand\"]",
+    "                                  Empty array \u003d any block accepted.",
+    "  weather       \"clear\" | \"raining\" | \"thundering\"   (\"raining\" also matches thundering)",
+    "  timeOfDay     \"day\" | \"night\"",
+    "  minY / maxY   Y-coordinate of the action (bobber for fishing, target block for dig/cut).",
+    "  minExcavationScore / maxExcavationScore   Cumulative score from the excavation action.",
+    "  minAttentionRequired   Minimum TypeAttention value; use for sustained-play gating.",
+    "  dimension     Full registry key, e.g. \"minecraft:overworld\" or \"minecraft:the_nether\".",
+    "  maxLightLevel Light level ceiling (0-15). Default 15 \u003d no restriction.",
+    "                Set to e.g. 7 to restrict this group to dark areas.",
+    "",
+    "REWARD TYPES",
+    "  type: \"pokemon\"",
+    "    pokemon    Cobblemon species name (e.g. \"magikarp\", \"charizard\").",
+    "    minLevel / maxLevel   Spawn level range (integers).",
+    "    nbt        Extra Cobblemon property tokens appended to the property string.",
+    "               Supports: form, ability, held_item, nature, gender, moves, etc.",
+    "               Example: \"form\u003dalola ability\u003dsnow_warning held_item\u003doran_berry\"",
+    "    weight     Relative probability within this group\u0027s reward pool.",
+    "",
+    "  type: \"mob\"",
+    "    entityId   Full entity registry key — vanilla OR any installed mod.",
+    "               Example: \"minecraft:zombie\"  |  \"alexsmobs:grizzly_bear\"",
+    "               The entity must extend Mob (standard hostile/passive mob). Decorative",
+    "               entities (boats, minecarts) are not supported.",
+    "    nbt        SNBT compound applied after spawn (Health, CustomName, AI flags, etc.).",
+    "               Positional / identity keys (UUID, Pos, Rotation) are stripped automatically.",
+    "               Example: \"{Health:80.0f,CustomName:\u0027{\\\"text\\\":\\\"Boss\\\"}\u0027,CustomNameVisible:1b}\"",
+    "    weight     Relative probability within this group\u0027s reward pool.",
+    "",
+    "  type: \"item\"",
+    "    item       Full item registry key — vanilla OR any installed mod.",
+    "               Example: \"minecraft:emerald\"  |  \"farmersdelight:tomato_seeds\"",
+    "    nbt        DataComponentPatch SNBT (Minecraft 1.21+ format) for enchantments,",
+    "               custom names, lore, durability, etc.",
+    "               Example: \"{changed:{\\\"minecraft:enchantments\\\":{levels:{\\\"minecraft:sharpness\\\":5}}}}\"",
+    "    entityId   Optional bearer mob. If set, this mob spawns holding the item and",
+    "               drops it at 100% chance. Accepts any Mob subclass (vanilla or modded).",
+    "    minAmount / maxAmount   Stack size range (integers). Default: 1.",
+    "    weight     Relative probability within this group\u0027s reward pool.",
+    "",
+    "HOW TO FIND MOD REGISTRY KEYS",
+    "  Items: press F3+H in-game, then hover over the item — the ID appears in the tooltip.",
+    "  Mobs:  check the mod\u0027s wiki, or look in its lang/ files for entity translation keys.",
+    "         The registry key is typically modid:entity_name (snake_case).",
+    "",
+    "════════════════════════════════════════════════════════════════════════"
+  ],
+  "any": [
+    {
+      "rarity": "JUNK",
+      "weight": 35.0,
+      "conditions": {
+        "maxSkillLevel": 9
+      },
+      "rewards": [
+        {
+          "type": "item",
+          "weight": 1.0,
+          "item": "minecraft:stick",
+          "minAmount": 1,
+          "maxAmount": 3
+        },
+        {
+          "type": "item",
+          "weight": 0.5,
+          "item": "minecraft:apple",
+          "minAmount": 1,
+          "maxAmount": 2
+        },
+        {
+          "type": "item",
+          "weight": 0.4,
+          "item": "minecraft:dead_bush",
+          "minAmount": 1,
+          "maxAmount": 1
+        },
+        {
+          "type": "item",
+          "weight": 0.3,
+          "item": "minecraft:honeycomb",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "COMMON",
+      "weight": 65.0,
+      "conditions": {
+        "maxSkillLevel": 9
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.42,
+          "pokemon": "caterpie",
+          "minLevel": 5,
+          "maxLevel": 18
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.42,
+          "pokemon": "weedle",
+          "minLevel": 5,
+          "maxLevel": 18
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.3,
+          "pokemon": "paras",
+          "minLevel": 5,
+          "maxLevel": 18
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.24,
+          "pokemon": "seedot",
+          "minLevel": 5,
+          "maxLevel": 18
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "cherubi",
+          "minLevel": 5,
+          "maxLevel": 18
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.18,
+          "pokemon": "burmy",
+          "minLevel": 5,
+          "maxLevel": 18
+        },
+        {
+          "type": "item",
+          "weight": 0.8,
+          "item": "cobblemon:oran_berry",
+          "minAmount": 1,
+          "maxAmount": 2
+        },
+        {
+          "type": "item",
+          "weight": 0.4,
+          "item": "cobblemon:red_apricorn",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "JUNK",
+      "weight": 20.0,
+      "conditions": {
+        "minSkillLevel": 10,
+        "maxSkillLevel": 19
+      },
+      "rewards": [
+        {
+          "type": "item",
+          "weight": 1.0,
+          "item": "minecraft:stick",
+          "minAmount": 1,
+          "maxAmount": 3
+        },
+        {
+          "type": "item",
+          "weight": 0.5,
+          "item": "minecraft:apple",
+          "minAmount": 1,
+          "maxAmount": 2
+        },
+        {
+          "type": "item",
+          "weight": 0.4,
+          "item": "minecraft:dead_bush",
+          "minAmount": 1,
+          "maxAmount": 1
+        },
+        {
+          "type": "item",
+          "weight": 0.3,
+          "item": "minecraft:honeycomb",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "COMMON",
+      "weight": 65.0,
+      "conditions": {
+        "minSkillLevel": 10,
+        "maxSkillLevel": 19
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.3,
+          "pokemon": "caterpie",
+          "minLevel": 8,
+          "maxLevel": 22
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.3,
+          "pokemon": "weedle",
+          "minLevel": 8,
+          "maxLevel": 22
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.24,
+          "pokemon": "paras",
+          "minLevel": 8,
+          "maxLevel": 22
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "seedot",
+          "minLevel": 8,
+          "maxLevel": 22
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.18,
+          "pokemon": "cherubi",
+          "minLevel": 8,
+          "maxLevel": 22
+        },
+        {
+          "type": "item",
+          "weight": 0.7,
+          "item": "cobblemon:oran_berry",
+          "minAmount": 1,
+          "maxAmount": 2
+        }
+      ]
+    },
+    {
+      "rarity": "UNCOMMON",
+      "weight": 15.0,
+      "conditions": {
+        "minSkillLevel": 10,
+        "maxSkillLevel": 19,
+        "minExcavationScore": 12.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.18,
+          "pokemon": "nuzleaf",
+          "minLevel": 15,
+          "maxLevel": 30
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "metapod",
+          "minLevel": 12,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "kakuna",
+          "minLevel": 12,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.14,
+          "pokemon": "nincada",
+          "minLevel": 14,
+          "maxLevel": 30
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.14,
+          "pokemon": "hoothoot",
+          "minLevel": 14,
+          "maxLevel": 30
+        },
+        {
+          "type": "item",
+          "weight": 0.22,
+          "item": "cobblemon:great_ball",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "JUNK",
+      "weight": 12.0,
+      "conditions": {
+        "minSkillLevel": 20,
+        "maxSkillLevel": 29
+      },
+      "rewards": [
+        {
+          "type": "item",
+          "weight": 1.0,
+          "item": "minecraft:stick",
+          "minAmount": 1,
+          "maxAmount": 3
+        },
+        {
+          "type": "item",
+          "weight": 0.5,
+          "item": "minecraft:apple",
+          "minAmount": 1,
+          "maxAmount": 2
+        },
+        {
+          "type": "item",
+          "weight": 0.4,
+          "item": "minecraft:dead_bush",
+          "minAmount": 1,
+          "maxAmount": 1
+        },
+        {
+          "type": "item",
+          "weight": 0.3,
+          "item": "minecraft:honeycomb",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "COMMON",
+      "weight": 48.0,
+      "conditions": {
+        "minSkillLevel": 20,
+        "maxSkillLevel": 29
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "paras",
+          "minLevel": 12,
+          "maxLevel": 26
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.18,
+          "pokemon": "seedot",
+          "minLevel": 12,
+          "maxLevel": 26
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.16,
+          "pokemon": "cherubi",
+          "minLevel": 12,
+          "maxLevel": 26
+        },
+        {
+          "type": "item",
+          "weight": 0.42,
+          "item": "cobblemon:razz_berry",
+          "minAmount": 1,
+          "maxAmount": 2
+        }
+      ]
+    },
+    {
+      "rarity": "UNCOMMON",
+      "weight": 30.0,
+      "conditions": {
+        "minSkillLevel": 20,
+        "maxSkillLevel": 29,
+        "minExcavationScore": 18.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.16,
+          "pokemon": "nuzleaf",
+          "minLevel": 18,
+          "maxLevel": 34
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.14,
+          "pokemon": "nincada",
+          "minLevel": 18,
+          "maxLevel": 34
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "noctowl",
+          "minLevel": 18,
+          "maxLevel": 34
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "ariados",
+          "minLevel": 18,
+          "maxLevel": 34
+        },
+        {
+          "type": "item",
+          "weight": 0.22,
+          "item": "cobblemon:exp_candy_s",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "RARE",
+      "weight": 10.0,
+      "conditions": {
+        "minSkillLevel": 20,
+        "maxSkillLevel": 29,
+        "minExcavationScore": 35.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "butterfree",
+          "minLevel": 28,
+          "maxLevel": 44
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "beedrill",
+          "minLevel": 28,
+          "maxLevel": 44
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "heracross",
+          "minLevel": 28,
+          "maxLevel": 44
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "pinsir",
+          "minLevel": 28,
+          "maxLevel": 44
+        },
+        {
+          "type": "item",
+          "weight": 0.18,
+          "item": "cobblemon:leaf_stone",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "JUNK",
+      "weight": 10.0,
+      "conditions": {
+        "minSkillLevel": 30,
+        "maxSkillLevel": 39
+      },
+      "rewards": [
+        {
+          "type": "item",
+          "weight": 1.0,
+          "item": "minecraft:stick",
+          "minAmount": 1,
+          "maxAmount": 3
+        },
+        {
+          "type": "item",
+          "weight": 0.5,
+          "item": "minecraft:apple",
+          "minAmount": 1,
+          "maxAmount": 2
+        },
+        {
+          "type": "item",
+          "weight": 0.4,
+          "item": "minecraft:dead_bush",
+          "minAmount": 1,
+          "maxAmount": 1
+        },
+        {
+          "type": "item",
+          "weight": 0.3,
+          "item": "minecraft:honeycomb",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "COMMON",
+      "weight": 30.0,
+      "conditions": {
+        "minSkillLevel": 30,
+        "maxSkillLevel": 39
+      },
+      "rewards": [
+        {
+          "type": "item",
+          "weight": 0.44,
+          "item": "cobblemon:oran_berry",
+          "minAmount": 1,
+          "maxAmount": 3
+        },
+        {
+          "type": "item",
+          "weight": 0.22,
+          "item": "minecraft:apple",
+          "minAmount": 1,
+          "maxAmount": 2
+        }
+      ]
+    },
+    {
+      "rarity": "UNCOMMON",
+      "weight": 45.0,
+      "conditions": {
+        "minSkillLevel": 30,
+        "maxSkillLevel": 39,
+        "minExcavationScore": 24.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "noctowl",
+          "minLevel": 24,
+          "maxLevel": 40
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "ninjask",
+          "minLevel": 24,
+          "maxLevel": 40
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "heracross",
+          "minLevel": 28,
+          "maxLevel": 42
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "pinsir",
+          "minLevel": 28,
+          "maxLevel": 42
+        },
+        {
+          "type": "item",
+          "weight": 0.24,
+          "item": "cobblemon:great_ball",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "RARE",
+      "weight": 15.0,
+      "conditions": {
+        "minSkillLevel": 30,
+        "maxSkillLevel": 39,
+        "minExcavationScore": 60.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "scyther",
+          "minLevel": 34,
+          "maxLevel": 50
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "tropius",
+          "minLevel": 34,
+          "maxLevel": 50
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "breloom",
+          "minLevel": 34,
+          "maxLevel": 50
+        },
+        {
+          "type": "item",
+          "weight": 0.18,
+          "item": "cobblemon:exp_candy_m",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "JUNK",
+      "weight": 8.0,
+      "conditions": {
+        "minSkillLevel": 40,
+        "maxSkillLevel": 49
+      },
+      "rewards": [
+        {
+          "type": "item",
+          "weight": 1.0,
+          "item": "minecraft:stick",
+          "minAmount": 1,
+          "maxAmount": 3
+        },
+        {
+          "type": "item",
+          "weight": 0.5,
+          "item": "minecraft:apple",
+          "minAmount": 1,
+          "maxAmount": 2
+        },
+        {
+          "type": "item",
+          "weight": 0.4,
+          "item": "minecraft:dead_bush",
+          "minAmount": 1,
+          "maxAmount": 1
+        },
+        {
+          "type": "item",
+          "weight": 0.3,
+          "item": "minecraft:honeycomb",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "COMMON",
+      "weight": 15.0,
+      "conditions": {
+        "minSkillLevel": 40,
+        "maxSkillLevel": 49
+      },
+      "rewards": [
+        {
+          "type": "item",
+          "weight": 0.2,
+          "item": "minecraft:honeycomb",
+          "minAmount": 1,
+          "maxAmount": 1
+        },
+        {
+          "type": "item",
+          "weight": 0.24,
+          "item": "cobblemon:sitrus_berry",
+          "minAmount": 1,
+          "maxAmount": 2
+        }
+      ]
+    },
+    {
+      "rarity": "UNCOMMON",
+      "weight": 42.0,
+      "conditions": {
+        "minSkillLevel": 40,
+        "maxSkillLevel": 49,
+        "minExcavationScore": 30.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "heracross",
+          "minLevel": 30,
+          "maxLevel": 48
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "pinsir",
+          "minLevel": 30,
+          "maxLevel": 48
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "scyther",
+          "minLevel": 32,
+          "maxLevel": 50
+        },
+        {
+          "type": "item",
+          "weight": 0.24,
+          "item": "cobblemon:exp_candy_s",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "RARE",
+      "weight": 25.0,
+      "conditions": {
+        "minSkillLevel": 40,
+        "maxSkillLevel": 49,
+        "minExcavationScore": 80.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "breloom",
+          "minLevel": 40,
+          "maxLevel": 56
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "tropius",
+          "minLevel": 40,
+          "maxLevel": 56
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.06,
+          "pokemon": "scizor",
+          "minLevel": 42,
+          "maxLevel": 58
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "trevenant",
+          "minLevel": 40,
+          "maxLevel": 56
+        },
+        {
+          "type": "item",
+          "weight": 0.18,
+          "item": "cobblemon:leaf_stone",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "EPIC",
+      "weight": 10.0,
+      "conditions": {
+        "minSkillLevel": 40,
+        "maxSkillLevel": 49,
+        "minExcavationScore": 110.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.05,
+          "pokemon": "hydreigon",
+          "minLevel": 46,
+          "maxLevel": 62
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.05,
+          "pokemon": "kommo-o",
+          "minLevel": 46,
+          "maxLevel": 62
+        },
+        {
+          "type": "item",
+          "weight": 0.24,
+          "item": "cobblemon:ultra_ball",
+          "minAmount": 1,
+          "maxAmount": 1
+        },
+        {
+          "type": "item",
+          "weight": 0.22,
+          "item": "cobblemon:exp_candy_m",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "JUNK",
+      "weight": 7.0,
+      "conditions": {
+        "minSkillLevel": 50,
+        "maxSkillLevel": 59
+      },
+      "rewards": [
+        {
+          "type": "item",
+          "weight": 1.0,
+          "item": "minecraft:stick",
+          "minAmount": 1,
+          "maxAmount": 3
+        },
+        {
+          "type": "item",
+          "weight": 0.5,
+          "item": "minecraft:apple",
+          "minAmount": 1,
+          "maxAmount": 2
+        },
+        {
+          "type": "item",
+          "weight": 0.4,
+          "item": "minecraft:dead_bush",
+          "minAmount": 1,
+          "maxAmount": 1
+        },
+        {
+          "type": "item",
+          "weight": 0.3,
+          "item": "minecraft:honeycomb",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "COMMON",
+      "weight": 10.0,
+      "conditions": {
+        "minSkillLevel": 50,
+        "maxSkillLevel": 59
+      },
+      "rewards": [
+        {
+          "type": "item",
+          "weight": 0.24,
+          "item": "cobblemon:sitrus_berry",
+          "minAmount": 1,
+          "maxAmount": 2
+        }
+      ]
+    },
+    {
+      "rarity": "UNCOMMON",
+      "weight": 35.0,
+      "conditions": {
+        "minSkillLevel": 50,
+        "maxSkillLevel": 59,
+        "minExcavationScore": 36.0
+      },
+      "rewards": [
+        {
+          "type": "item",
+          "weight": 0.24,
+          "item": "cobblemon:exp_candy_m",
+          "minAmount": 1,
+          "maxAmount": 1
+        },
+        {
+          "type": "item",
+          "weight": 0.18,
+          "item": "cobblemon:great_ball",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "RARE",
+      "weight": 35.0,
+      "conditions": {
+        "minSkillLevel": 50,
+        "maxSkillLevel": 59,
+        "minExcavationScore": 95.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "breloom",
+          "minLevel": 44,
+          "maxLevel": 60
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "trevenant",
+          "minLevel": 44,
+          "maxLevel": 60
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "scizor",
+          "minLevel": 46,
+          "maxLevel": 62
+        },
+        {
+          "type": "item",
+          "weight": 0.16,
+          "item": "cobblemon:rare_candy",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "EPIC",
+      "weight": 13.0,
+      "conditions": {
+        "minSkillLevel": 50,
+        "maxSkillLevel": 59,
+        "minExcavationScore": 130.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.06,
+          "pokemon": "hydreigon",
+          "minLevel": 50,
+          "maxLevel": 66
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.06,
+          "pokemon": "kommo-o",
+          "minLevel": 50,
+          "maxLevel": 66
+        },
+        {
+          "type": "item",
+          "weight": 0.24,
+          "item": "cobblemon:ultra_ball",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "JUNK",
+      "weight": 6.0,
+      "conditions": {
+        "minSkillLevel": 60,
+        "maxSkillLevel": 69
+      },
+      "rewards": [
+        {
+          "type": "item",
+          "weight": 1.0,
+          "item": "minecraft:stick",
+          "minAmount": 1,
+          "maxAmount": 3
+        },
+        {
+          "type": "item",
+          "weight": 0.5,
+          "item": "minecraft:apple",
+          "minAmount": 1,
+          "maxAmount": 2
+        },
+        {
+          "type": "item",
+          "weight": 0.4,
+          "item": "minecraft:dead_bush",
+          "minAmount": 1,
+          "maxAmount": 1
+        },
+        {
+          "type": "item",
+          "weight": 0.3,
+          "item": "minecraft:honeycomb",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "COMMON",
+      "weight": 7.0,
+      "conditions": {
+        "minSkillLevel": 60,
+        "maxSkillLevel": 69
+      },
+      "rewards": [
+        {
+          "type": "item",
+          "weight": 0.24,
+          "item": "cobblemon:sitrus_berry",
+          "minAmount": 1,
+          "maxAmount": 3
+        }
+      ]
+    },
+    {
+      "rarity": "UNCOMMON",
+      "weight": 30.0,
+      "conditions": {
+        "minSkillLevel": 60,
+        "maxSkillLevel": 69,
+        "minExcavationScore": 42.0
+      },
+      "rewards": [
+        {
+          "type": "item",
+          "weight": 0.26,
+          "item": "cobblemon:exp_candy_m",
+          "minAmount": 1,
+          "maxAmount": 1
+        },
+        {
+          "type": "item",
+          "weight": 0.18,
+          "item": "cobblemon:leaf_stone",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "RARE",
+      "weight": 40.0,
+      "conditions": {
+        "minSkillLevel": 60,
+        "maxSkillLevel": 69,
+        "minExcavationScore": 110.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "breloom",
+          "minLevel": 48,
+          "maxLevel": 64
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "trevenant",
+          "minLevel": 48,
+          "maxLevel": 64
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "scizor",
+          "minLevel": 50,
+          "maxLevel": 66
+        },
+        {
+          "type": "item",
+          "weight": 0.18,
+          "item": "cobblemon:rare_candy",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "EPIC",
+      "weight": 17.0,
+      "conditions": {
+        "minSkillLevel": 60,
+        "maxSkillLevel": 69,
+        "minExcavationScore": 145.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.07,
+          "pokemon": "hydreigon",
+          "minLevel": 54,
+          "maxLevel": 70
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.07,
+          "pokemon": "kommo-o",
+          "minLevel": 54,
+          "maxLevel": 70
+        },
+        {
+          "type": "item",
+          "weight": 0.18,
+          "item": "cobblemon:exp_candy_l",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "JUNK",
+      "weight": 5.0,
+      "conditions": {
+        "minSkillLevel": 70,
+        "maxSkillLevel": 79
+      },
+      "rewards": [
+        {
+          "type": "item",
+          "weight": 1.0,
+          "item": "minecraft:stick",
+          "minAmount": 1,
+          "maxAmount": 3
+        },
+        {
+          "type": "item",
+          "weight": 0.5,
+          "item": "minecraft:apple",
+          "minAmount": 1,
+          "maxAmount": 2
+        },
+        {
+          "type": "item",
+          "weight": 0.4,
+          "item": "minecraft:dead_bush",
+          "minAmount": 1,
+          "maxAmount": 1
+        },
+        {
+          "type": "item",
+          "weight": 0.3,
+          "item": "minecraft:honeycomb",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "COMMON",
+      "weight": 4.0,
+      "conditions": {
+        "minSkillLevel": 70,
+        "maxSkillLevel": 79
+      },
+      "rewards": [
+        {
+          "type": "item",
+          "weight": 0.26,
+          "item": "cobblemon:sitrus_berry",
+          "minAmount": 1,
+          "maxAmount": 3
+        }
+      ]
+    },
+    {
+      "rarity": "UNCOMMON",
+      "weight": 24.0,
+      "conditions": {
+        "minSkillLevel": 70,
+        "maxSkillLevel": 79,
+        "minExcavationScore": 48.0
+      },
+      "rewards": [
+        {
+          "type": "item",
+          "weight": 0.28,
+          "item": "cobblemon:exp_candy_m",
+          "minAmount": 1,
+          "maxAmount": 1
+        },
+        {
+          "type": "item",
+          "weight": 0.18,
+          "item": "cobblemon:ultra_ball",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "RARE",
+      "weight": 44.0,
+      "conditions": {
+        "minSkillLevel": 70,
+        "maxSkillLevel": 79,
+        "minExcavationScore": 125.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "breloom",
+          "minLevel": 52,
+          "maxLevel": 68
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "trevenant",
+          "minLevel": 52,
+          "maxLevel": 68
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.09,
+          "pokemon": "scizor",
+          "minLevel": 54,
+          "maxLevel": 70
+        },
+        {
+          "type": "item",
+          "weight": 0.2,
+          "item": "cobblemon:rare_candy",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "EPIC",
+      "weight": 23.0,
+      "conditions": {
+        "minSkillLevel": 70,
+        "maxSkillLevel": 79,
+        "minExcavationScore": 160.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "hydreigon",
+          "minLevel": 58,
+          "maxLevel": 74
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "kommo-o",
+          "minLevel": 58,
+          "maxLevel": 74
+        },
+        {
+          "type": "item",
+          "weight": 0.2,
+          "item": "cobblemon:exp_candy_l",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "JUNK",
+      "weight": 4.0,
+      "conditions": {
+        "minSkillLevel": 80,
+        "maxSkillLevel": 89
+      },
+      "rewards": [
+        {
+          "type": "item",
+          "weight": 1.0,
+          "item": "minecraft:stick",
+          "minAmount": 1,
+          "maxAmount": 3
+        },
+        {
+          "type": "item",
+          "weight": 0.5,
+          "item": "minecraft:apple",
+          "minAmount": 1,
+          "maxAmount": 2
+        },
+        {
+          "type": "item",
+          "weight": 0.4,
+          "item": "minecraft:dead_bush",
+          "minAmount": 1,
+          "maxAmount": 1
+        },
+        {
+          "type": "item",
+          "weight": 0.3,
+          "item": "minecraft:honeycomb",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "COMMON",
+      "weight": 2.0,
+      "conditions": {
+        "minSkillLevel": 80,
+        "maxSkillLevel": 89
+      },
+      "rewards": [
+        {
+          "type": "item",
+          "weight": 0.28,
+          "item": "cobblemon:sitrus_berry",
+          "minAmount": 1,
+          "maxAmount": 3
+        }
+      ]
+    },
+    {
+      "rarity": "UNCOMMON",
+      "weight": 16.0,
+      "conditions": {
+        "minSkillLevel": 80,
+        "maxSkillLevel": 89,
+        "minExcavationScore": 54.0
+      },
+      "rewards": [
+        {
+          "type": "item",
+          "weight": 0.24,
+          "item": "cobblemon:exp_candy_l",
+          "minAmount": 1,
+          "maxAmount": 1
+        },
+        {
+          "type": "item",
+          "weight": 0.2,
+          "item": "cobblemon:ultra_ball",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "RARE",
+      "weight": 48.0,
+      "conditions": {
+        "minSkillLevel": 80,
+        "maxSkillLevel": 89,
+        "minExcavationScore": 140.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "breloom",
+          "minLevel": 56,
+          "maxLevel": 72
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "trevenant",
+          "minLevel": 56,
+          "maxLevel": 72
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "scizor",
+          "minLevel": 58,
+          "maxLevel": 74
+        },
+        {
+          "type": "item",
+          "weight": 0.22,
+          "item": "cobblemon:rare_candy",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "EPIC",
+      "weight": 30.0,
+      "conditions": {
+        "minSkillLevel": 80,
+        "maxSkillLevel": 89,
+        "minExcavationScore": 175.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.09,
+          "pokemon": "hydreigon",
+          "minLevel": 62,
+          "maxLevel": 78
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.09,
+          "pokemon": "kommo-o",
+          "minLevel": 62,
+          "maxLevel": 78
+        },
+        {
+          "type": "item",
+          "weight": 0.22,
+          "item": "cobblemon:exp_candy_l",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "JUNK",
+      "weight": 3.0,
+      "conditions": {
+        "minSkillLevel": 90
+      },
+      "rewards": [
+        {
+          "type": "item",
+          "weight": 1.0,
+          "item": "minecraft:stick",
+          "minAmount": 1,
+          "maxAmount": 3
+        },
+        {
+          "type": "item",
+          "weight": 0.5,
+          "item": "minecraft:apple",
+          "minAmount": 1,
+          "maxAmount": 2
+        },
+        {
+          "type": "item",
+          "weight": 0.4,
+          "item": "minecraft:dead_bush",
+          "minAmount": 1,
+          "maxAmount": 1
+        },
+        {
+          "type": "item",
+          "weight": 0.3,
+          "item": "minecraft:honeycomb",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "UNCOMMON",
+      "weight": 8.0,
+      "conditions": {
+        "minSkillLevel": 90,
+        "minExcavationScore": 60.0
+      },
+      "rewards": [
+        {
+          "type": "item",
+          "weight": 0.26,
+          "item": "cobblemon:exp_candy_l",
+          "minAmount": 1,
+          "maxAmount": 1
+        },
+        {
+          "type": "item",
+          "weight": 0.22,
+          "item": "cobblemon:ultra_ball",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "RARE",
+      "weight": 49.0,
+      "conditions": {
+        "minSkillLevel": 90,
+        "minExcavationScore": 155.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "breloom",
+          "minLevel": 60,
+          "maxLevel": 76
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "trevenant",
+          "minLevel": 60,
+          "maxLevel": 76
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "scizor",
+          "minLevel": 62,
+          "maxLevel": 78
+        },
+        {
+          "type": "item",
+          "weight": 0.24,
+          "item": "cobblemon:rare_candy",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "EPIC",
+      "weight": 40.0,
+      "conditions": {
+        "minSkillLevel": 90,
+        "minExcavationScore": 190.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "hydreigon",
+          "minLevel": 66,
+          "maxLevel": 82
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "kommo-o",
+          "minLevel": 66,
+          "maxLevel": 82
+        },
+        {
+          "type": "item",
+          "weight": 0.24,
+          "item": "cobblemon:exp_candy_l",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "COMMON",
+      "weight": 4.0,
+      "conditions": {},
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.34,
+          "pokemon": "caterpie",
+          "minLevel": 5,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.34,
+          "pokemon": "weedle",
+          "minLevel": 5,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.28,
+          "pokemon": "paras",
+          "minLevel": 5,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.24,
+          "pokemon": "seedot",
+          "minLevel": 5,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.22,
+          "pokemon": "cherubi",
+          "minLevel": 5,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.18,
+          "pokemon": "burmy",
+          "minLevel": 5,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.18,
+          "pokemon": "shroomish",
+          "minLevel": 6,
+          "maxLevel": 30
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.16,
+          "pokemon": "foongus",
+          "minLevel": 6,
+          "maxLevel": 30
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.16,
+          "pokemon": "combee",
+          "minLevel": 6,
+          "maxLevel": 30
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "applin",
+          "minLevel": 8,
+          "maxLevel": 30
+        }
+      ]
+    },
+    {
+      "rarity": "UNCOMMON",
+      "weight": 3.0,
+      "conditions": {
+        "minExcavationScore": 18.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "metapod",
+          "minLevel": 14,
+          "maxLevel": 38
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "kakuna",
+          "minLevel": 14,
+          "maxLevel": 38
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.18,
+          "pokemon": "nuzleaf",
+          "minLevel": 16,
+          "maxLevel": 40
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.16,
+          "pokemon": "ariados",
+          "minLevel": 18,
+          "maxLevel": 42
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.14,
+          "pokemon": "noctowl",
+          "minLevel": 18,
+          "maxLevel": 42
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "vespiquen",
+          "minLevel": 22,
+          "maxLevel": 46
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "flapple",
+          "minLevel": 24,
+          "maxLevel": 48
+        }
+      ]
+    },
+    {
+      "rarity": "RARE",
+      "weight": 2.0,
+      "conditions": {
+        "minExcavationScore": 48.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.14,
+          "pokemon": "heracross",
+          "minLevel": 28,
+          "maxLevel": 58
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.14,
+          "pokemon": "pinsir",
+          "minLevel": 28,
+          "maxLevel": 58
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.12,
+          "pokemon": "scyther",
+          "minLevel": 30,
+          "maxLevel": 60
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.12,
+          "pokemon": "tropius",
+          "minLevel": 30,
+          "maxLevel": 60
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.12,
+          "pokemon": "breloom",
+          "minLevel": 32,
+          "maxLevel": 62
+        }
+      ]
+    },
+    {
+      "rarity": "VERY_RARE",
+      "weight": 1.2,
+      "conditions": {
+        "minExcavationScore": 92.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "trevenant",
+          "minLevel": 40,
+          "maxLevel": 70
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "scizor",
+          "minLevel": 42,
+          "maxLevel": 72
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "toedscruel",
+          "minLevel": 42,
+          "maxLevel": 72
+        }
+      ]
+    },
+    {
+      "rarity": "ULTRA_RARE",
+      "weight": 0.35,
+      "conditions": {
+        "maxSkillLevel": 39,
+        "minExcavationScore": 118.0
+      },
+      "rewards": [
+        {
+          "type": "item",
+          "weight": 0.16,
+          "item": "cobblemon:rare_candy",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "ULTRA_RARE",
+      "weight": 0.35,
+      "conditions": {
+        "minSkillLevel": 40,
+        "minExcavationScore": 118.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "hydreigon",
+          "minLevel": 46,
+          "maxLevel": 78
+        }
+      ]
+    },
+    {
+      "rarity": "LEGENDARY",
+      "weight": 0.01,
+      "conditions": {
+        "minSkillLevel": 50,
+        "maxSkillLevel": 59,
+        "weather": "raining",
+        "timeOfDay": "night",
+        "minExcavationScore": 180.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 1.0,
+          "pokemon": "celebi",
+          "minLevel": 55,
+          "maxLevel": 75
+        }
+      ]
+    },
+    {
+      "rarity": "LEGENDARY",
+      "weight": 0.013,
+      "conditions": {
+        "minSkillLevel": 60,
+        "maxSkillLevel": 69,
+        "weather": "raining",
+        "timeOfDay": "night",
+        "minExcavationScore": 190.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 1.0,
+          "pokemon": "celebi",
+          "minLevel": 58,
+          "maxLevel": 78
+        }
+      ]
+    },
+    {
+      "rarity": "LEGENDARY",
+      "weight": 0.017,
+      "conditions": {
+        "minSkillLevel": 70,
+        "maxSkillLevel": 79,
+        "weather": "raining",
+        "timeOfDay": "night",
+        "minExcavationScore": 200.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 1.0,
+          "pokemon": "celebi",
+          "minLevel": 60,
+          "maxLevel": 80
+        }
+      ]
+    },
+    {
+      "rarity": "LEGENDARY",
+      "weight": 0.022,
+      "conditions": {
+        "minSkillLevel": 80,
+        "maxSkillLevel": 89,
+        "weather": "raining",
+        "timeOfDay": "night",
+        "minExcavationScore": 210.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 1.0,
+          "pokemon": "celebi",
+          "minLevel": 62,
+          "maxLevel": 82
+        }
+      ]
+    },
+    {
+      "rarity": "LEGENDARY",
+      "weight": 0.033,
+      "conditions": {
+        "minSkillLevel": 90,
+        "weather": "raining",
+        "timeOfDay": "night",
+        "minExcavationScore": 220.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 1.0,
+          "pokemon": "celebi",
+          "minLevel": 65,
+          "maxLevel": 85
+        }
+      ]
+    }
+  ],
+  "is_forest": [
+    {
+      "rarity": "BIOME",
+      "weight": 14.0,
+      "conditions": {
+        "maxSkillLevel": 39
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.12,
+          "pokemon": "slakoth",
+          "minLevel": 8,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "heracross",
+          "minLevel": 16,
+          "maxLevel": 34
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "pinsir",
+          "minLevel": 16,
+          "maxLevel": 34
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.14,
+          "pokemon": "hoothoot",
+          "minLevel": 10,
+          "maxLevel": 30
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.14,
+          "pokemon": "toedscool",
+          "minLevel": 10,
+          "maxLevel": 30
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "voltorb",
+          "minLevel": 12,
+          "maxLevel": 32,
+          "nbt": "form\u003dhisui"
+        }
+      ]
+    },
+    {
+      "rarity": "LEGENDARY",
+      "weight": 0.01,
+      "conditions": {
+        "minSkillLevel": 50,
+        "maxSkillLevel": 59,
+        "weather": "raining",
+        "timeOfDay": "night",
+        "minExcavationScore": 180.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 1.0,
+          "pokemon": "celebi",
+          "minLevel": 55,
+          "maxLevel": 75
+        }
+      ]
+    },
+    {
+      "rarity": "LEGENDARY",
+      "weight": 0.013,
+      "conditions": {
+        "minSkillLevel": 60,
+        "maxSkillLevel": 69,
+        "weather": "raining",
+        "timeOfDay": "night",
+        "minExcavationScore": 190.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 1.0,
+          "pokemon": "celebi",
+          "minLevel": 58,
+          "maxLevel": 78
+        }
+      ]
+    },
+    {
+      "rarity": "LEGENDARY",
+      "weight": 0.017,
+      "conditions": {
+        "minSkillLevel": 70,
+        "maxSkillLevel": 79,
+        "weather": "raining",
+        "timeOfDay": "night",
+        "minExcavationScore": 200.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 1.0,
+          "pokemon": "celebi",
+          "minLevel": 60,
+          "maxLevel": 80
+        }
+      ]
+    },
+    {
+      "rarity": "LEGENDARY",
+      "weight": 0.022,
+      "conditions": {
+        "minSkillLevel": 80,
+        "maxSkillLevel": 89,
+        "weather": "raining",
+        "timeOfDay": "night",
+        "minExcavationScore": 210.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 1.0,
+          "pokemon": "celebi",
+          "minLevel": 62,
+          "maxLevel": 82
+        }
+      ]
+    },
+    {
+      "rarity": "LEGENDARY",
+      "weight": 0.033,
+      "conditions": {
+        "minSkillLevel": 90,
+        "weather": "raining",
+        "timeOfDay": "night",
+        "minExcavationScore": 220.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 1.0,
+          "pokemon": "celebi",
+          "minLevel": 65,
+          "maxLevel": 85
+        }
+      ]
+    },
+    {
+      "rarity": "LEGENDARY",
+      "weight": 0.01,
+      "conditions": {
+        "minSkillLevel": 50,
+        "maxSkillLevel": 59,
+        "weather": "clear",
+        "timeOfDay": "day",
+        "minExcavationScore": 220.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 1.0,
+          "pokemon": "xerneas",
+          "minLevel": 55,
+          "maxLevel": 75
+        }
+      ]
+    },
+    {
+      "rarity": "LEGENDARY",
+      "weight": 0.013,
+      "conditions": {
+        "minSkillLevel": 60,
+        "maxSkillLevel": 69,
+        "weather": "clear",
+        "timeOfDay": "day",
+        "minExcavationScore": 230.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 1.0,
+          "pokemon": "xerneas",
+          "minLevel": 58,
+          "maxLevel": 78
+        }
+      ]
+    },
+    {
+      "rarity": "LEGENDARY",
+      "weight": 0.017,
+      "conditions": {
+        "minSkillLevel": 70,
+        "maxSkillLevel": 79,
+        "weather": "clear",
+        "timeOfDay": "day",
+        "minExcavationScore": 240.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 1.0,
+          "pokemon": "xerneas",
+          "minLevel": 60,
+          "maxLevel": 80
+        }
+      ]
+    },
+    {
+      "rarity": "LEGENDARY",
+      "weight": 0.022,
+      "conditions": {
+        "minSkillLevel": 80,
+        "maxSkillLevel": 89,
+        "weather": "clear",
+        "timeOfDay": "day",
+        "minExcavationScore": 250.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 1.0,
+          "pokemon": "xerneas",
+          "minLevel": 62,
+          "maxLevel": 82
+        }
+      ]
+    },
+    {
+      "rarity": "LEGENDARY",
+      "weight": 0.033,
+      "conditions": {
+        "minSkillLevel": 90,
+        "weather": "clear",
+        "timeOfDay": "day",
+        "minExcavationScore": 260.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 1.0,
+          "pokemon": "xerneas",
+          "minLevel": 65,
+          "maxLevel": 85
+        }
+      ]
+    }
+  ],
+  "is_swamp": [
+    {
+      "rarity": "BIOME",
+      "weight": 14.0,
+      "conditions": {
+        "maxSkillLevel": 39
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.22,
+          "pokemon": "oddish",
+          "minLevel": 8,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "bellsprout",
+          "minLevel": 8,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.18,
+          "pokemon": "foongus",
+          "minLevel": 8,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "phantump",
+          "minLevel": 14,
+          "maxLevel": 32
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.16,
+          "pokemon": "toedscool",
+          "minLevel": 10,
+          "maxLevel": 30
+        }
+      ]
+    },
+    {
+      "rarity": "RARE",
+      "weight": 12.0,
+      "conditions": {
+        "minSkillLevel": 40,
+        "minExcavationScore": 95.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "amoonguss",
+          "minLevel": 38,
+          "maxLevel": 64
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "trevenant",
+          "minLevel": 40,
+          "maxLevel": 66
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "toedscruel",
+          "minLevel": 40,
+          "maxLevel": 66
+        },
+        {
+          "type": "item",
+          "weight": 0.18,
+          "item": "cobblemon:big_root",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    }
+  ],
+  "is_freezing": [
+    {
+      "rarity": "BIOME",
+      "weight": 14.0,
+      "conditions": {
+        "maxSkillLevel": 39
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.22,
+          "pokemon": "snover",
+          "minLevel": 8,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.18,
+          "pokemon": "pineco",
+          "minLevel": 8,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.12,
+          "pokemon": "delibird",
+          "minLevel": 10,
+          "maxLevel": 30
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.14,
+          "pokemon": "snom",
+          "minLevel": 8,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.12,
+          "pokemon": "deerling",
+          "minLevel": 10,
+          "maxLevel": 30,
+          "nbt": "form\u003dwinter"
+        }
+      ]
+    },
+    {
+      "rarity": "RARE",
+      "weight": 12.0,
+      "conditions": {
+        "minSkillLevel": 40,
+        "minExcavationScore": 95.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "abomasnow",
+          "minLevel": 38,
+          "maxLevel": 64
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "weavile",
+          "minLevel": 42,
+          "maxLevel": 68
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "frosmoth",
+          "minLevel": 40,
+          "maxLevel": 66
+        },
+        {
+          "type": "item",
+          "weight": 0.18,
+          "item": "cobblemon:ice_stone",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    }
+  ],
+  "is_cave": [
+    {
+      "rarity": "BIOME",
+      "weight": 14.0,
+      "conditions": {
+        "maxSkillLevel": 39
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.22,
+          "pokemon": "paras",
+          "minLevel": 8,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.18,
+          "pokemon": "foongus",
+          "minLevel": 8,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.16,
+          "pokemon": "shroomish",
+          "minLevel": 8,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.12,
+          "pokemon": "morelull",
+          "minLevel": 10,
+          "maxLevel": 30
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.12,
+          "pokemon": "toedscool",
+          "minLevel": 10,
+          "maxLevel": 30
+        }
+      ]
+    },
+    {
+      "rarity": "RARE",
+      "weight": 12.0,
+      "conditions": {
+        "minSkillLevel": 40,
+        "minExcavationScore": 95.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "breloom",
+          "minLevel": 38,
+          "maxLevel": 64
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "shiinotic",
+          "minLevel": 38,
+          "maxLevel": 64
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "toedscruel",
+          "minLevel": 40,
+          "maxLevel": 66
+        },
+        {
+          "type": "item",
+          "weight": 0.18,
+          "item": "cobblemon:big_mushroom",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    }
+  ],
+  "is_coast": [
+    {
+      "rarity": "BIOME",
+      "weight": 14.0,
+      "conditions": {
+        "maxSkillLevel": 39
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.18,
+          "pokemon": "exeggcute",
+          "minLevel": 8,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.12,
+          "pokemon": "phantump",
+          "minLevel": 10,
+          "maxLevel": 30
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "tropius",
+          "minLevel": 16,
+          "maxLevel": 34
+        }
+      ]
+    },
+    {
+      "rarity": "RARE",
+      "weight": 12.0,
+      "conditions": {
+        "minSkillLevel": 40,
+        "minExcavationScore": 95.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "exeggutor",
+          "minLevel": 38,
+          "maxLevel": 64
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "trevenant",
+          "minLevel": 40,
+          "maxLevel": 66
+        },
+        {
+          "type": "item",
+          "weight": 0.18,
+          "item": "cobblemon:sun_stone",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    }
+  ],
+  "is_jungle": [
+    {
+      "rarity": "BIOME",
+      "weight": 14.0,
+      "conditions": {
+        "maxSkillLevel": 39
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.16,
+          "pokemon": "applin",
+          "minLevel": 8,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.18,
+          "pokemon": "bounsweet",
+          "minLevel": 8,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.18,
+          "pokemon": "scatterbug",
+          "minLevel": 8,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "passimian",
+          "minLevel": 14,
+          "maxLevel": 32
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "tropius",
+          "minLevel": 16,
+          "maxLevel": 34
+        }
+      ]
+    },
+    {
+      "rarity": "RARE",
+      "weight": 12.0,
+      "conditions": {
+        "minSkillLevel": 40,
+        "minExcavationScore": 105.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "tsareena",
+          "minLevel": 38,
+          "maxLevel": 64
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "vivillon",
+          "minLevel": 38,
+          "maxLevel": 64
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "oranguru",
+          "minLevel": 40,
+          "maxLevel": 66
+        },
+        {
+          "type": "item",
+          "weight": 0.18,
+          "item": "cobblemon:sun_stone",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    }
+  ],
+  "is_savanna": [
+    {
+      "rarity": "BIOME",
+      "weight": 14.0,
+      "conditions": {
+        "maxSkillLevel": 39
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.16,
+          "pokemon": "deerling",
+          "minLevel": 8,
+          "maxLevel": 28,
+          "nbt": "form\u003dsummer"
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.12,
+          "pokemon": "girafarig",
+          "minLevel": 12,
+          "maxLevel": 32
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.18,
+          "pokemon": "skiddo",
+          "minLevel": 8,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.14,
+          "pokemon": "litleo",
+          "minLevel": 10,
+          "maxLevel": 30
+        }
+      ]
+    },
+    {
+      "rarity": "RARE",
+      "weight": 12.0,
+      "conditions": {
+        "minSkillLevel": 40,
+        "minExcavationScore": 100.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "sawsbuck",
+          "minLevel": 38,
+          "maxLevel": 64,
+          "nbt": "form\u003dsummer"
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "gogoat",
+          "minLevel": 38,
+          "maxLevel": 64
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "pyroar",
+          "minLevel": 40,
+          "maxLevel": 66
+        },
+        {
+          "type": "item",
+          "weight": 0.16,
+          "item": "cobblemon:fire_stone",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    }
+  ],
+  "is_taiga": [
+    {
+      "rarity": "BIOME",
+      "weight": 14.0,
+      "conditions": {
+        "maxSkillLevel": 39
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.18,
+          "pokemon": "pineco",
+          "minLevel": 8,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.16,
+          "pokemon": "snover",
+          "minLevel": 8,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.14,
+          "pokemon": "nickit",
+          "minLevel": 8,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.12,
+          "pokemon": "deerling",
+          "minLevel": 10,
+          "maxLevel": 30,
+          "nbt": "form\u003dautumn"
+        }
+      ]
+    },
+    {
+      "rarity": "RARE",
+      "weight": 12.0,
+      "conditions": {
+        "minSkillLevel": 40,
+        "minExcavationScore": 100.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "forretress",
+          "minLevel": 38,
+          "maxLevel": 64
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "abomasnow",
+          "minLevel": 38,
+          "maxLevel": 64
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "thievul",
+          "minLevel": 40,
+          "maxLevel": 66
+        },
+        {
+          "type": "item",
+          "weight": 0.16,
+          "item": "cobblemon:ice_stone",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    }
+  ],
+  "minecraft:cherry_grove": [
+    {
+      "rarity": "BIOME",
+      "weight": 14.0,
+      "conditions": {
+        "maxSkillLevel": 39
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.22,
+          "pokemon": "cherubi",
+          "minLevel": 8,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.18,
+          "pokemon": "combee",
+          "minLevel": 8,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.16,
+          "pokemon": "flabebe",
+          "minLevel": 8,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.14,
+          "pokemon": "petilil",
+          "minLevel": 10,
+          "maxLevel": 30
+        }
+      ]
+    },
+    {
+      "rarity": "RARE",
+      "weight": 12.0,
+      "conditions": {
+        "minSkillLevel": 40,
+        "minExcavationScore": 100.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "cherrim",
+          "minLevel": 38,
+          "maxLevel": 64
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "vespiquen",
+          "minLevel": 38,
+          "maxLevel": 64
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.08,
+          "pokemon": "lilligant",
+          "minLevel": 40,
+          "maxLevel": 66
+        },
+        {
+          "type": "item",
+          "weight": 0.16,
+          "item": "cobblemon:shiny_stone",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    }
+  ],
+  "minecraft:mangrove_swamp": [
+    {
+      "rarity": "BIOME",
+      "weight": 14.0,
+      "conditions": {
+        "maxSkillLevel": 39
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.18,
+          "pokemon": "oddish",
+          "minLevel": 8,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.18,
+          "pokemon": "foongus",
+          "minLevel": 8,
+          "maxLevel": 28
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.12,
+          "pokemon": "phantump",
+          "minLevel": 10,
+          "maxLevel": 30
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.16,
+          "pokemon": "toedscool",
+          "minLevel": 10,
+          "maxLevel": 30
+        }
+      ]
+    },
+    {
+      "rarity": "RARE",
+      "weight": 12.0,
+      "conditions": {
+        "minSkillLevel": 40,
+        "minExcavationScore": 100.0
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "amoonguss",
+          "minLevel": 38,
+          "maxLevel": 64
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "trevenant",
+          "minLevel": 40,
+          "maxLevel": 66
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "toedscruel",
+          "minLevel": 40,
+          "maxLevel": 66
+        },
+        {
+          "type": "item",
+          "weight": 0.18,
+          "item": "cobblemon:big_root",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    }
+  ]
+}

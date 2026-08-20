@@ -1,0 +1,20 @@
+{
+  "cobbledollarsEmeraldRate": 750,
+  "syncCobbleDollarsBankRate": true,
+  "villagersAcceptCobbleDollars": true,
+  "freeMinimumEmeraldTrade": false,
+  "useCobbleDollarsShopUi": true,
+  "useRctTradesOverhaul": true,
+  "useDatapackTrades": true,
+  "excludedVillagerProfessionNamespaces": [
+    "cobbledollars"
+  ],
+  "excludedVillagerProfessionIds": [
+    "casinorocket:casino_worker"
+  ],
+  "_comment_emeraldRate": "CobbleDollars per emerald (literal). Used for villager trades. Example: 250 = 250 CD.",
+  "_comment_syncBank": "Legacy field; villager rate always uses cobbledollarsEmeraldRate. Match that to bank.json emerald price if desired.",
+  "_comment_freeMinimum": "freeMinimumEmeraldTrade: 1-emerald trades (e.g. after curing) cost 0 CD when true.",
+  "_comment_excluded": "Excluded villagers keep their mod's native UI (not the CobbleDollars shop on right-click).",
+  "_comment_customCurrency": "Relic coins etc.: edit custom_currency.json in this folder."
+}

@@ -1,0 +1,12 @@
+name = "iris"
+filename = "iris-fabric-1.8.14-beta.1+mc1.21.1.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "6776c0340845887477bfa463acc736ce7fcb6de5"
+
+[update]
+[update.modrinth]
+mod-id = "iris"
+version = "a7fbb629793c52f0"

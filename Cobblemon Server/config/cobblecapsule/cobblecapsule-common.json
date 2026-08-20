@@ -1,0 +1,18 @@
+{
+  "external_json": {
+    "use_external_pokemon_capsules": true,
+    "external_pokemon_capsules_replace_datapack": true,
+    "use_external_loot_tables": true,
+    "external_loot_tables_replace_datapack": true,
+    "copy_default_external_json_files": true
+  },
+  "compatibility": {
+    "log_optional_compat_summary": true,
+    "log_skipped_optional_entries": false,
+    "enable_jei_integration": true,
+    "enable_jer_worldgen_config_export": true
+  },
+  "diagnostics": {
+    "debug_logging": false
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "capturedDropTargets": [
+    "player_inventory"
+  ],
+  "defeatedDropTargets": [
+    "pokemon_world_position"
+  ],
+  "evolutionDropTargets": [
+    "player_inventory"
+  ],
+  "hatchedDropTargets": [
+    "player_inventory"
+  ],
+  "killedDropTargets": [
+    "pokemon_world_position"
+  ],
+  "levelUpDropTargets": [
+    "player_inventory"
+  ],
+  "releasedDropTargets": [
+    "player_inventory"
+  ],
+  "resurrectedDropTargets": [
+    "player_inventory",
+    "pokemon_world_position"
+  ],
+  "starterChosenDropTargets": [
+    "player_inventory"
+  ],
+  "tickedDropTargets": [
+    "pokemon_world_position"
+  ],
+  "victoryDropTargets": [
+    "pokemon_world_position"
+  ],
+  "legacyMode": true,
+  "granularDropPeriods": {},
+  "debug": false
+}

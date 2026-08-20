@@ -1,0 +1,32 @@
+name: Test & Enforce 100% Coverage
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install Astral UV
+        uses: astral-sh/setup-uv@v5
+        with:
+          version: "latest"
+
+      - name: Setup Python
+        run: uv python install 3.11
+
+      - name: Install Dependencies
+        run: uv sync --all-extras
+
+      - name: Run Pytest Suite with 100% Coverage Check
+        run: uv run pytest --cov=src --cov=cicd --cov-report=term-missing --cov-report=json --cov-fail-under=100
+
+      - name: Verify Coverage with Skill Tool
+        run: uv run python .agents/skills/code-coverage-report/scripts/check_coverage.py coverage.json

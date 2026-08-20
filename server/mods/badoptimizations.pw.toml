@@ -1,0 +1,12 @@
+name = "badoptimizations"
+filename = "BadOptimizations-2.4.1-1.21.1.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "1461d8e46391efd32a3085150e86094c9f6f5c9d"
+
+[update]
+[update.modrinth]
+mod-id = "badoptimizations"
+version = "2b66428bd98bd5ec"

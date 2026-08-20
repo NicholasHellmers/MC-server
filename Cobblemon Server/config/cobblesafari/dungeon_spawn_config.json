@@ -1,0 +1,46 @@
+{
+  "spawnIntervalSeconds": 600,
+  "portalLifetimeMinutes": 30,
+  "notificationRadiusBlocks": 80,
+  "enableNotification": true,
+  "spawnRadiusMin": 32,
+  "spawnRadiusMax": 80,
+  "enabled": true,
+  "spawnChance": 1.0,
+  "allowedDimensions": [
+    "minecraft:overworld"
+  ],
+  "bannedBlocks": [],
+  "dimensions": [
+    {
+      "dimensionId": "dungeon_underground",
+      "isEnabled": true,
+      "spawnWeight": 1,
+      "enableEntryFee": false,
+      "entryFee": "cobblesafari:ticket_dungeon",
+      "cobbledollarEntryFee": false,
+      "entryFeeAmount": 5000,
+      "allowMultiplePayment": false
+    },
+    {
+      "dimensionId": "dungeon_jump",
+      "isEnabled": false,
+      "spawnWeight": 1,
+      "enableEntryFee": false,
+      "entryFee": "cobblesafari:ticket_dungeon",
+      "cobbledollarEntryFee": false,
+      "entryFeeAmount": 5000,
+      "allowMultiplePayment": false
+    },
+    {
+      "dimensionId": "dungeon_distortion",
+      "isEnabled": true,
+      "spawnWeight": 1,
+      "enableEntryFee": false,
+      "entryFee": "cobblesafari:ticket_dungeon",
+      "cobbledollarEntryFee": false,
+      "entryFeeAmount": 5000,
+      "allowMultiplePayment": false
+    }
+  ]
+}

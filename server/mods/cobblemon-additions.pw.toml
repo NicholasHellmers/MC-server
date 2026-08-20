@@ -1,0 +1,12 @@
+name = "cobblemon-additions"
+filename = "cobblemon-additions-4.1.6.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "293c0fd6354114cd45d2dd8e4e771d48b1d89200"
+
+[update]
+[update.modrinth]
+mod-id = "cobblemon-additions"
+version = "7486248caac72775"

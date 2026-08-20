@@ -1,0 +1,12 @@
+name = "cobblebase"
+filename = "cobblebase-fabric-2.0.0+1.7.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3c0bf959581541f58b1c54d0b36ab747c83a5512"
+
+[update]
+[update.modrinth]
+mod-id = "cobblebase"
+version = "5ad7cfaa6200a487"

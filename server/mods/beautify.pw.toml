@@ -1,0 +1,12 @@
+name = "beautify"
+filename = "beautify-2.0.0+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7b22fbf4997200c8f210a016f7af36309f52a1e1"
+
+[update]
+[update.modrinth]
+mod-id = "beautify"
+version = "629209361f6ddb27"

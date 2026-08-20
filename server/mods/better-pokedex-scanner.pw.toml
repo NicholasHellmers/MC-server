@@ -1,0 +1,12 @@
+name = "better-pokedex-scanner"
+filename = "better-pokedex-scanner-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "cfb76dc69acbe4ec18a7f59b0911c7399afd671e"
+
+[update]
+[update.modrinth]
+mod-id = "better-pokedex-scanner"
+version = "1f609e231f06a269"

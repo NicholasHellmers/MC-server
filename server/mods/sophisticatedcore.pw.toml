@@ -1,0 +1,12 @@
+name = "sophisticatedcore"
+filename = "sophisticatedcore-1.21.1-1.2.9.21.168.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "43a95dfa338a2a6ba3ea33a5efa0ac040331e50c"
+
+[update]
+[update.modrinth]
+mod-id = "sophisticatedcore"
+version = "330489fa3434702a"

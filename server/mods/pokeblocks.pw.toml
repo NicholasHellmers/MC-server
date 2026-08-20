@@ -1,0 +1,12 @@
+name = "pokeblocks"
+filename = "pokeblocks-1.4.0-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "74a6bb7102596b326d07f64281ee80aca0eedaa6"
+
+[update]
+[update.modrinth]
+mod-id = "pokeblocks"
+version = "14c46fc6157fc796"

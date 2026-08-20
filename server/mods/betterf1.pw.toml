@@ -1,0 +1,12 @@
+name = "betterf1"
+filename = "BetterF1-Fabric-1.1+1.21.7.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "218c3aa2ae3356309997deae0861133e9f861581"
+
+[update]
+[update.modrinth]
+mod-id = "betterf1"
+version = "cecf3f8740db3f41"

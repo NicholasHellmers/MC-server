@@ -1,0 +1,12 @@
+name = "rctmod"
+filename = "rctmod-fabric-1.21.1-0.18.1-beta.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "00bf82e254bddb804529222567e5719310524085"
+
+[update]
+[update.modrinth]
+mod-id = "rctmod"
+version = "867fbd050afbcc76"

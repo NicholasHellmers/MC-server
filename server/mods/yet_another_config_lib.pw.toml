@@ -1,0 +1,12 @@
+name = "yet_another_config_lib"
+filename = "yet_another_config_lib_v3-3.8.2+1.21.1-fabric.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e075503382f70715ab9fc6f66d603397a86eb3e0"
+
+[update]
+[update.modrinth]
+mod-id = "yet_another_config_lib"
+version = "353169f85fa63e73"

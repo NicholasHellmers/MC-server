@@ -1,0 +1,12 @@
+name = "cobblemon-environment-interactions"
+filename = "cobblemon-environment-interactions-fabric-3.1.0-fabric.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9841644b82f6e25202a14e6f958a7f82373256b2"
+
+[update]
+[update.modrinth]
+mod-id = "cobblemon-environment-interactions"
+version = "52f558f1e81a27db"

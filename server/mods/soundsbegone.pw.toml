@@ -1,0 +1,12 @@
+name = "soundsbegone"
+filename = "soundsbegone-fabric-1.5.2+mc1.21.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "3ef45517426b434a2ef6092559c494a67ee1aff9"
+
+[update]
+[update.modrinth]
+mod-id = "soundsbegone"
+version = "833f7cc00b8ff60d"

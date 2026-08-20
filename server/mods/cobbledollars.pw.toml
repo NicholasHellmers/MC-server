@@ -1,0 +1,12 @@
+name = "cobbledollars"
+filename = "CobbleDollars-fabric-2.0.0+Beta-5.1+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "48a2a30fb22e088ca9357fc95bdb4247ddc80b17"
+
+[update]
+[update.modrinth]
+mod-id = "cobbledollars"
+version = "97fceefa211ab095"

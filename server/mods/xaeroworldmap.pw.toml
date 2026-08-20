@@ -1,0 +1,12 @@
+name = "xaeroworldmap"
+filename = "xaeroworldmap-fabric-1.21.1-1.44.2.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "9872f1275b6e491bc0a806b6288ae2320261b36a"
+
+[update]
+[update.modrinth]
+mod-id = "xaeroworldmap"
+version = "991c8745dda265d9"

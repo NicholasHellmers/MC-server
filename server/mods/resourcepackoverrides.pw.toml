@@ -1,0 +1,12 @@
+name = "resourcepackoverrides"
+filename = "ResourcePackOverrides-v21.1.0-1.21.1-Fabric.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "ea53b83821e3a584159d0bca490e2460e27c616d"
+
+[update]
+[update.modrinth]
+mod-id = "resourcepackoverrides"
+version = "ff2391f91ccac262"

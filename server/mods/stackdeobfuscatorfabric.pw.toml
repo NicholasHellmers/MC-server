@@ -1,0 +1,12 @@
+name = "stackdeobfuscatorfabric"
+filename = "StackDeobfuscatorFabric-1.4.3+08e71cc.jar"
+side = "server"
+
+[download]
+hash-format = "sha1"
+hash = "c36982af69e6d9d9dbac52e4d6c43e8a64fc6163"
+
+[update]
+[update.modrinth]
+mod-id = "stackdeobfuscatorfabric"
+version = "ef851d54a60e223e"

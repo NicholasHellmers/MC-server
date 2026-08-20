@@ -1,0 +1,248 @@
+[
+  {
+    "species": "gastly",
+    "weight": 12,
+    "min_level": 1,
+    "max_level": 45
+  },
+  {
+    "species": "shuppet",
+    "weight": 11,
+    "min_level": 1,
+    "max_level": 42
+  },
+  {
+    "species": "duskull",
+    "weight": 11,
+    "min_level": 1,
+    "max_level": 44
+  },
+  {
+    "species": "litwick",
+    "weight": 10,
+    "min_level": 1,
+    "max_level": 44
+  },
+  {
+    "species": "drifloon",
+    "weight": 9,
+    "min_level": 1,
+    "max_level": 46
+  },
+  {
+    "species": "yamask",
+    "weight": 9,
+    "min_level": 1,
+    "max_level": 48
+  },
+  {
+    "species": "misdreavus",
+    "weight": 8,
+    "min_level": 5,
+    "max_level": 50
+  },
+  {
+    "species": "phantump",
+    "weight": 7,
+    "min_level": 5,
+    "max_level": 50
+  },
+  {
+    "species": "pumpkaboo",
+    "weight": 7,
+    "min_level": 5,
+    "max_level": 50
+  },
+  {
+    "species": "haunter",
+    "weight": 5,
+    "min_level": 30,
+    "max_level": 60
+  },
+  {
+    "species": "dusclops",
+    "weight": 4,
+    "min_level": 32,
+    "max_level": 60
+  },
+  {
+    "species": "lampent",
+    "weight": 5,
+    "min_level": 30,
+    "max_level": 60
+  },
+  {
+    "species": "sinistea",
+    "weight": 6,
+    "min_level": 10,
+    "max_level": 55
+  },
+  {
+    "species": "baltoy",
+    "weight": 6,
+    "min_level": 10,
+    "max_level": 55
+  },
+  {
+    "species": "golett",
+    "weight": 5,
+    "min_level": 15,
+    "max_level": 60
+  },
+  {
+    "species": "murkrow",
+    "weight": 5,
+    "min_level": 10,
+    "max_level": 55
+  },
+  {
+    "species": "zorua",
+    "weight": 5,
+    "min_level": 10,
+    "max_level": 55
+  },
+  {
+    "species": "houndour",
+    "weight": 6,
+    "min_level": 5,
+    "max_level": 50
+  },
+  {
+    "species": "charcadet",
+    "weight": 5,
+    "min_level": 15,
+    "max_level": 60
+  },
+  {
+    "species": "banette",
+    "weight": 3,
+    "min_level": 40,
+    "max_level": 70
+  },
+  {
+    "species": "cofagrigus",
+    "weight": 3,
+    "min_level": 42,
+    "max_level": 70
+  },
+  {
+    "species": "drifblim",
+    "weight": 3,
+    "min_level": 40,
+    "max_level": 70
+  },
+  {
+    "species": "trevenant",
+    "weight": 2,
+    "min_level": 42,
+    "max_level": 70
+  },
+  {
+    "species": "gourgeist",
+    "weight": 2,
+    "min_level": 42,
+    "max_level": 70
+  },
+  {
+    "species": "sableye",
+    "weight": 4,
+    "min_level": 20,
+    "max_level": 65
+  },
+  {
+    "species": "mawile",
+    "weight": 4,
+    "min_level": 20,
+    "max_level": 65
+  },
+  {
+    "species": "absol",
+    "weight": 3,
+    "min_level": 30,
+    "max_level": 70
+  },
+  {
+    "species": "houndoom",
+    "weight": 3,
+    "min_level": 35,
+    "max_level": 70
+  },
+  {
+    "species": "chandelure",
+    "weight": 1,
+    "min_level": 50,
+    "max_level": 75
+  },
+  {
+    "species": "mimikyu",
+    "weight": 1,
+    "min_level": 45,
+    "max_level": 75
+  },
+  {
+    "species": "spiritomb",
+    "weight": 1,
+    "min_level": 50,
+    "max_level": 75
+  },
+  {
+    "species": "dusknoir",
+    "weight": 1,
+    "min_level": 45,
+    "max_level": 75
+  },
+  {
+    "species": "gengar",
+    "weight": 1,
+    "min_level": 45,
+    "max_level": 75
+  },
+  {
+    "species": "polteageist",
+    "weight": 2,
+    "min_level": 35,
+    "max_level": 65
+  },
+  {
+    "species": "yamask galarian",
+    "weight": 5,
+    "min_level": 1,
+    "max_level": 48
+  },
+  {
+    "species": "runerigus",
+    "weight": 2,
+    "min_level": 40,
+    "max_level": 70
+  },
+  {
+    "species": "zoroark",
+    "weight": 2,
+    "min_level": 35,
+    "max_level": 70
+  },
+  {
+    "species": "honchkrow",
+    "weight": 2,
+    "min_level": 35,
+    "max_level": 70
+  },
+  {
+    "species": "ceruledge",
+    "weight": 1,
+    "min_level": 40,
+    "max_level": 75
+  },
+  {
+    "species": "claydol",
+    "weight": 3,
+    "min_level": 25,
+    "max_level": 60
+  },
+  {
+    "species": "golurk",
+    "weight": 2,
+    "min_level": 40,
+    "max_level": 70
+  }
+]

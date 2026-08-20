@@ -1,0 +1,12 @@
+name = "konkrete"
+filename = "konkrete_fabric_1.9.9_MC_1.21.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "c521e23a8be17a941f4f95a76feba9df5e3de5d0"
+
+[update]
+[update.modrinth]
+mod-id = "konkrete"
+version = "6d4c65a0a9d51b2b"

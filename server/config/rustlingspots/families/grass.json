@@ -1,0 +1,22 @@
+{
+  "surface_blocks": [
+    "minecraft:grass_block",
+    "minecraft:dirt_path",
+    "minecraft:moss_block",
+    "minecraft:podzol",
+    "minecraft:coarse_dirt",
+    "minecraft:rooted_dirt",
+    "biomeswevegone:lush_grass_block",
+    "regions_unexplored:argillite_grass_block",
+    "regions_unexplored:chalk_grass_block",
+    "regions_unexplored:silt_grass_block",
+    "regions_unexplored:peat_grass_block",
+    "regions_unexplored:alpha_grass_block",
+    "regions_unexplored:deepslate_grass_block",
+    "regions_unexplored:stone_grass_block",
+    "minecraft:grass",
+    "minecraft:tall_grass",
+    "minecraft:fern",
+    "minecraft:large_fern"
+  ]
+}

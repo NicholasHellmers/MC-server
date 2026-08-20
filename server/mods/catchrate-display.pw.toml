@@ -1,0 +1,12 @@
+name = "catchrate-display"
+filename = "catchrate-display-fabric-2.8.22.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "ad63e64fa2121c4a19f3ac72a9cd84313ac8390c"
+
+[update]
+[update.modrinth]
+mod-id = "catchrate-display"
+version = "1c92ca05ff0defbc"

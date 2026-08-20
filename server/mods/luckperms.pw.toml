@@ -1,0 +1,12 @@
+name = "luckperms"
+filename = "LuckPerms-Fabric-5.4.140.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5368c9a12f181eeeae124b70395691780e5cb657"
+
+[update]
+[update.modrinth]
+mod-id = "luckperms"
+version = "386ff4d18981c830"

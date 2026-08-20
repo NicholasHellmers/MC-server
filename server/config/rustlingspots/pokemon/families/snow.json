@@ -1,0 +1,254 @@
+[
+  {
+    "species": "swinub",
+    "weight": 12,
+    "min_level": 1,
+    "max_level": 25
+  },
+  {
+    "species": "snorunt",
+    "weight": 12,
+    "min_level": 1,
+    "max_level": 25
+  },
+  {
+    "species": "cubchoo",
+    "weight": 12,
+    "min_level": 1,
+    "max_level": 25
+  },
+  {
+    "species": "bergmite",
+    "weight": 11,
+    "min_level": 1,
+    "max_level": 28
+  },
+  {
+    "species": "spheal",
+    "weight": 11,
+    "min_level": 1,
+    "max_level": 25
+  },
+  {
+    "species": "snom",
+    "weight": 11,
+    "min_level": 1,
+    "max_level": 22
+  },
+  {
+    "species": "snover",
+    "weight": 11,
+    "min_level": 1,
+    "max_level": 25
+  },
+  {
+    "species": "vanillite",
+    "weight": 10,
+    "min_level": 1,
+    "max_level": 25
+  },
+  {
+    "species": "cryogonal",
+    "weight": 9,
+    "min_level": 10,
+    "max_level": 40
+  },
+  {
+    "species": "delibird",
+    "weight": 9,
+    "min_level": 10,
+    "max_level": 35
+  },
+  {
+    "species": "deerling",
+    "weight": 9,
+    "min_level": 1,
+    "max_level": 25
+  },
+  {
+    "species": "stantler",
+    "weight": 8,
+    "min_level": 1,
+    "max_level": 30
+  },
+  {
+    "species": "teddiursa",
+    "weight": 8,
+    "min_level": 1,
+    "max_level": 25
+  },
+  {
+    "species": "piplup",
+    "weight": 9,
+    "min_level": 1,
+    "max_level": 20
+  },
+  {
+    "species": "sneasel",
+    "weight": 8,
+    "min_level": 10,
+    "max_level": 35
+  },
+  {
+    "species": "piloswine",
+    "weight": 6,
+    "min_level": 25,
+    "max_level": 55
+  },
+  {
+    "species": "glalie",
+    "weight": 6,
+    "min_level": 25,
+    "max_level": 55
+  },
+  {
+    "species": "froslass",
+    "weight": 5,
+    "min_level": 25,
+    "max_level": 55
+  },
+  {
+    "species": "beartic",
+    "weight": 6,
+    "min_level": 25,
+    "max_level": 55
+  },
+  {
+    "species": "avalugg",
+    "weight": 5,
+    "min_level": 30,
+    "max_level": 60
+  },
+  {
+    "species": "walrein",
+    "weight": 5,
+    "min_level": 30,
+    "max_level": 60
+  },
+  {
+    "species": "abomasnow",
+    "weight": 5,
+    "min_level": 30,
+    "max_level": 60
+  },
+  {
+    "species": "vanillish",
+    "weight": 5,
+    "min_level": 25,
+    "max_level": 55
+  },
+  {
+    "species": "empoleon",
+    "weight": 4,
+    "min_level": 35,
+    "max_level": 65
+  },
+  {
+    "species": "samurott",
+    "weight": 3,
+    "min_level": 35,
+    "max_level": 65
+  },
+  {
+    "species": "amaura",
+    "weight": 3,
+    "min_level": 20,
+    "max_level": 50
+  },
+  {
+    "species": "aurorus",
+    "weight": 2,
+    "min_level": 35,
+    "max_level": 65
+  },
+  {
+    "species": "mamoswine",
+    "weight": 2,
+    "min_level": 40,
+    "max_level": 70
+  },
+  {
+    "species": "weavile",
+    "weight": 2,
+    "min_level": 40,
+    "max_level": 70
+  },
+  {
+    "species": "vanilluxe",
+    "weight": 2,
+    "min_level": 40,
+    "max_level": 70
+  },
+  {
+    "species": "lapras",
+    "weight": 1,
+    "min_level": 40,
+    "max_level": 70
+  },
+  {
+    "species": "sealeo",
+    "weight": 5,
+    "min_level": 22,
+    "max_level": 50
+  },
+  {
+    "species": "frosmoth",
+    "weight": 3,
+    "min_level": 25,
+    "max_level": 60
+  },
+  {
+    "species": "prinplup",
+    "weight": 4,
+    "min_level": 18,
+    "max_level": 45
+  },
+  {
+    "species": "vulpix alolan",
+    "weight": 6,
+    "min_level": 1,
+    "max_level": 25
+  },
+  {
+    "species": "ninetales alolan",
+    "weight": 2,
+    "min_level": 35,
+    "max_level": 65
+  },
+  {
+    "species": "growlithe hisuian",
+    "weight": 5,
+    "min_level": 1,
+    "max_level": 28
+  },
+  {
+    "species": "arcanine hisuian",
+    "weight": 2,
+    "min_level": 40,
+    "max_level": 70
+  },
+  {
+    "species": "avalugg hisuian",
+    "weight": 2,
+    "min_level": 35,
+    "max_level": 65
+  },
+  {
+    "species": "cetoddle",
+    "weight": 7,
+    "min_level": 1,
+    "max_level": 28
+  },
+  {
+    "species": "cetitan",
+    "weight": 2,
+    "min_level": 35,
+    "max_level": 70
+  },
+  {
+    "species": "eiscue",
+    "weight": 3,
+    "min_level": 20,
+    "max_level": 55
+  }
+]

@@ -1,0 +1,12 @@
+name = "cobblemon-utility"
+filename = "Cobblemon-Utility+-fabric-1.7.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "cf99342e1ea0f57259b843be76249f189fb5df25"
+
+[update]
+[update.modrinth]
+mod-id = "cobblemon-utility"
+version = "cfb64e0e865fd9eb"

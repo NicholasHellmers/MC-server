@@ -1,0 +1,26 @@
+{
+  "resetHour": 0,
+  "dailyTrades": 3,
+  "doPokemonExpire": true,
+  "pokemonBestBefore": 7,
+  "autoFill": true,
+  "autoFillAmount": 50,
+  "autoFillFromPools": [
+    {
+      "groupId": "common_vanilla",
+      "weight": 98
+    },
+    {
+      "groupId": "legendaries_vanilla",
+      "weight": 2
+    }
+  ],
+  "minLevel": 5,
+  "maxLevel": 55,
+  "minIV": 20,
+  "maxIV": 31,
+  "perfectChance": 0.01,
+  "ribbonChance": 0.01,
+  "bannedSpecies": [],
+  "bannedHeldItems": []
+}

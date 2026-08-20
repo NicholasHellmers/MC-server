@@ -1,0 +1,5 @@
+[
+  { "item": "cobblemon:oran_berry", "min": 1, "max": 3, "weight": 4 },
+  { "item": "cobblemon:poke_ball", "min": 1, "max": 1, "weight": 2 },
+  { "item": "cobblemon:exp_candy_xs", "min": 1, "max": 1, "weight": 1 }
+]

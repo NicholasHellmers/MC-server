@@ -1,0 +1,12 @@
+name = "cobbleballswitch"
+filename = "cobbleballswitch-1.0-SNAPSHOT.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b6a8fcfd5cbd54b63026e30e909336c8433232df"
+
+[update]
+[update.modrinth]
+mod-id = "cobbleballswitch"
+version = "a20bb312293fae1d"

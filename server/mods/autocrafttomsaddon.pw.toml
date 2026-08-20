@@ -1,0 +1,12 @@
+name = "autocrafttomsaddon"
+filename = "AutoCraftTomsAddon-1.7.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2115e94c91f0f0743094ad93ea8df81290ff6961"
+
+[update]
+[update.modrinth]
+mod-id = "autocrafttomsaddon"
+version = "cf0595c8026cf142"

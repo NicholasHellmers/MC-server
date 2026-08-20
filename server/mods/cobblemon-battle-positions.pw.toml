@@ -1,0 +1,12 @@
+name = "cobblemon-battle-positions"
+filename = "cobblemon-battle-positions-1.1.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2edbf7224a689b3463327f2970b481fd8e4ceae8"
+
+[update]
+[update.modrinth]
+mod-id = "cobblemon-battle-positions"
+version = "1fa9df1e934ad432"

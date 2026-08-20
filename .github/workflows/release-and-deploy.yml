@@ -1,0 +1,61 @@
+name: Build Modpack Release & Deploy
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install Astral UV
+        uses: astral-sh/setup-uv@v5
+        with:
+          version: "latest"
+
+      - name: Setup Python
+        run: uv python install 3.11
+
+      - name: Install Dependencies
+        run: uv sync --all-extras
+
+      - name: Validate Modpack & Export .mrpack
+        run: |
+          uv run python cicd/build_modpack.py --server-dir server --output Cobblemon-Modpack.mrpack
+
+      - name: Create GitHub Release
+        id: create_release
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/v')
+        with:
+          files: Cobblemon-Modpack.mrpack
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Post Discord Announcement
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: |
+          uv run python cicd/discord_notify.py \
+            --version "${{ github.ref_name }}" \
+            --release-url "https://github.com/${{ github.repository }}/releases/tag/${{ github.ref_name }}" \
+            --server-ip "${{ secrets.SERVER_HOST || 'play.cobblemon.xyz' }}"
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: Deploy to Remote AWS Server
+        if: ${{ secrets.SERVER_HOST != '' && secrets.SERVER_SSH_KEY != '' }}
+        run: |
+          echo "${{ secrets.SERVER_SSH_KEY }}" > server_key.pem
+          chmod 600 server_key.pem
+          uv run python cicd/deploy_server.py \
+            --host "${{ secrets.SERVER_HOST }}" \
+            --user "${{ secrets.SERVER_USER || 'ubuntu' }}" \
+            --key server_key.pem \
+            --remote-dir "/opt/mc-server"
+          rm -f server_key.pem

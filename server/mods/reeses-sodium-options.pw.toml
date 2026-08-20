@@ -1,0 +1,12 @@
+name = "reeses-sodium-options"
+filename = "reeses-sodium-options-fabric-2.2.3+mc1.21.1.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "aca62b29c1b2a9ec73f321aceeeceaeaaec53744"
+
+[update]
+[update.modrinth]
+mod-id = "reeses-sodium-options"
+version = "9b5e2b4b883f5cfb"

@@ -1,0 +1,12 @@
+name = "cobblenav"
+filename = "cobblenav-fabric-2.3.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "63681a16bc562089329533686fcc60e7bb7cd63d"
+
+[update]
+[update.modrinth]
+mod-id = "cobblenav"
+version = "0d2efd2f8beebf8b"

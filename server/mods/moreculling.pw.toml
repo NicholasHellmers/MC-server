@@ -1,0 +1,12 @@
+name = "moreculling"
+filename = "moreculling-fabric-1.21.1-1.0.8.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "fcacddf1cecc0fdc9ba937197c74402fd436e9c7"
+
+[update]
+[update.modrinth]
+mod-id = "moreculling"
+version = "45a2744b8253af0b"

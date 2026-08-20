@@ -1,0 +1,34 @@
+{
+  "dimensions": [
+    {
+      "dimensionId": "cobblesafari:domedimension",
+      "timerDurationSeconds": 900,
+      "returnToSpawn": false,
+      "allowReset": true
+    },
+    {
+      "dimensionId": "cobblesafari:dungeon_jump",
+      "timerDurationSeconds": 900,
+      "returnToSpawn": false,
+      "allowReset": false
+    },
+    {
+      "dimensionId": "cobblesafari:dungeon_underground",
+      "timerDurationSeconds": 900,
+      "returnToSpawn": false,
+      "allowReset": false
+    },
+    {
+      "dimensionId": "cobblesafari:unionroom",
+      "timerDurationSeconds": 3600,
+      "returnToSpawn": false,
+      "allowReset": true
+    },
+    {
+      "dimensionId": "cobblesafari:dungeon_distortion",
+      "timerDurationSeconds": 900,
+      "returnToSpawn": false,
+      "allowReset": false
+    }
+  ]
+}

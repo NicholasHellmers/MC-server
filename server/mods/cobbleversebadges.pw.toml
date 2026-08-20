@@ -1,0 +1,12 @@
+name = "cobbleversebadges"
+filename = "CobbleverseBadges-1.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "8e213de6013b6a58485ba8ddfcff5c91b3beb41d"
+
+[update]
+[update.modrinth]
+mod-id = "cobbleversebadges"
+version = "c5ca78e885defa54"

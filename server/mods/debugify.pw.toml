@@ -1,0 +1,12 @@
+name = "debugify"
+filename = "Debugify-1.21.1+1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6fb7d4ec9c2d2dc5b58577324b47671d3e28d7a4"
+
+[update]
+[update.modrinth]
+mod-id = "debugify"
+version = "079e7bd774abf7e2"

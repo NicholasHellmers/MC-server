@@ -1,0 +1,12 @@
+name = "fzzy_config"
+filename = "fzzy_config-0.7.6+1.21.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "cff21f254e911a323fe49015d12e548d3e3b8d7c"
+
+[update]
+[update.modrinth]
+mod-id = "fzzy_config"
+version = "84f4176e371e65c8"

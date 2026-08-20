@@ -1,0 +1,12 @@
+name = "cobblemon-battle-extras"
+filename = "cobblemon-battle-extras-fabric-1.13.45.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "8d56d3e943d20f9d22be32e9a9dee5851eb7f654"
+
+[update]
+[update.modrinth]
+mod-id = "cobblemon-battle-extras"
+version = "f6c1a43c3eef81fe"

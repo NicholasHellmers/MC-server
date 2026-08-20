@@ -1,0 +1,12 @@
+name = "lumymon"
+filename = "LumyMon-0.6.6.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "983104ced5cadd78d75a3c512bd68d486e59f82f"
+
+[update]
+[update.modrinth]
+mod-id = "lumymon"
+version = "06bdfc1c17945bd2"

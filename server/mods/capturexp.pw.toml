@@ -1,0 +1,12 @@
+name = "capturexp"
+filename = "capturexp-fabric-1.7.3-1.3.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "fe935920b30c7cce657c2fa5e4dd27f36ea640cf"
+
+[update]
+[update.modrinth]
+mod-id = "capturexp"
+version = "d1f8d6f25b1e28db"

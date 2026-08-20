@@ -1,0 +1,33 @@
+{
+  "tick_per_minute": 1200,
+  "drop_chance_per_minute": 0.05,
+  "item_blacklist": [
+    "minecraft:porkchop",
+    "minecraft:beef",
+    "minecraft:chicken",
+    "minecraft:mutton",
+    "minecraft:rabbit",
+    "minecraft:fish",
+    "minecraft:cooked_porkchop",
+    "minecraft:cooked_beef",
+    "minecraft:cooked_chicken",
+    "minecraft:cooked_mutton",
+    "minecraft:cooked_rabbit",
+    "minecraft:cooked_fish",
+    "minecraft:leather",
+    "minecraft:bone",
+    "minecraft:spider_eye",
+    "minecraft:rotten_flesh",
+    "minecraft:rabbit_hide",
+    "minecraft:rabbit_foot",
+    "minecraft:cod",
+    "minecraft:pufferfish",
+    "minecraft:bone_block",
+    "minecraft:bone_meal",
+    "cobblemon:sharp_beak",
+    "minecraft:honey_bottle",
+    "minecraft:salmon",
+    "minecraft:white_wool"
+  ],
+  "legacy_flatten_item_quantity": false
+}

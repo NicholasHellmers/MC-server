@@ -1,0 +1,12 @@
+name = "musicnotification"
+filename = "musicnotification-fabric-3.0.0+mc1.21.1.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "c27e43fec57825e2ac45d39a9366150b45d409ec"
+
+[update]
+[update.modrinth]
+mod-id = "musicnotification"
+version = "10ad3d070cecc949"

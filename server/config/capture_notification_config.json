@@ -1,0 +1,20 @@
+{
+  "shiny_message": "%s has captured a Shiny %s!",
+  "legendary_message": "%s has captured a Legendary %s!",
+  "ultra_beast_message": "%s has captured an Ultra Beast %s!",
+  "mythical_message": "%s has captured a Mythical %s!",
+  "ultra_rare_message": "%s has captured an Ultra-Rare %s!",
+  "demigod_message": "%s has captured a Demigod %s!",
+  "enable_shiny_messages": true,
+  "enable_legendary_messages": true,
+  "enable_ultra_beast_messages": true,
+  "enable_mythical_messages": true,
+  "enable_ultra_rare_messages": true,
+  "enable_demigod_messages": true,
+  "shiny_color": "GOLD",
+  "legendary_color": "LIGHT_PURPLE",
+  "ultra_beast_color": "RED",
+  "mythical_color": "AQUA",
+  "ultra_rare_color": "DARK_PURPLE",
+  "demigod_color": "YELLOW"
+}

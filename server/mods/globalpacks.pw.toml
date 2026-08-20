@@ -1,0 +1,12 @@
+name = "globalpacks"
+filename = "globalpacks-fabric-1.21.1-21.0.6.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6a0c4ccf2a8bc916173defc3c49c8e95285e66b9"
+
+[update]
+[update.modrinth]
+mod-id = "globalpacks"
+version = "f49f202900e2753f"

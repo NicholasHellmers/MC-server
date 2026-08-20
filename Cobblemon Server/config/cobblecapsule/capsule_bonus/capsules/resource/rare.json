@@ -1,0 +1,30 @@
+{
+  "entries": [
+    {
+      "required_mod": "mega_showdown",
+      "rolls": { "min": 1, "max": 3 },
+      "allow_duplicates": false,
+      "items": [
+        { "id": "mega_showdown:fighting_tera_shard", "weight": 1, "stack": [1, 2] },
+        { "id": "mega_showdown:electric_tera_shard", "weight": 1, "stack": [1, 2] },
+        { "id": "mega_showdown:stellar_tera_shard", "weight": 1, "stack": [1, 2] },
+        { "id": "mega_showdown:psychic_tera_shard", "weight": 1, "stack": [1, 2] },
+        { "id": "mega_showdown:poison_tera_shard", "weight": 1, "stack": [1, 2] },
+        { "id": "mega_showdown:normal_tera_shard", "weight": 1, "stack": [1, 2] },
+        { "id": "mega_showdown:ground_tera_shard", "weight": 1, "stack": [1, 2] },
+        { "id": "mega_showdown:flying_tera_shard", "weight": 1, "stack": [1, 2] },
+        { "id": "mega_showdown:dragon_tera_shard", "weight": 1, "stack": [1, 2] },
+        { "id": "mega_showdown:water_tera_shard", "weight": 1, "stack": [1, 2] },
+        { "id": "mega_showdown:steel_tera_shard", "weight": 1, "stack": [1, 2] },
+        { "id": "mega_showdown:grass_tera_shard", "weight": 1, "stack": [1, 2] },
+        { "id": "mega_showdown:ghost_tera_shard", "weight": 1, "stack": [1, 2] },
+        { "id": "mega_showdown:fairy_tera_shard", "weight": 1, "stack": [1, 2] },
+        { "id": "mega_showdown:rock_tera_shard", "weight": 1, "stack": [1, 2] },
+        { "id": "mega_showdown:fire_tera_shard", "weight": 1, "stack": [1, 2] },
+        { "id": "mega_showdown:dark_tera_shard", "weight": 1, "stack": [1, 2] },
+        { "id": "mega_showdown:ice_tera_shard", "weight": 1, "stack": [1, 2] },
+        { "id": "mega_showdown:bug_tera_shard", "weight": 1, "stack": [1, 2] }
+      ]
+    }
+  ]
+}

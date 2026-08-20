@@ -1,0 +1,12 @@
+name = "athena"
+filename = "athena-fabric-1.21.1-4.0.6.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "92534d85cad33ab1fee598068443c685f4bb06e0"
+
+[update]
+[update.modrinth]
+mod-id = "athena"
+version = "6fec9964e4ce654f"

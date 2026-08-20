@@ -1,0 +1,12 @@
+name = "accessories_compat_layer"
+filename = "accessories_compat_layer-fabric-0.1.12+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "44acb001881c063aa15fe66a26de5fae88e6564f"
+
+[update]
+[update.modrinth]
+mod-id = "accessories_compat_layer"
+version = "aee7f01996f4675d"

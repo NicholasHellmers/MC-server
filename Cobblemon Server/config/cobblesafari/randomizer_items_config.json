@@ -1,0 +1,153 @@
+{
+  "availablePokeBalls": [
+    {
+      "pokeballId": "cobblemon:poke_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:great_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:ultra_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:master_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:premier_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:cherish_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:dive_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:dusk_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:fast_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:friend_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:heal_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:heavy_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:level_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:love_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:lure_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:luxury_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:moon_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:nest_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:net_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:park_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:quick_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:repeat_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:sport_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:timer_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:dream_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:beast_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:ancient_poke_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:ancient_great_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:ancient_ultra_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:ancient_heavy_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:ancient_leaden_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:ancient_gigaton_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:ancient_feather_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:ancient_wing_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:ancient_jet_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:ancient_origin_ball",
+      "weight": 1
+    },
+    {
+      "pokeballId": "cobblemon:ancient_strange_ball",
+      "weight": 1
+    }
+  ],
+  "redChainRandomShinyRollMax": 4095
+}

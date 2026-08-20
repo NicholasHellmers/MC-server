@@ -1,0 +1,12 @@
+name = "advancementplaques"
+filename = "AdvancementPlaques-1.21.1-fabric-1.6.8.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "e3a5a514bbcc18e2c4e3bc251eb9f48e64217405"
+
+[update]
+[update.modrinth]
+mod-id = "advancementplaques"
+version = "32afe425aecefaac"

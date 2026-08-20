@@ -1,0 +1,12 @@
+name = "complete-cobblemon-collection-w-legendary-spawns"
+filename = "complete-cobblemon-collection-w-legendary-spawns-2.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "710a04b0dba6ec254e2f9c1bb992d6a05cfb842d"
+
+[update]
+[update.modrinth]
+mod-id = "complete-cobblemon-collection-w-legendary-spawns"
+version = "caf5ad4263e7a753"

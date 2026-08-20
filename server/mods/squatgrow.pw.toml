@@ -1,0 +1,12 @@
+name = "squatgrow"
+filename = "squatgrow-fabric-21.1.4+mc1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2831edc8f98e64c7f7069b86083ed92b9a5fdc72"
+
+[update]
+[update.modrinth]
+mod-id = "squatgrow"
+version = "438bec23894473d7"

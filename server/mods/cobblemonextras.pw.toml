@@ -1,0 +1,12 @@
+name = "cobblemonextras"
+filename = "CobblemonExtras-fabric-1.5.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b28c975f5925f56a73815be0bdb30b13c57a2608"
+
+[update]
+[update.modrinth]
+mod-id = "cobblemonextras"
+version = "df0fdcd9054432d4"

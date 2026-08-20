@@ -1,0 +1,12 @@
+name = "enderchests"
+filename = "enderchests-fabric-1.21.1-1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "eaca04aa437ed1b70aaaad9418463e297e54c9f1"
+
+[update]
+[update.modrinth]
+mod-id = "enderchests"
+version = "d33fe2a031df4262"

@@ -1,0 +1,12 @@
+name = "cobblemonexpall"
+filename = "cobblemonexpall-fabric-0.0.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0133ed88b5ae568e683acbe870f69f2bfbfba30b"
+
+[update]
+[update.modrinth]
+mod-id = "cobblemonexpall"
+version = "be0d118bcc879596"

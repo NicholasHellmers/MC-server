@@ -1,0 +1,12 @@
+name = "cobbledex-rei-emi-jei"
+filename = "cobbledex-rei-emi-jei-fabric-2.0.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6e15d658aeac7ee6d8afe892c2065009fc525754"
+
+[update]
+[update.modrinth]
+mod-id = "cobbledex-rei-emi-jei"
+version = "28090dda71ed570b"

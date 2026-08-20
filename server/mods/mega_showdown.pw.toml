@@ -1,0 +1,12 @@
+name = "mega_showdown"
+filename = "mega_showdown-fabric-1.8.4+1.7.3+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "948795e4c112b0719859f0f44bb2e5cdf67d1859"
+
+[update]
+[update.modrinth]
+mod-id = "mega_showdown"
+version = "e378edfb6545b2ca"

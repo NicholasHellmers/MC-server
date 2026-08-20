@@ -1,0 +1,12 @@
+name = "advancementdisable"
+filename = "advancementdisable-fabric-1.0.1+1.21.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "32190447e74e705c799641d4a7392b396df63962"
+
+[update]
+[update.modrinth]
+mod-id = "advancementdisable"
+version = "c31cda01802ee7f9"

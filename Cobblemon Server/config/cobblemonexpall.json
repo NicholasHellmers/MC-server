@@ -1,0 +1,10 @@
+{
+  "chatLogging": false,
+  "chatLogOriginalRecipient": true,
+  "chatLogSharedRecipients": true,
+  "chatLogWhenNotEquipped": false,
+  "shareMultiplier": 0.5,
+  "useAccessoriesSlot": true,
+  "useCuriosSlot": true,
+  "useHelmetSlot": true
+}

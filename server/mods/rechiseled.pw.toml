@@ -1,0 +1,12 @@
+name = "rechiseled"
+filename = "rechiseled-1.2.4-fabric-mc1.21.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "52df3c871d9634cef497575ed214ed35a960bbfe"
+
+[update]
+[update.modrinth]
+mod-id = "rechiseled"
+version = "75d8bb248863221a"

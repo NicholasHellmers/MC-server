@@ -1,0 +1,62 @@
+{
+  "rolls": { "min": 3, "max": 6 },
+  "allow_duplicates": false,
+  "items": [
+    { "id": "cobblemon:super_potion", "weight": 26, "stack": { "min": 1, "max": 3 } },
+    { "id": "cobblemon:hyper_potion", "weight": 20, "stack": { "min": 1, "max": 2 } },
+    { "id": "cobblemon:full_heal", "weight": 18, "stack": { "min": 1, "max": 2 } },
+    { "id": "cobblemon:revive", "weight": 12, "stack": { "min": 1, "max": 1 } },
+    { "id": "cobblemon:fine_remedy", "weight": 14, "stack": { "min": 1, "max": 2 } },
+    { "id": "cobblemon:heal_powder", "weight": 12, "stack": { "min": 1, "max": 2 } },
+
+    { "id": "cobblemon:oran_berry", "weight": 10, "stack": { "min": 2, "max": 6 } },
+    { "id": "cobblemon:pecha_berry", "weight": 10, "stack": { "min": 2, "max": 6 } },
+    { "id": "cobblemon:cheri_berry", "weight": 10, "stack": { "min": 2, "max": 6 } },
+    { "id": "cobblemon:chesto_berry", "weight": 10, "stack": { "min": 2, "max": 6 } },
+    { "id": "cobblemon:rawst_berry", "weight": 10, "stack": { "min": 2, "max": 6 } },
+    { "id": "cobblemon:aspear_berry", "weight": 10, "stack": { "min": 2, "max": 6 } },
+    { "id": "cobblemon:persim_berry", "weight": 10, "stack": { "min": 2, "max": 6 } },
+
+    { "id": "cobblemon:leppa_berry", "weight": 12, "stack": { "min": 2, "max": 5 } },
+    { "id": "cobblemon:sitrus_berry", "weight": 12, "stack": { "min": 2, "max": 4 } },
+    { "id": "cobblemon:lum_berry", "weight": 10, "stack": { "min": 1, "max": 3 } },
+
+    { "id": "cobblemon:pomeg_berry", "weight": 8, "stack": { "min": 1, "max": 3 } },
+    { "id": "cobblemon:kelpsy_berry", "weight": 8, "stack": { "min": 1, "max": 3 } },
+    { "id": "cobblemon:qualot_berry", "weight": 8, "stack": { "min": 1, "max": 3 } },
+    { "id": "cobblemon:hondew_berry", "weight": 8, "stack": { "min": 1, "max": 3 } },
+    { "id": "cobblemon:grepa_berry", "weight": 8, "stack": { "min": 1, "max": 3 } },
+    { "id": "cobblemon:tamato_berry", "weight": 8, "stack": { "min": 1, "max": 3 } },
+
+    { "id": "cobblemon:figy_berry", "weight": 6, "stack": { "min": 1, "max": 3 } },
+    { "id": "cobblemon:wiki_berry", "weight": 6, "stack": { "min": 1, "max": 3 } },
+    { "id": "cobblemon:mago_berry", "weight": 6, "stack": { "min": 1, "max": 3 } },
+    { "id": "cobblemon:aguav_berry", "weight": 6, "stack": { "min": 1, "max": 3 } },
+    { "id": "cobblemon:iapapa_berry", "weight": 6, "stack": { "min": 1, "max": 3 } },
+
+    { "id": "cobblemon:occa_berry",  "weight": 5, "stack": { "min": 1, "max": 2 } },
+    { "id": "cobblemon:passho_berry","weight": 5, "stack": { "min": 1, "max": 2 } },
+    { "id": "cobblemon:wacan_berry", "weight": 5, "stack": { "min": 1, "max": 2 } },
+    { "id": "cobblemon:rindo_berry","weight": 5, "stack": { "min": 1, "max": 2 } },
+    { "id": "cobblemon:yache_berry","weight": 5, "stack": { "min": 1, "max": 2 } },
+    { "id": "cobblemon:chople_berry","weight": 5, "stack": { "min": 1, "max": 2 } },
+    { "id": "cobblemon:kebia_berry","weight": 5, "stack": { "min": 1, "max": 2 } },
+    { "id": "cobblemon:shuca_berry","weight": 5, "stack": { "min": 1, "max": 2 } },
+    { "id": "cobblemon:coba_berry", "weight": 5, "stack": { "min": 1, "max": 2 } },
+    { "id": "cobblemon:payapa_berry","weight": 5, "stack": { "min": 1, "max": 2 } },
+    { "id": "cobblemon:tanga_berry","weight": 5, "stack": { "min": 1, "max": 2 } },
+    { "id": "cobblemon:charti_berry","weight": 5, "stack": { "min": 1, "max": 2 } },
+    { "id": "cobblemon:kasib_berry","weight": 5, "stack": { "min": 1, "max": 2 } },
+    { "id": "cobblemon:haban_berry", "weight": 5, "stack": { "min": 1, "max": 2 } },
+
+    { "id": "cobblemon:razz_berry", "weight": 6, "stack": { "min": 2, "max": 5 } },
+    { "id": "cobblemon:nanab_berry", "weight": 6, "stack": { "min": 2, "max": 5 } },
+    { "id": "cobblemon:bluk_berry", "weight": 6, "stack": { "min": 2, "max": 5 } },
+    { "id": "cobblemon:pinap_berry", "weight": 6, "stack": { "min": 2, "max": 5 } },
+    { "id": "cobblemon:pamtre_berry", "weight": 5, "stack": { "min": 1, "max": 4 } },
+    { "id": "cobblemon:wepear_berry", "weight": 5, "stack": { "min": 1, "max": 4 } },
+    { "id": "cobblemon:watmel_berry", "weight": 5, "stack": { "min": 1, "max": 3 } },
+    { "id": "cobblemon:durin_berry", "weight": 5, "stack": { "min": 1, "max": 4 } },
+    { "id": "cobblemon:belue_berry", "weight": 5, "stack": { "min": 1, "max": 4 } }
+  ]
+}

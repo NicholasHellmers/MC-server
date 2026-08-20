@@ -1,0 +1,21 @@
+{
+  "pokemon_capsules": {
+    "pokemon_capsule_min_level": 1,
+    "pokemon_capsule_max_level": 100,
+    "pokemon_capsule_shiny_min_level": 1,
+    "pokemon_capsule_shiny_max_level": 100,
+    "pokemon_whitelist": [],
+    "pokemon_blacklist": []
+  },
+  "loot_items": {
+    "item_whitelist": [],
+    "item_blacklist": []
+  },
+  "stack_limits": {
+    "capsule_stack_size": 16,
+    "core_stack_size": 16
+  },
+  "gameplay": {
+    "capsule_cooldown_ticks": 60
+  }
+}

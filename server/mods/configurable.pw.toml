@@ -1,0 +1,12 @@
+name = "configurable"
+filename = "configurable-3.5.2+1.21.1-fabric.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2c7302944b3dbdb7a20ebdba8425ccae52f7f46a"
+
+[update]
+[update.modrinth]
+mod-id = "configurable"
+version = "30122272fd6cd5a4"

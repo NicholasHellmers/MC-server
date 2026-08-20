@@ -1,0 +1,39 @@
+{
+  "CONFIG_VERSION": 2,
+  "phoneApps": {
+    "chatApp": {
+      "enabledByDefault": true,
+      "bannedDimensions": []
+    },
+    "gtsApp": {
+      "enabledByDefault": false,
+      "bannedDimensions": [
+        "cobblesafari:dungeon_underground",
+        "cobblesafari:dungeon_distortion"
+      ]
+    },
+    "wonderApp": {
+      "enabledByDefault": false,
+      "bannedDimensions": [
+        "cobblesafari:dungeon_underground",
+        "cobblesafari:dungeon_distortion"
+      ]
+    },
+    "unionApp": {
+      "enabledByDefault": false,
+      "bannedDimensions": [
+        "cobblesafari:dungeon_underground",
+        "cobblesafari:dungeon_distortion"
+      ]
+    },
+    "skinApp": {
+      "enabledByDefault": false,
+      "bannedDimensions": []
+    },
+    "settingsApp": {
+      "enabledByDefault": false,
+      "bannedDimensions": []
+    }
+  },
+  "allowsShinyPhone": true
+}

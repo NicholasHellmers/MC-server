@@ -1,0 +1,19 @@
+{
+  "backend": "file",
+  "importFileDataOnMissing": true,
+  "mysql": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "database": "cobblemon_snap",
+    "username": "root",
+    "password": "",
+    "table": "snap_player_data",
+    "scope": "default",
+    "maximumPoolSize": 8,
+    "minimumIdle": 1,
+    "connectionTimeoutMs": 10000,
+    "idleTimeoutMs": 600000,
+    "maxLifetimeMs": 1800000,
+    "parameters": "useSSL\u003dfalse\u0026allowPublicKeyRetrieval\u003dtrue\u0026serverTimezone\u003dUTC\u0026useUnicode\u003dtrue\u0026characterEncoding\u003dutf8\u0026createDatabaseIfNotExist\u003dtrue"
+  }
+}

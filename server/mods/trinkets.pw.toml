@@ -1,0 +1,12 @@
+name = "trinkets"
+filename = "trinkets-3.10.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f54756f938c7c273713b9f97d4a987eec551e892"
+
+[update]
+[update.modrinth]
+mod-id = "trinkets"
+version = "3ea846c945a05596"

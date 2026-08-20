@@ -1,0 +1,52 @@
+{
+  "balloonSpawnMultiplier": 1.0,
+  "balloonCheckIntervalTicks": 200,
+  "balloonSpawnRadius": 32,
+  "balloonHeightAboveGround": 32,
+  "balloonLifetimeTicks": 6000,
+  "balloonEnabled": true,
+  "dailySystemResetHour": 0,
+  "dimensionalObjectivesGoldScanRadius": 8,
+  "giratinaCoreCooldown": 40,
+  "teleportpadForwardLeeway": 5,
+  "lostItem": {
+    "poolBerryId": "cobblesafari:lostitem_berry",
+    "poolCandyId": "cobblesafari:lostitem_candy",
+    "poolBallsId": "cobblesafari:lostitem_ball",
+    "poolTreasuresId": "cobblesafari:lostitem_treasure",
+    "lostItemLootTableId": "cobblesafari:lostitem",
+    "lootItemId": "cobblemon:poke_ball",
+    "minRoll": 1,
+    "maxRoll": 3,
+    "mode": 0
+  },
+  "auspiciousPokeball": {
+    "poolBerryId": "cobblesafari:auspiciouspokeball/berry",
+    "poolCandyId": "cobblesafari:auspiciouspokeball/candy",
+    "poolBallsId": "cobblesafari:auspiciouspokeball/ball",
+    "poolTreasuresId": "cobblesafari:auspiciouspokeball/treasure",
+    "minRoll": 1,
+    "maxRoll": 3
+  },
+  "auspiciousPokeballSmall": {
+    "poolBerryId": "cobblesafari:auspiciouspokeball/berry_small",
+    "poolCandyId": "cobblesafari:auspiciouspokeball/candy_small",
+    "poolBallsId": "cobblesafari:auspiciouspokeball/ball_small",
+    "poolTreasuresId": "cobblesafari:auspiciouspokeball/treasure_small",
+    "minRoll": 1,
+    "maxRoll": 3
+  },
+  "auspiciousPokeballGold": {
+    "poolBerryId": "cobblesafari:auspiciouspokeball/berry_gold",
+    "poolCandyId": "cobblesafari:auspiciouspokeball/candy_gold",
+    "poolBallsId": "cobblesafari:auspiciouspokeball/ball_gold",
+    "poolTreasuresId": "cobblesafari:auspiciouspokeball/treasure_gold",
+    "minRoll": 1,
+    "maxRoll": 3
+  },
+  "unionRoomMaxInstances": 10,
+  "unionRoomMaxGuestsPerSession": 6,
+  "unionRoomPlazaMaxInstances": 2,
+  "unionRoomPlazaMaxGuestsPerSession": 24,
+  "unionRoomBannedDimensions": []
+}

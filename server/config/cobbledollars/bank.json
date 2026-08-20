@@ -1,0 +1,20 @@
+{
+  "bank": [
+    {
+      "item": "minecraft:emerald",
+      "price": 750
+    },
+    {
+      "item": "cobblemon:relic_coin",
+      "price": 50
+    },
+    {
+      "item": "cobblemon:relic_coin_pouch",
+      "price": 450
+    }
+    {
+      "item": "cobblemon:relic_coin_sack",
+      "price": 4050
+    }
+  ]
+}

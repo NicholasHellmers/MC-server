@@ -1,0 +1,12 @@
+name = "cobblemon-pasturecollector"
+filename = "cobblemon-pasturecollector-fabric-1.7.3-1.4.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c1798a03c83ccee9f75b25d8fafe8b4e3967427c"
+
+[update]
+[update.modrinth]
+mod-id = "cobblemon-pasturecollector"
+version = "092c6510501a2323"

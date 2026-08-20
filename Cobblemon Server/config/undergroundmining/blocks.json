@@ -1,0 +1,377 @@
+{
+  "blocks": [
+    {
+      "spawnBlocks": [
+        "minecraft:stone"
+      ],
+      "primaryBlock": "minecraft:stone",
+      "primaryHealth": 3,
+      "secondaryBlock": "minecraft:dirt",
+      "secondaryHealth": 2,
+      "backgroundBlock": "minecraft:deepslate",
+      "rarityMultiplier": 0.8,
+      "bedrockChance": 0.15,
+      "baseStability": 1.0,
+      "dimensions": [],
+      "biomes": [],
+      "clearRewards": [],
+      "useOnlyBlockSpecificLoot": false,
+      "possibleTreasures": [],
+      "enabled": true
+    },
+    {
+      "spawnBlocks": [
+        "minecraft:deepslate"
+      ],
+      "primaryBlock": "minecraft:deepslate",
+      "primaryHealth": 4,
+      "secondaryBlock": "minecraft:tuff",
+      "secondaryHealth": 2,
+      "backgroundBlock": "minecraft:cobbled_deepslate",
+      "rarityMultiplier": 1.2,
+      "bedrockChance": 0.15,
+      "baseStability": 1.1,
+      "dimensions": [],
+      "biomes": [],
+      "clearRewards": [],
+      "useOnlyBlockSpecificLoot": false,
+      "possibleTreasures": [],
+      "enabled": true
+    },
+    {
+      "spawnBlocks": [
+        "minecraft:coarse_dirt",
+        "minecraft:dirt",
+        "minecraft:grass_block"
+      ],
+      "primaryBlock": "minecraft:coarse_dirt",
+      "primaryHealth": 3,
+      "secondaryBlock": "minecraft:rooted_dirt",
+      "secondaryHealth": 2,
+      "backgroundBlock": "minecraft:mud",
+      "rarityMultiplier": 0.5,
+      "bedrockChance": 0.05,
+      "baseStability": 0.7,
+      "dimensions": [],
+      "biomes": [],
+      "clearRewards": [],
+      "useOnlyBlockSpecificLoot": true,
+      "possibleTreasures": [
+        {
+          "itemId": "minecraft:wheat_seeds",
+          "width": 1,
+          "height": 1,
+          "minYield": 2,
+          "maxYield": 8,
+          "rarity": 1
+        },
+        {
+          "itemId": "minecraft:melon_seeds",
+          "width": 1,
+          "height": 1,
+          "minYield": 1,
+          "maxYield": 4,
+          "rarity": 2
+        },
+        {
+          "itemId": "minecraft:pumpkin_seeds",
+          "width": 1,
+          "height": 1,
+          "minYield": 1,
+          "maxYield": 4,
+          "rarity": 2
+        },
+        {
+          "itemId": "minecraft:beetroot_seeds",
+          "width": 1,
+          "height": 1,
+          "minYield": 1,
+          "maxYield": 4,
+          "rarity": 2
+        },
+        {
+          "itemId": "minecraft:torchflower_seeds",
+          "width": 1,
+          "height": 1,
+          "minYield": 1,
+          "maxYield": 2,
+          "rarity": 8
+        },
+        {
+          "itemId": "minecraft:pitcher_pod",
+          "width": 1,
+          "height": 1,
+          "minYield": 1,
+          "maxYield": 2,
+          "rarity": 10
+        },
+        {
+          "itemId": "minecraft:bone",
+          "width": 1,
+          "height": 2,
+          "minYield": 1,
+          "maxYield": 4,
+          "rarity": 1
+        },
+        {
+          "itemId": "minecraft:rotten_flesh",
+          "width": 1,
+          "height": 1,
+          "minYield": 1,
+          "maxYield": 5,
+          "rarity": 1
+        },
+        {
+          "itemId": "minecraft:spider_eye",
+          "width": 1,
+          "height": 1,
+          "minYield": 1,
+          "maxYield": 3,
+          "rarity": 2
+        },
+        {
+          "itemId": "minecraft:string",
+          "width": 1,
+          "height": 1,
+          "minYield": 2,
+          "maxYield": 6,
+          "rarity": 1
+        },
+        {
+          "itemId": "minecraft:feather",
+          "width": 1,
+          "height": 1,
+          "minYield": 2,
+          "maxYield": 6,
+          "rarity": 1
+        },
+        {
+          "itemId": "minecraft:leather",
+          "width": 1,
+          "height": 1,
+          "minYield": 1,
+          "maxYield": 3,
+          "rarity": 2
+        },
+        {
+          "itemId": "minecraft:slime_ball",
+          "width": 1,
+          "height": 1,
+          "minYield": 1,
+          "maxYield": 4,
+          "rarity": 3
+        },
+        {
+          "itemId": "minecraft:gunpowder",
+          "width": 1,
+          "height": 1,
+          "minYield": 1,
+          "maxYield": 4,
+          "rarity": 2
+        },
+        {
+          "itemId": "minecraft:clay_ball",
+          "width": 1,
+          "height": 1,
+          "minYield": 2,
+          "maxYield": 8,
+          "rarity": 1
+        },
+        {
+          "itemId": "minecraft:flint",
+          "width": 1,
+          "height": 1,
+          "minYield": 1,
+          "maxYield": 4,
+          "rarity": 1
+        },
+        {
+          "itemId": "minecraft:brick",
+          "width": 1,
+          "height": 1,
+          "minYield": 1,
+          "maxYield": 4,
+          "rarity": 2
+        },
+        {
+          "itemId": "minecraft:rabbit_foot",
+          "width": 1,
+          "height": 1,
+          "minYield": 1,
+          "maxYield": 1,
+          "rarity": 15
+        },
+        {
+          "itemId": "minecraft:phantom_membrane",
+          "width": 1,
+          "height": 1,
+          "minYield": 1,
+          "maxYield": 2,
+          "rarity": 12
+        },
+        {
+          "itemId": "minecraft:honey_bottle",
+          "width": 1,
+          "height": 2,
+          "minYield": 1,
+          "maxYield": 2,
+          "rarity": 8
+        },
+        {
+          "itemId": "minecraft:honeycomb",
+          "width": 1,
+          "height": 1,
+          "minYield": 1,
+          "maxYield": 3,
+          "rarity": 6
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "spawnBlocks": [
+        "minecraft:sand",
+        "minecraft:sandstone",
+        "minecraft:red_sand",
+        "minecraft:red_sandstone"
+      ],
+      "primaryBlock": "minecraft:sandstone",
+      "primaryHealth": 3,
+      "secondaryBlock": "minecraft:sand",
+      "secondaryHealth": 2,
+      "backgroundBlock": "minecraft:cut_sandstone",
+      "rarityMultiplier": 0.9,
+      "bedrockChance": 0.05,
+      "baseStability": 0.8,
+      "dimensions": [],
+      "biomes": [],
+      "clearRewards": [],
+      "useOnlyBlockSpecificLoot": false,
+      "possibleTreasures": [],
+      "enabled": true
+    },
+    {
+      "spawnBlocks": [
+        "minecraft:netherrack"
+      ],
+      "primaryBlock": "minecraft:netherrack",
+      "primaryHealth": 3,
+      "secondaryBlock": "minecraft:soul_sand",
+      "secondaryHealth": 2,
+      "backgroundBlock": "minecraft:blackstone",
+      "rarityMultiplier": 1.1,
+      "bedrockChance": 0.15,
+      "baseStability": 0.75,
+      "dimensions": [
+        "minecraft:the_nether"
+      ],
+      "biomes": [],
+      "clearRewards": [],
+      "useOnlyBlockSpecificLoot": false,
+      "possibleTreasures": [],
+      "enabled": true
+    },
+    {
+      "spawnBlocks": [
+        "minecraft:end_stone"
+      ],
+      "primaryBlock": "minecraft:end_stone",
+      "primaryHealth": 3,
+      "secondaryBlock": "minecraft:purpur_block",
+      "secondaryHealth": 2,
+      "backgroundBlock": "minecraft:obsidian",
+      "rarityMultiplier": 1.2,
+      "bedrockChance": 0.15,
+      "baseStability": 1.0,
+      "dimensions": [
+        "minecraft:the_end"
+      ],
+      "biomes": [],
+      "clearRewards": [],
+      "useOnlyBlockSpecificLoot": false,
+      "possibleTreasures": [],
+      "enabled": true
+    },
+    {
+      "spawnBlocks": [
+        "minecraft:obsidian"
+      ],
+      "primaryBlock": "minecraft:obsidian",
+      "primaryHealth": 8,
+      "secondaryBlock": "minecraft:end_stone",
+      "secondaryHealth": 3,
+      "backgroundBlock": "minecraft:crying_obsidian",
+      "rarityMultiplier": 1.3,
+      "bedrockChance": 0.3,
+      "baseStability": 1.5,
+      "dimensions": [
+        "minecraft:the_end"
+      ],
+      "biomes": [],
+      "clearRewards": [
+        {
+          "command": "effect give {player} minecraft:mining_fatigue 30 0",
+          "weight": 10,
+          "enabled": true
+        }
+      ],
+      "useOnlyBlockSpecificLoot": false,
+      "possibleTreasures": [],
+      "enabled": true,
+      "requiredTool": "minecraft:diamond_pickaxe"
+    },
+    {
+      "spawnBlocks": [
+        "minecraft:amethyst_block",
+        "minecraft:budding_amethyst"
+      ],
+      "primaryBlock": "minecraft:amethyst_block",
+      "primaryHealth": 3,
+      "secondaryBlock": "minecraft:calcite",
+      "secondaryHealth": 2,
+      "backgroundBlock": "minecraft:smooth_basalt",
+      "rarityMultiplier": 1.0,
+      "bedrockChance": 0.1,
+      "baseStability": 0.9,
+      "dimensions": [],
+      "biomes": [],
+      "clearRewards": [],
+      "useOnlyBlockSpecificLoot": true,
+      "possibleTreasures": [
+        {
+          "itemId": "minecraft:amethyst_shard",
+          "width": 2,
+          "height": 2,
+          "minYield": 2,
+          "maxYield": 6,
+          "rarity": 1
+        },
+        {
+          "itemId": "minecraft:lapis_lazuli",
+          "width": 2,
+          "height": 2,
+          "minYield": 2,
+          "maxYield": 6,
+          "rarity": 50
+        },
+        {
+          "itemId": "minecraft:spyglass",
+          "width": 2,
+          "height": 3,
+          "minYield": 1,
+          "maxYield": 1,
+          "rarity": 100
+        },
+        {
+          "itemId": "minecraft:tinted_glass",
+          "width": 2,
+          "height": 2,
+          "minYield": 1,
+          "maxYield": 4,
+          "rarity": 30
+        }
+      ],
+      "enabled": true
+    }
+  ]
+}

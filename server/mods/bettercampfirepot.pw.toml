@@ -1,0 +1,12 @@
+name = "bettercampfirepot"
+filename = "bettercampfirepot-1.7.3+1.21.1-fabric.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "ee181fb7377d58784814af3351f51550751b2329"
+
+[update]
+[update.modrinth]
+mod-id = "bettercampfirepot"
+version = "60477fb61a00b7c1"

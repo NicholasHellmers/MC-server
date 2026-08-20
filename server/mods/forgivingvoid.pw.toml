@@ -1,0 +1,12 @@
+name = "forgivingvoid"
+filename = "forgivingvoid-fabric-1.21.1-21.1.7.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "be9be65f0b23bc751f0768af9c921a1483a06aa9"
+
+[update]
+[update.modrinth]
+mod-id = "forgivingvoid"
+version = "5168f3bc0bc7b1bf"

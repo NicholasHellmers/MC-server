@@ -1,0 +1,12 @@
+name = "lenientdeath"
+filename = "lenientdeath-1.2.5+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "cca7eb614db1053e9b8f8f413bc7bc82edcd472a"
+
+[update]
+[update.modrinth]
+mod-id = "lenientdeath"
+version = "5129657af70a8c71"

@@ -1,0 +1,12 @@
+name = "rctapi"
+filename = "rctapi-fabric-1.21.1-0.15.2-beta.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a75bb662e507c3932304d80ed514ec57e5dbf69b"
+
+[update]
+[update.modrinth]
+mod-id = "rctapi"
+version = "f0e740fed61051e2"

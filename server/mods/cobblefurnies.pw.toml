@@ -1,0 +1,12 @@
+name = "cobblefurnies"
+filename = "CobbleFurnies-fabric-1.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a71f20907c3350680a11054584cf96963f5875e5"
+
+[update]
+[update.modrinth]
+mod-id = "cobblefurnies"
+version = "9cb5a3f1e4604bb3"

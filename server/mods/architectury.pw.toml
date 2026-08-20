@@ -1,0 +1,12 @@
+name = "architectury"
+filename = "architectury-13.0.8-fabric.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e71346a43c563e5784580dd096338acfb45f49d4"
+
+[update]
+[update.modrinth]
+mod-id = "architectury"
+version = "7a24a0481732c550"

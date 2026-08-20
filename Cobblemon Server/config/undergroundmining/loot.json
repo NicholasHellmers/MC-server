@@ -1,0 +1,1120 @@
+{
+  "possibleTreasures": [
+    {
+      "itemId": "minecraft:coal",
+      "width": 2,
+      "height": 2,
+      "minYield": 2,
+      "maxYield": 6,
+      "rarity": 1,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:iron_nugget",
+      "width": 2,
+      "height": 2,
+      "minYield": 2,
+      "maxYield": 5,
+      "rarity": 2,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:gold_nugget",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 3,
+      "rarity": 4,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:raw_copper",
+      "width": 2,
+      "height": 2,
+      "minYield": 4,
+      "maxYield": 10,
+      "rarity": 2,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:redstone",
+      "width": 2,
+      "height": 2,
+      "minYield": 6,
+      "maxYield": 16,
+      "rarity": 3,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:lapis_lazuli",
+      "width": 1,
+      "height": 1,
+      "minYield": 4,
+      "maxYield": 12,
+      "rarity": 5,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:diamond",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 2,
+      "rarity": 15,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:emerald",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 3,
+      "rarity": 12,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:amethyst_shard",
+      "width": 2,
+      "height": 2,
+      "minYield": 2,
+      "maxYield": 6,
+      "rarity": 10,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:ender_pearl",
+      "width": 2,
+      "height": 2,
+      "minYield": 2,
+      "maxYield": 6,
+      "rarity": 10,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:quartz",
+      "width": 2,
+      "height": 2,
+      "minYield": 4,
+      "maxYield": 12,
+      "rarity": 4,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:elytra",
+      "width": 4,
+      "height": 4,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 2000,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:heavy_core",
+      "width": 3,
+      "height": 3,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 500,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:trident",
+      "width": 2,
+      "height": 3,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 450,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:nether_star",
+      "width": 3,
+      "height": 3,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 800,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:ominous_bottle",
+      "width": 1,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 100,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:mace",
+      "width": 2,
+      "height": 3,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 1000,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:shulker_shell",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 2,
+      "rarity": 120,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:dragon_breath",
+      "width": 1,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 3,
+      "rarity": 150,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:golden_apple",
+      "width": 3,
+      "height": 3,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 100,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:golden_carrot",
+      "width": 3,
+      "height": 3,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 100,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:enchanted_golden_apple",
+      "width": 3,
+      "height": 3,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 600,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:totem_of_undying",
+      "width": 2,
+      "height": 3,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 400,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:netherite_scrap",
+      "width": 3,
+      "height": 3,
+      "minYield": 1,
+      "maxYield": 2,
+      "rarity": 250,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:ancient_debris",
+      "width": 3,
+      "height": 3,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 250,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:wither_skull",
+      "width": 3,
+      "height": 3,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 650,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:ghast_tear",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 650,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:shulker_box",
+      "width": 3,
+      "height": 3,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 400,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:iron_golem_spawn_egg",
+      "width": 3,
+      "height": 3,
+      "minYield": 1,
+      "maxYield": 3,
+      "rarity": 500,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:enchanted_book",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 80,
+      "randomEnchantment": true
+    },
+    {
+      "itemId": "minecraft:enchanted_book",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 150,
+      "randomEnchantment": true
+    },
+    {
+      "itemId": "minecraft:enchanted_book",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 250,
+      "randomEnchantment": true
+    },
+    {
+      "itemId": "minecraft:netherite_upgrade_smithing_template",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 350,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:silence_armor_trim_smithing_template",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 1000,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:tide_armor_trim_smithing_template",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 350,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:ward_armor_trim_smithing_template",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 350,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:vex_armor_trim_smithing_template",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 350,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:wild_armor_trim_smithing_template",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 350,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:wayfinder_armor_trim_smithing_template",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 350,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:raiser_armor_trim_smithing_template",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 350,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:shaper_armor_trim_smithing_template",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 350,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:host_armor_trim_smithing_template",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 350,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:heart_of_the_sea",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 300,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:echo_shard",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 3,
+      "rarity": 200,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:music_disc_5",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 400,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:music_disc_pigstep",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 500,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:sniffer_egg",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 700,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:archer_pottery_sherd",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 150,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:prize_pottery_sherd",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 150,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:arms_up_pottery_sherd",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 150,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:skull_pottery_sherd",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 150,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:danger_pottery_sherd",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 150,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:friend_pottery_sherd",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 150,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:heart_pottery_sherd",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 150,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:miner_pottery_sherd",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 150,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:burn_pottery_sherd",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 150,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "minecraft:snort_pottery_sherd",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 150,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "mega_showdown:blank_mega_stone",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 60,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "mega_showdown:key_stone",
+      "width": 1,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 300,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "mega_showdown:blank_z_crystal",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 80,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "mega_showdown:wishing_star",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 100,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "mega_showdown:normal_tera_shard",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 4,
+      "rarity": 40,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "mega_showdown:fire_tera_shard",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 4,
+      "rarity": 40,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "mega_showdown:water_tera_shard",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 4,
+      "rarity": 40,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "mega_showdown:grass_tera_shard",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 4,
+      "rarity": 40,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "mega_showdown:electric_tera_shard",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 4,
+      "rarity": 40,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "mega_showdown:ice_tera_shard",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 4,
+      "rarity": 40,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "mega_showdown:fighting_tera_shard",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 4,
+      "rarity": 40,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "mega_showdown:poison_tera_shard",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 4,
+      "rarity": 40,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "mega_showdown:ground_tera_shard",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 4,
+      "rarity": 40,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "mega_showdown:flying_tera_shard",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 4,
+      "rarity": 40,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "mega_showdown:psychic_tera_shard",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 4,
+      "rarity": 40,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "mega_showdown:bug_tera_shard",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 4,
+      "rarity": 40,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "mega_showdown:rock_tera_shard",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 4,
+      "rarity": 40,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "mega_showdown:ghost_tera_shard",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 4,
+      "rarity": 40,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "mega_showdown:dragon_tera_shard",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 4,
+      "rarity": 40,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "mega_showdown:dark_tera_shard",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 4,
+      "rarity": 40,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "mega_showdown:steel_tera_shard",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 4,
+      "rarity": 40,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "mega_showdown:fairy_tera_shard",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 4,
+      "rarity": 40,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "mega_showdown:stellar_tera_shard",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 3,
+      "rarity": 200,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:master_ball",
+      "width": 4,
+      "height": 4,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 1500,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:origin_ball",
+      "width": 4,
+      "height": 4,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 2000,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:cherish_ball",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 500,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:gs_ball",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 600,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:fire_stone",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 2,
+      "rarity": 50,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:water_stone",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 2,
+      "rarity": 50,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:thunder_stone",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 2,
+      "rarity": 50,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:leaf_stone",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 2,
+      "rarity": 50,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:moon_stone",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 2,
+      "rarity": 50,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:sun_stone",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 2,
+      "rarity": 50,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:shiny_stone",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 2,
+      "rarity": 50,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:dusk_stone",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 2,
+      "rarity": 50,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:dawn_stone",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 2,
+      "rarity": 50,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:ice_stone",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 2,
+      "rarity": 50,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:relic_coin",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 3,
+      "rarity": 80,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:pixie_plate",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 250,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:draco_plate",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 250,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:dread_plate",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 250,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:earth_plate",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 250,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:fist_plate",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 250,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:flame_plate",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 250,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:icicle_plate",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 250,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:insect_plate",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 250,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:iron_plate",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 250,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:meadow_plate",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 250,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:mind_plate",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 250,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:sky_plate",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 250,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:splash_plate",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 250,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:spooky_plate",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 250,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:stone_plate",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 250,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:toxic_plate",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 250,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:zap_plate",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 250,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:helix_fossil",
+      "width": 3,
+      "height": 3,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 100,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:dome_fossil",
+      "width": 3,
+      "height": 3,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 100,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:old_amber",
+      "width": 3,
+      "height": 3,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 100,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:root_fossil",
+      "width": 3,
+      "height": 3,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 100,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:claw_fossil",
+      "width": 3,
+      "height": 3,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 100,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:skull_fossil",
+      "width": 3,
+      "height": 3,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 100,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:armor_fossil",
+      "width": 3,
+      "height": 3,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 100,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:cover_fossil",
+      "width": 3,
+      "height": 3,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 100,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:plume_fossil",
+      "width": 3,
+      "height": 3,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 100,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:jaw_fossil",
+      "width": 3,
+      "height": 3,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 100,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "cobblemon:sail_fossil",
+      "width": 3,
+      "height": 3,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 100,
+      "randomEnchantment": false
+    },
+    {
+      "itemId": "ball_stickers:dirty_seal",
+      "width": 2,
+      "height": 2,
+      "minYield": 1,
+      "maxYield": 1,
+      "rarity": 150,
+      "randomEnchantment": false
+    }
+  ]
+}

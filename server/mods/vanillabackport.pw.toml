@@ -1,0 +1,12 @@
+name = "vanillabackport"
+filename = "VanillaBackport-fabric-1.21.1-1.1.7.10.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "be520356ef53352b2d3e6ec84ca3abb7ca62f041"
+
+[update]
+[update.modrinth]
+mod-id = "vanillabackport"
+version = "111395b0aff0d809"

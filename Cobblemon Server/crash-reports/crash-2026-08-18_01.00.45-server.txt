@@ -1,0 +1,418 @@
+---- Minecraft Crash Report ----
+// I bet Cylons wouldn't have this problem.
+
+Time: 2026-08-18 01:00:45
+Description: Exception in server tick loop
+
+java.lang.NoClassDefFoundError: net/luckperms/api/LuckPermsProvider
+	at knot//net.xpressdev.shinyreroll.ShinyReroll.onInitialize$lambda$0(ShinyReroll.kt:56)
+	at knot//net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents.lambda$static$2(ServerLifecycleEvents.java:49)
+	at knot//net.minecraft.server.MinecraftServer.handler$cab000$fabric-lifecycle-events-v1$afterSetupServer(MinecraftServer.java:4643)
+	at knot//net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:668)
+	at knot//net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:281)
+	at java.base@21.0.11/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassNotFoundException: net.luckperms.api.LuckPermsProvider
+	at java.base@21.0.11/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base@21.0.11/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:239)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119)
+	at java.base@21.0.11/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 6 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Cobblemon --
+Details:
+	Version: 1.7.3
+	Is Snapshot: false
+	Git Commit: 37264af (https://gitlab.com/cable-mc/cobblemon/-/commit/37264aff0f6c90c9f9a79bbdfc712bd11929a38c)
+	Branch: HEAD
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.11, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 7442792448 bytes (7098 MiB) / 8589934592 bytes (8192 MiB) up to 8589934592 bytes (8192 MiB)
+	CPUs: 16
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 7 5700X 8-Core Processor             
+	Identifier: AuthenticAMD Family 25 Model 33 Stepping 2
+	Microarchitecture: Zen 3
+	Frequency (GHz): 3.40
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 16
+	Graphics card #0 name: AMD Radeon RX 6700 XT
+	Graphics card #0 vendor: Advanced Micro Devices, Inc.
+	Graphics card #0 VRAM (MiB): 12272.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.21045.1000
+	Memory slot #0 capacity (MiB): 16384.00
+	Memory slot #0 clockSpeed (GHz): 3.60
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MiB): 16384.00
+	Memory slot #1 clockSpeed (GHz): 3.60
+	Memory slot #1 type: DDR4
+	Virtual memory max (MiB): 65462.09
+	Virtual memory used (MiB): 29625.24
+	Swap memory total (MiB): 32768.00
+	Swap memory used (MiB): 98.77
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 181538.19, total: 850582.00
+	Space in storage for workdir (MiB): available: 181538.19, total: 850582.00
+	JVM Flags: 2 total; -Xmx8G -Xms8G
+	Fabric Mods: 
+		accessories: Accessories 1.1.0-beta.53+1.21.1
+		accessories_compat_layer: Accessories Compatibility Layer 0.1.12
+		advancementdisable: AdvancementDisable 1.0.0
+		architectury: Architectury 13.0.8
+		athena: Athena 4.0.6
+		ballchange: Ballchange 1.0-SNAPSHOT
+		balm: Balm 21.0.63
+			kuma_api: KumaAPI 21.0.8
+		beautify: Beautify 2.0.0+1.21.1
+		better_pokedex_scanner: Better Pokédex Scanner 1.0.0
+		bettercampfirepot: Better Campfire Pot 1.7.3+1.21.1-fabric
+		biome_replacer: Biome Replacer 2.1-hippo
+		c2me: Concurrent Chunk Management Engine 0.4.0-alpha.0.23+1.21.1
+			c2me-base: Concurrent Chunk Management Engine (Base) 0.4.0-alpha.0.23+1.21.1
+			c2me-fixes-chunkio-threading-issues: Concurrent Chunk Management Engine (Fixes/Chunk IO/Threading Issues) 0.4.0-alpha.0.23+1.21.1
+			c2me-fixes-general-threading-issues: Concurrent Chunk Management Engine (Fixes/General/Threading Issues) 0.4.0-alpha.0.23+1.21.1
+			c2me-fixes-worldgen-threading-issues: Concurrent Chunk Management Engine (Fixes/WorldGen/Threading Issues) 0.4.0-alpha.0.23+1.21.1
+			c2me-fixes-worldgen-vanilla-bugs: Concurrent Chunk Management Engine (Fixes/WorldGen/Vanilla Bugs) 0.4.0-alpha.0.23+1.21.1
+			c2me-notickvd: Concurrent Chunk Management Engine (No Tick View Distance) 0.4.0-alpha.0.23+1.21.1
+			c2me-opts-allocs: Concurrent Chunk Management Engine (Optimizations/Memory Allocations) 0.4.0-alpha.0.23+1.21.1
+			c2me-opts-chunkio: Concurrent Chunk Management Engine (Optimizations/Chunk IO) 0.4.0-alpha.0.23+1.21.1
+			c2me-opts-math: Concurrent Chunk Management Engine (Optimizations/Math) 0.4.0-alpha.0.23+1.21.1
+			c2me-opts-scheduling: Concurrent Chunk Management Engine (Optimizations/Scheduling) 0.4.0-alpha.0.23+1.21.1
+			c2me-opts-worldgen-general: Concurrent Chunk Management Engine (Optimizations/General WorldGen) 0.4.0-alpha.0.23+1.21.1
+			c2me-opts-worldgen-vanilla: Concurrent Chunk Management Engine (Optimizations/Vanilla WorldGen) 0.4.0-alpha.0.23+1.21.1
+			c2me-rewrites-chunk-system: Concurrent Chunk Management Engine (Rewrites/Chunk System) 0.4.0-alpha.0.23+1.21.1
+			c2me-rewrites-chunkio: Concurrent Chunk Management Engine (Rewrites/Chunk IO) 0.4.0-alpha.0.23+1.21.1
+			c2me-server-utils: Concurrent Chunk Management Engine (Server Utils) 0.4.0-alpha.0.23+1.21.1
+			c2me-threading-lighting: Concurrent Chunk Management Engine (Threading/Lighting) 0.4.0-alpha.0.23+1.21.1
+			com_github_ben-manes_caffeine_caffeine: caffeine 3.2.1
+			com_ibm_async_asyncutil: asyncutil 0.1.0
+			io_reactivex_rxjava3_rxjava: rxjava 3.1.12
+			mixinsquared: MixinSquared 0.3.7-beta.1
+			net_objecthunter_exp4j: exp4j 0.4.8
+			org_jctools_jctools-core: jctools-core 4.0.5
+			org_reactivestreams_reactive-streams: reactive-streams 1.0.4
+		capture_xp: Cobblemon Capture XP 1.7.3-fabric-1.3.0
+		carved_wood: Carved Wood 1.9.7-B
+			cardinal-components-block: Cardinal Components API (blocks) 6.1.0
+		catchcombo: CatchCombo 2.0.0
+		cloth-config: Cloth Config v15 15.0.140
+			cloth-basic-math: cloth-basic-math 0.6.1
+		cobblebase: Cobblebase 2.0.0+1.7.0
+		cobblecapsule: Cobble Capsule 2.0
+		cobblecuisine: CobbleCuisine 2.0.1
+		cobbledex: Cobbledex 1.2.0
+		cobbledgacha: Cobbled Gacha 3.0.3
+		cobbledollars: CobbleDollars 2.0.0+Beta-5.1+1.21.1
+		cobbledollars_villagers_overhaul_rca: CobbleDollars Villagers Overhaul 0.3.0
+		cobbleemi: Cobblemon EMI Plugin 1.1.4-for-cobblemon-1.7.3
+		cobblefurnies: CobbleFurnies 1.2
+		cobbleit: Cobbleit 1.0.0
+		cobblemon: Cobblemon 1.7.3+1.21.1
+		cobblemon-additions: Cobblemon Additions 4.1.6
+		cobblemon-battle-extras: Cobblemon Battle Extras 1.13.45
+		cobblemon-cards: Cobblemon Cards 1.0.0
+			com_howlite_cobblemoncards_common: common 1.0.0
+		cobblemon_battle_tower: Cobblemon Battle Tower 1.10.22
+		cobblemon_capture_notification: Cobblemon Capture Notification 1.4-fabric-1.3.0
+		cobblemon_expeditions: Cobblemon Expeditions 1.6.0
+		cobblemon_pasturecollector: Cobblemon Pasture Collector 1.7.3-fabric-1.4.1
+		cobblemon_picnic: Cobblemon Picnic 1.28.0
+		cobblemon_smartphone: Cobblemon Smartphone 1.1.3
+		cobblemon_snap: Cobblemon Snap 1.1.3
+		cobblemon_spin_tiles: Cobblemon Spin Tiles 1.0.11
+		cobblemon_utility: Cobblemon Utility+ 1.7.4
+		cobblemonalphas: CobblemonAlphas 1.4.1
+		cobblemonbattlepositions: Cobblemon Battle Positions 1.1.2
+		cobblemoncharms: Cobblemon: Charms 1.2.0-fabric
+		cobblemonexpall: Cobblemon Exp All 0.0.2
+		cobblemonextras: CobblemonExtras 1.5.0
+		cobblemonextrastructures: Cobblemon Extra Structures 1.3.0
+		cobblemongocatch: Cobblemon Go Catch 1.2
+		cobblemonminigames: Cobblemon MiniGames 3.0.2
+		cobblemonmmoskills: cobblemonmmoskills 1.2.3
+			sgui: sgui 1.6.1+1.21.1
+		cobblemonopponents: Cobblemon Trainer Structures 1.7.1
+		cobblemonraiddens: Cobblemon Raid Dens 0.11.3+1.21.1
+		cobblemonresearchtasks: Cobblemon Research Tasks 2.0
+		cobblemontrialsedition: Cobblemon Trials Edition 2.1.0
+		cobblenav: Cobblenav 2.3.3
+		cobblesafari: CobbleSafari 0.3.4
+		cobbleversebadges: COBBLEVERSE Badges 1.3
+		cobblewhistle: CobbleWhistle 1.0-SNAPSHOT
+		cobbreeding: Cobbreeding 2.2.2
+		comforts: Comforts 9.0.5+1.21.1
+			cardinal-components-base: Cardinal Components API (base) 6.1.2
+			cardinal-components-entity: Cardinal Components API (entities) 6.1.2
+			spectrelib: SpectreLib 0.17.2+1.21
+		configurable: Configurable 3.5.2
+			com_electronwill_night-config_core: core 3.8.3
+			com_electronwill_night-config_toml: toml 3.8.3
+			com_google_auto_service_auto-service: auto-service 1.0
+			org_quiltmc_parsers_gson: gson 0.3.1
+			org_quiltmc_parsers_json: json 0.3.1
+		cozyhome: Cozy Home 1.1.20
+		crd_broadcasts: CRD Broadcasts 1.4.1+1.21.1
+		crd_converters: CRD Converters 1.1.0+1.21.1
+		debugify: Debugify 1.21.1+1.0
+		defaultoptions: Default Options 21.1.7
+		droploottables: DropLootTables 1.7.3-fabric-1.9.1
+		emi: EMI 1.1.24+1.21.1+fabric
+		entityculling: EntityCulling 1.10.5
+			transition: TRansition 1.0.21
+			trender: TRender 1.0.15
+		essential_commands: Essential Commands 0.35.2-mc1.21
+			ec-core: Essential Commands Core 1.3.0-mc1.21
+			fabric-permissions-api-v0: fabric-permissions-api 0.3.1
+			org_yaml_snakeyaml: snakeyaml 2.0
+			placeholder-api: Placeholder API 2.4.0-pre.2+1.21
+			playerabilitylib: Pal 1.10.0
+		fabric-api: Fabric API 0.116.14+1.21.1
+			fabric-api-base: Fabric API Base 0.4.42+6573ed8c19
+			fabric-api-lookup-api-v1: Fabric API Lookup API (v1) 1.6.72+7b3d111d19
+			fabric-biome-api-v1: Fabric Biome API (v1) 13.0.31+d527f9fd19
+			fabric-block-api-v1: Fabric Block API (v1) 1.1.0+0bc3503219
+			fabric-block-view-api-v2: Fabric BlockView API (v2) 1.0.11+ebb2264e19
+			fabric-command-api-v1: Fabric Command API (v1) 1.2.49+f71b366f19
+			fabric-command-api-v2: Fabric Command API (v2) 2.2.28+6ced4dd919
+			fabric-commands-v0: Fabric Commands (v0) 0.2.66+df3654b319
+			fabric-content-registries-v0: Fabric Content Registries (v0) 8.0.19+b559734419
+			fabric-convention-tags-v1: Fabric Convention Tags 2.1.7+7f945d5b19
+			fabric-convention-tags-v2: Fabric Convention Tags (v2) 2.12.0+c3656daa19
+			fabric-crash-report-info-v1: Fabric Crash Report Info (v1) 0.2.29+0af3f5a719
+			fabric-data-attachment-api-v1: Fabric Data Attachment API (v1) 1.4.7+5b36e0f719
+			fabric-data-generation-api-v1: Fabric Data Generation API (v1) 20.3.0+1eb36c0719
+			fabric-dimensions-v1: Fabric Dimensions API (v1) 4.0.1+65213ef819
+			fabric-entity-events-v1: Fabric Entity Events (v1) 1.8.0+2b27e0a419
+			fabric-events-interaction-v0: Fabric Events Interaction (v0) 0.7.14+ba9dae0619
+			fabric-game-rule-api-v1: Fabric Game Rule API (v1) 1.0.53+6ced4dd919
+			fabric-item-api-v1: Fabric Item API (v1) 11.2.0+3b3cb2e819
+			fabric-item-group-api-v1: Fabric Item Group API (v1) 4.1.7+def88e3a19
+			fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 2.6.0+0865547519
+			fabric-loot-api-v2: Fabric Loot API (v2) 3.0.15+3f89f5a519
+			fabric-loot-api-v3: Fabric Loot API (v3) 1.0.3+3f89f5a519
+			fabric-message-api-v1: Fabric Message API (v1) 6.0.14+8aaf3aca19
+			fabric-networking-api-v1: Fabric Networking API (v1) 4.3.1+d30f6a7919
+			fabric-object-builder-api-v1: Fabric Object Builder API (v1) 15.2.1+40875a9319
+			fabric-particles-v1: Fabric Particles (v1) 4.0.2+6573ed8c19
+			fabric-recipe-api-v1: Fabric Recipe API (v1) 5.0.16+2475392c19
+			fabric-registry-sync-v0: Fabric Registry Sync (v0) 5.3.2+e3eddc2119
+			fabric-rendering-data-attachment-v1: Fabric Rendering Data Attachment (v1) 0.3.49+73761d2e19
+			fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 3.1.6+1daea21519
+			fabric-resource-conditions-api-v1: Fabric Resource Conditions API (v1) 4.3.0+8dc279b119
+			fabric-resource-loader-v0: Fabric Resource Loader (v0) 1.3.1+5b5275af19
+			fabric-screen-handler-api-v1: Fabric Screen Handler API (v1) 1.3.91+b559734419
+			fabric-tag-api-v1: Fabric Tag API (v1) 1.3.0+1eb36c0719
+			fabric-transfer-api-v1: Fabric Transfer API (v1) 5.4.4+7b3d111d19
+			fabric-transitive-access-wideners-v1: Fabric Transitive Access Wideners (v1) 6.2.0+45b9699719
+		fabric-language-kotlin: Fabric Language Kotlin 1.13.13+kotlin.2.4.10
+			org_jetbrains_kotlin_kotlin-reflect: kotlin-reflect 2.4.10
+			org_jetbrains_kotlin_kotlin-stdlib: kotlin-stdlib 2.4.10
+			org_jetbrains_kotlin_kotlin-stdlib-jdk7: kotlin-stdlib-jdk7 2.4.10
+			org_jetbrains_kotlin_kotlin-stdlib-jdk8: kotlin-stdlib-jdk8 2.4.10
+			org_jetbrains_kotlinx_atomicfu-jvm: atomicfu-jvm 0.33.0
+			org_jetbrains_kotlinx_kotlinx-coroutines-core-jvm: kotlinx-coroutines-core-jvm 1.11.0
+			org_jetbrains_kotlinx_kotlinx-coroutines-jdk8: kotlinx-coroutines-jdk8 1.11.0
+			org_jetbrains_kotlinx_kotlinx-datetime-jvm: kotlinx-datetime-jvm 0.8.0
+			org_jetbrains_kotlinx_kotlinx-io-bytestring-jvm: kotlinx-io-bytestring-jvm 0.9.1
+			org_jetbrains_kotlinx_kotlinx-io-core-jvm: kotlinx-io-core-jvm 0.9.1
+			org_jetbrains_kotlinx_kotlinx-serialization-cbor-jvm: kotlinx-serialization-cbor-jvm 1.11.0
+			org_jetbrains_kotlinx_kotlinx-serialization-core-jvm: kotlinx-serialization-core-jvm 1.11.0
+			org_jetbrains_kotlinx_kotlinx-serialization-json-jvm: kotlinx-serialization-json-jvm 1.11.0
+		fabricloader: Fabric Loader 0.19.3
+			mixinextras: MixinExtras 0.5.4
+		fancymenu: FancyMenu 3.9.8
+			com_github_keksuccino_japng: japng 0.5.3
+			com_github_rtyley_animated-gif-lib-for-java: animated-gif-lib-for-java animated-gif-lib-1.7
+		ferritecore: FerriteCore 7.0.3
+		fightorflight: Cobblemon Fight or Flight Fabric 0.10.9
+		forgeconfigapiport: Forge Config API Port 21.1.6
+		forgivingvoid: Forgiving Void 21.1.7
+		fusion: Fusion 1.2.12
+		fzzy_config: Fzzy Config 0.7.6+1.21
+			blue_endless_jankson: jankson 1.2.3
+			net_peanuuutz_tomlkt_tomlkt-jvm: tomlkt-jvm 0.3.7
+		geckolib: GeckoLib 4 4.9.2
+		globalpacks: Global Data- & Resourcepacks 21.0.6
+		handcrafted: Handcrafted 4.0.3
+		highlight: Highlight 3.0.0
+		hugestructureblocks: Huge Structure Blocks 1.1.6
+		iceberg: Iceberg 1.3.2
+		java: Java HotSpot(TM) 64-Bit Server VM 21
+		konkrete: Konkrete 1.9.9
+		krypton: Krypton 0.2.8
+			com_velocitypowered_velocity-native: velocity-native 3.3.0-SNAPSHOT
+		legendarymonuments: Legendary Monuments Cobbleverse
+		lenientdeath: Lenient Death 1.2.5+1.21.1
+			jackfredlib-base: JackFredLib: Base 1.4.0+1.21
+			jackfredlib-colour: JackFredLib: Colour 1.1.0+1.21
+			jackfredlib-config: JackFredLib: Config 0.2.3+1.21
+				commons-io_commons-io: commons-io 2.15.1
+			jackfredlib-lying: JackFredLib: Lying 0.5.5+1.21
+			server_translations_api: Server Translations API 2.3.1+1.21-pre2
+		libjf: LibJF 3.17.5
+			libjf-base: LibJF Base 3.17.3
+			libjf-config-commands: LibJF Config Commands 3.17.3
+			libjf-config-core-v2: LibJF Config 3.17.3
+			libjf-config-network-v0: LibJF Config: Network 3.17.3
+			libjf-data-manipulation-v0: LibJF Data Manipulation 3.17.3
+			libjf-data-v0: LibJF Data 3.17.3
+			libjf-mainhttp-v0: LibJF MainHTTP 3.17.3
+			libjf-resource-pack-entry-widgets-v0: LibJF Resource Pack Entry Widgets 3.17.3
+			libjf-translate-v1: LibJF Translate 3.17.3
+			libjf-unsafe-v0: LibJF Unsafe 3.17.5
+			libjf-web-v1: LibJF Web 3.17.3
+		lithium: Lithium 0.15.4+mc1.21.1
+		lumymon: LumyMon 0.6.6
+		mega_showdown: Cobblemon:Mega Showdown 1.8.4+1.7.3+1.21.1
+		melody: Melody 1.0.10
+		midnightlib: MidnightLib 1.7.5
+		minecraft: Minecraft 1.21.1
+		moarconcrete: Moar Concrete 1.3.1
+		mobsbegone: MobsBeGone 0.0.7
+		modernfix: ModernFix 5.25.1+mc1.21.1
+		more_cobblemon_tweaks: MoreCobblemonTweaks 1.3.3
+		mr_cobblemon_darkrai: Overgrown's Cobblemon: Darkrai 1.1.1
+		mr_cobblemon_legendarystructures: Cobblemon: Legends Untold 2.2
+		mr_complete_cobblemoncollectionwlegendaryspawns: Complete Cobblemon Collection w Legendary Spawns 2.0.1
+		mr_extra_moveanimscobblemon: Extra Move Animations (Cobblemon) 1.7v1.0.2
+		mr_legends_myths: Legends & Myths (Cobblemon) 3
+		mythsandlegends: Myths and Legends 1.9.0
+			com_moandjiezana_toml_toml4j: toml4j 0.7.2
+		neruina: Neruina 3.3.3
+			org_kohsuke_github-api: github-api 2.0-rc.6
+		nethermap: Better Nether Map 4.0.0-1.21.1
+		netherportalfix: NetherPortalFix 21.1.3
+		nochatrestrictions: No Chat Restrictions Fabric-MC1.21.11-v1.0.0
+		notenoughanimations: NotEnoughAnimations 1.12.4
+		notenoughcrashes: Not Enough Crashes 4.4.9+1.21.1
+		obc: Only Bottle Caps 1.3.0
+		owo: oωo 0.12.15.4+1.21
+			io_wispforest_endec: endec 0.1.5.1
+			io_wispforest_endec_gson: gson 0.1.3.1
+			io_wispforest_endec_jankson: jankson 0.1.3.1
+			io_wispforest_endec_netty: netty 0.1.2
+		packetfixer: Packet Fixer 3.3.1
+		particular: Particular Reforged 1.5.5
+		pasture-loot: PastureLoot 1.0.5+1.21.1
+		pickaxeminigame: pickaxeminigame 2.1.5
+		pingwheel: Ping Wheel 1.12.2
+		platform: Platform 1.3.3
+		playerxp: PlayerXP 1.0.9+1.21.1
+		pokebike: PokeBike 3.0
+		pokeblocks: Pokeblocks 1.4.0-1.21.1
+		polymer-bundled: Polymer 0.9.19+1.21.1
+			polymer-autohost: Polymer (Auto Host) 0.9.19+1.21.1
+				io_netty_netty-codec-http: netty-codec-http 4.1.82
+			polymer-blocks: Polymer (Textured Blocks) 0.9.19+1.21.1
+			polymer-common: Polymer (Common) 0.9.19+1.21.1
+				packet_tweaker: Packet Tweaker 0.5.6+1.21
+			polymer-core: Polymer (Core) 0.9.19+1.21.1
+				polymer-networking: Polymer (Networking) 0.9.19+1.21.1
+				polymer-registry-sync-manipulator: Polymer (Registry Sync Manipulator) 0.9.19+1.21.1
+			polymer-resource-pack: Polymer (Resource Pack) 0.9.19+1.21.1
+			polymer-virtual-entity: Polymer (Virtual Entity) 0.9.19+1.21.1
+		rctapi: Radical Cobblemon Trainers API 0.15.2-beta
+		rctmod: Radical Cobblemon Trainers 0.18.1-beta
+			com_github_vlsi_mxgraph_jgraphx: jgraphx 4.2.2
+			org_jgrapht_jgrapht-core: jgrapht-core 1.5.2
+			org_jgrapht_jgrapht-ext: jgrapht-ext 1.5.2
+		rechiseled: Rechiseled 1.2.4
+		repurposed_structures: Repurposed Structures 7.5.21+1.21.1-fabric
+		resourcefullib: Resourceful Lib 3.0.12
+			com_teamresourceful_bytecodecs: bytecodecs 1.1.2
+			com_teamresourceful_yabn: yabn 1.0.3
+		respackopts: Resource Pack Options 4.14.0+1.21.1.4
+			io_gitlab_jfronny_muscript-all: muscript-all 2.0.0-SNAPSHOT
+			io_gitlab_jfronny_muscript-json: muscript-json 2.0.0-SNAPSHOT
+		roughlyenoughitems: Roughly Enough Items 16.0.799
+			error_notifier: Error Notifier 1.0.11
+		rustlingspots: Rustling Spots 4.3
+		safepastures: Safe Pastures 1.1.1+1.21.1
+		scalablelux: ScalableLux 0.1.0.1+fabric.d0d58ab
+		shinyreroll: ShinyReroll 1.1.0+1.21.1
+			adventure-platform-fabric: adventure-platform-fabric 5.14.2
+				net_kyori_adventure-api: adventure-api 4.17.0
+				net_kyori_adventure-key: adventure-key 4.17.0
+				net_kyori_adventure-platform-api: adventure-platform-api 4.3.3
+				net_kyori_adventure-text-logger-slf4j: adventure-text-logger-slf4j 4.17.0
+				net_kyori_adventure-text-minimessage: adventure-text-minimessage 4.17.0
+				net_kyori_adventure-text-serializer-ansi: adventure-text-serializer-ansi 4.17.0
+				net_kyori_adventure-text-serializer-gson: adventure-text-serializer-gson 4.17.0
+				net_kyori_adventure-text-serializer-json: adventure-text-serializer-json 4.17.0
+				net_kyori_adventure-text-serializer-plain: adventure-text-serializer-plain 4.17.0
+				net_kyori_ansi: ansi 1.1.0
+				net_kyori_examination-api: examination-api 1.3.0
+				net_kyori_examination-string: examination-string 1.3.0
+				net_kyori_option: option 1.0.0
+		simpletms: SimpleTMs 2.3.3
+		sophisticatedbackpacks: Sophisticated Backpacks 1.21.1-3.23.4.3.106
+		sophisticatedcore: Sophisticated Core 1.21.1-1.2.9.21.168
+			porting_lib_conditions: Porting Lib Conditions 3.1.0-beta.47+1.21.1
+			porting_lib_core: Porting Lib Core 3.1.0-beta.47+1.21.1
+			porting_lib_fluids: Porting Lib Fluids 3.1.0-beta.47+1.21.1
+			porting_lib_item_abilities: Porting Lib Item Abilities 3.1.0-beta.47+1.21.1
+			porting_lib_lazy_registration: Porting Lib Lazy Register 3.1.0-beta.47+1.21.1
+			porting_lib_level_events: Porting Lib Level Events 3.1.0-beta.47+1.21.1
+			porting_lib_loot: Porting Lib Loot 3.1.0-beta.47+1.21.1
+			porting_lib_model_loader: Porting Lib Model Loader 3.1.0-beta.47+1.21.1
+			porting_lib_render_types: Porting Lib Render Types 3.1.0-beta.47+1.21.1
+			porting_lib_transfer: Porting Lib Transfer 3.1.0-beta.47+1.21.1
+			team_reborn_energy: Energy 4.1.0
+		sophisticatedstorage: Sophisticated Storage 1.21.1-1.3.7.9.139
+		sound_physics_remastered: Sound Physics Remastered 1.21.1-1.5.1
+		spawn_notification: Spawn Notification 1.7.3-fabric-2.3.0
+		stackdeobfuscator: StackDeobfuscator 1.4.3+08e71cc
+			net_fabricmc_mapping-io: mapping-io 0.6.1
+			stackdeobfuscator-common: StackDeobfuscator Common 1.4.3+08e71cc
+		supermartijn642configlib: SuperMartijn642's Config Lib 1.1.8
+		supermartijn642corelib: SuperMartijn642's Core Lib 1.1.21
+		tim_core: Tim Core 1.7.3-fabric-1.32.0
+		tmcraft: TM Craft 1.4.18+1.7.3
+		toms_storage: Tom's Simple Storage Mod 2.3.0
+		traineraccessories: TrainerAccessories 1.7.2-1.0.0
+		trainerattributeslib: TrainerAttributesLib 1.7.2-1.0.2
+			io_wispforest_accessories-common: accessories-common 1.1.0-beta.52+1.21.1-mojmap
+		trinkets: Trinkets 3.10.0
+		tsflareons-item-core: TSFlareon's Item Core 1.0.0
+		vanillabackport: VanillaBackport 1.1.7.10
+		villagerconfig: VillagerConfig 4.5.4
+			fiber: fiber 0.23.0-2
+		virtualloot: Cobblemon Virtual Loot 0.3
+		waystones: Waystones 21.1.37
+		wild_battle_api: Wild Battle API 1.1.2
+		xaerominimap: Xaero's Minimap 26.4.2
+			xaerolib: XaeroLib 1.7.1
+		xaeroworldmap: Xaero's World Map 1.44.2
+		yet_another_config_lib_v3: YetAnotherConfigLib 3.8.2+1.21.1-fabric
+			com_twelvemonkeys_common_common-image: common-image 3.12.0
+			com_twelvemonkeys_common_common-io: common-io 3.12.0
+			com_twelvemonkeys_common_common-lang: common-lang 3.12.0
+			com_twelvemonkeys_imageio_imageio-core: imageio-core 3.12.0
+			com_twelvemonkeys_imageio_imageio-metadata: imageio-metadata 3.12.0
+			com_twelvemonkeys_imageio_imageio-webp: imageio-webp 3.12.0
+		zamega: zamega 1.7.3
+		zfastnoise: Fast Noise 1.0.13+1.21
+	Server Running: true
+	Player Count: 0 / 20; []
+	Active Data Packs: vanilla, file/COBBLEVERSE - No Ender Dragon.zip, file/COBBLEVERSE - No Hunger.zip, file/COBBLEVERSE-DP-v31.zip, file/COBBLEVERSE-Loot-DP-v11.zip, file/COBBLEVERSE-RCT-DP-v20.zip, file/PokeCenterPCs-DP.zip, fabric, accessories, balm (incompatible), beautify, bettercampfirepot, carved_wood (incompatible), cobblebase, cobblecapsule (incompatible), cobblecuisine, cobbledex, cobbledgacha (incompatible), cobbledollars, cobblefurnies, cobblemon, cobblemon-additions, cobblemon-cards, cobblemon_battle_tower, cobblemon_expeditions, cobblemon_pasturecollector, cobblemon_picnic, cobblemon_smartphone, cobblemon_snap, cobblemon_spin_tiles, cobblemon_utility, cobblemonalphas, cobblemonbattlepositions, cobblemoncharms, cobblemonexpall, cobblemonextrastructures, cobblemongocatch, cobblemonminigames, cobblemonmmoskills, cobblemonopponents, cobblemonraiddens, cobblemonresearchtasks, cobblemontrialsedition, cobblenav, cobblesafari (incompatible), cobbleversebadges, cobblewhistle, cobbreeding, comforts (incompatible), cozyhome, crd_broadcasts, fabric-convention-tags-v2, fightorflight, handcrafted, io_wispforest_accessories-common, legendarymonuments, lenientdeath, libjf-data-v0, lumymon, mega_showdown, moarconcrete, mr_cobblemon_darkrai, mr_cobblemon_legendarystructures (incompatible), mr_complete_cobblemoncollectionwlegendaryspawns, mr_extra_moveanimscobblemon, mr_legends_myths, mythsandlegends, neruina, obc, particular (incompatible), pickaxeminigame, pokebike, pokeblocks, porting_lib_item_abilities, rctmod, rechiseled (incompatible), repurposed_structures, server_translations_api, simpletms, sophisticatedbackpacks (incompatible), sophisticatedcore (incompatible), sophisticatedstorage (incompatible), spawn_notification, supermartijn642corelib (incompatible), tim_core, tmcraft, toms_storage, traineraccessories, trainerattributeslib, trinkets, tsflareons-item-core, vanillabackport, virtualloot, waystones (incompatible), zamega, carved_wood:carvedwood_vanillabackport_compat (incompatible), cobblemon:repurposedstructurescobblemon, lumymon:compat
+	Available Data Packs: file/COBBLEVERSE - No Ender Dragon.zip, file/COBBLEVERSE - No Hunger.zip, file/COBBLEVERSE-DP-v31.zip, file/COBBLEVERSE-Loot-DP-v11.zip, file/COBBLEVERSE-RCT-DP-v20.zip, file/PokeCenterPCs-DP.zip, fabric, accessories, balm (incompatible), beautify, bettercampfirepot, carved_wood (incompatible), cobblebase, cobblecapsule (incompatible), cobblecuisine, cobbledex, cobbledgacha (incompatible), cobbledollars, cobblefurnies, cobblemon, cobblemon-additions, cobblemon-cards, cobblemon_battle_tower, cobblemon_expeditions, cobblemon_pasturecollector, cobblemon_picnic, cobblemon_smartphone, cobblemon_snap, cobblemon_spin_tiles, cobblemon_utility, cobblemonalphas, cobblemonbattlepositions, cobblemoncharms, cobblemonexpall, cobblemonextrastructures, cobblemongocatch, cobblemonminigames, cobblemonmmoskills, cobblemonopponents, cobblemonraiddens, cobblemonresearchtasks, cobblemontrialsedition, cobblenav, cobblesafari (incompatible), cobbleversebadges, cobblewhistle, cobbreeding, comforts (incompatible), cozyhome, crd_broadcasts, fabric-convention-tags-v2, fightorflight, handcrafted, io_wispforest_accessories-common, legendarymonuments, lenientdeath, libjf-data-v0, lumymon, mega_showdown, moarconcrete, mr_cobblemon_darkrai, mr_cobblemon_legendarystructures (incompatible), mr_complete_cobblemoncollectionwlegendaryspawns, mr_extra_moveanimscobblemon, mr_legends_myths, mythsandlegends, neruina, obc, particular (incompatible), pickaxeminigame, pokebike, pokeblocks, porting_lib_item_abilities, rctmod, rechiseled (incompatible), repurposed_structures, server_translations_api, simpletms, sophisticatedbackpacks (incompatible), sophisticatedcore (incompatible), sophisticatedstorage (incompatible), spawn_notification, supermartijn642corelib (incompatible), tim_core, tmcraft, toms_storage, traineraccessories, trainerattributeslib, trinkets, tsflareons-item-core, vanillabackport, virtualloot, waystones (incompatible), zamega, cobblemon:repurposedstructurescobblemon, lumymon:compat, carved_wood:carvedwood_vanillabackport_compat (incompatible), vanilla, trade_rebalance, bundle
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Experimental
+	World Seed: -8698378307736638717
+	Is Modded: Definitely; Server brand changed to 'fabric'
+	Type: Dedicated Server (map_server.txt)
+	Suspected Mods: ShinyReroll (shinyreroll), Fabric Loader (fabricloader), Fabric Lifecycle Events (v1) (fabric-lifecycle-events-v1)

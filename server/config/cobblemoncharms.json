@@ -1,0 +1,98 @@
+{
+  "quick_toggles": {
+    "enable_all_ev_items": false,
+    "enable_all_iv_items": false,
+    "enable_all_type_charms": true,
+    "grant_charm_on_advancement": true
+  },
+  "charms": {
+    "charm_effect_requires_advancement": true,
+    "shiny_charm": {
+      "enabled": true,
+      "grant_on_advancement": true,
+      "multiplier": 3.0,
+      "dex_threshold": 100.0
+    },
+    "exp_charm": {
+      "enabled": true,
+      "grant_on_advancement": true,
+      "multiplier": 1.5
+    },
+    "catch_charm": {
+      "enabled": true,
+      "grant_on_advancement": true,
+      "multiplier": 2.0
+    },
+    "multi_charm": {
+      "enabled": true
+    },
+    "type_charms": {
+      "enable": {
+        "bug": true,
+        "dark": true,
+        "dragon": true,
+        "electric": true,
+        "fairy": true,
+        "fighting": true,
+        "fire": true,
+        "flying": true,
+        "ghost": true,
+        "grass": true,
+        "ground": true,
+        "ice": true,
+        "normal": true,
+        "poison": true,
+        "psychic": true,
+        "rock": true,
+        "steel": true,
+        "water": true
+      },
+      "grant_on_advancement": {
+        "bug": true,
+        "dark": true,
+        "dragon": true,
+        "electric": true,
+        "fairy": true,
+        "fighting": true,
+        "fire": true,
+        "flying": true,
+        "ghost": true,
+        "grass": true,
+        "ground": true,
+        "ice": true,
+        "normal": true,
+        "poison": true,
+        "psychic": true,
+        "rock": true,
+        "steel": true,
+        "water": true
+      },
+      "radius": 64.0,
+      "match_multiplier": 5.0,
+      "non_match_multiplier": 0.5,
+      "threshold_percentage": 80.0
+    }
+  },
+  "training_items": {
+    "ev_items": {
+      "enable_super_carbos": true,
+      "enable_super_protein": true,
+      "enable_super_hp_up": true,
+      "enable_super_iron": true,
+      "enable_super_calcium": true,
+      "enable_super_zinc": true,
+      "ev_increase_amount": 100
+    },
+    "iv_items": {
+      "enable_super_health_candy": true,
+      "enable_super_mighty_candy": true,
+      "enable_super_tough_candy": true,
+      "enable_super_smart_candy": true,
+      "enable_super_courage_candy": true,
+      "enable_super_quick_candy": true,
+      "enable_gold_bottle_cap": true,
+      "iv_increase_amount": 10,
+      "gold_bottle_cap_iv_amount": 31
+    }
+  }
+}

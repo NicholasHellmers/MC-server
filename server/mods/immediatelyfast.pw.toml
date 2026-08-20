@@ -1,0 +1,12 @@
+name = "immediatelyfast"
+filename = "ImmediatelyFast-Fabric-1.6.11+1.21.1.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "e4e125088d8654f91562e78a00bdec22f74bc07f"
+
+[update]
+[update.modrinth]
+mod-id = "immediatelyfast"
+version = "f80f7d1d046c6579"

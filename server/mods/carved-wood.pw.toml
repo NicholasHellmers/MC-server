@@ -1,0 +1,12 @@
+name = "carved-wood"
+filename = "Carved Wood-fabric-1.21.1-1.9.7-B.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "af0a1cf8ad03421cb3e5522db432b5c224317309"
+
+[update]
+[update.modrinth]
+mod-id = "carved-wood"
+version = "be1f1a67b76f5d92"

@@ -1,0 +1,12 @@
+name = "cobblewhistle"
+filename = "cobblewhistle-1.0-SNAPSHOT-patched.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "74216596de766aa5af36f7034a32d0744b607c3a"
+
+[update]
+[update.modrinth]
+mod-id = "cobblewhistle"
+version = "d94fcedc3affed13"

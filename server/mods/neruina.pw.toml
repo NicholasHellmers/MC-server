@@ -1,0 +1,12 @@
+name = "neruina"
+filename = "neruina-3.3.3+1.21.1-fabric.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "33cfda42d642db4854c3617b75f511669ff43d6b"
+
+[update]
+[update.modrinth]
+mod-id = "neruina"
+version = "f617b4d840c7fb2e"

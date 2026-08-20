@@ -1,0 +1,12 @@
+name = "c2me"
+filename = "c2me-fabric-mc1.21.1-0.4.0-alpha.0.23.jar"
+side = "server"
+
+[download]
+hash-format = "sha1"
+hash = "3a0a64877ba57d1f1198c7c6805719581859337d"
+
+[update]
+[update.modrinth]
+mod-id = "c2me"
+version = "4f05e0535115c7cd"

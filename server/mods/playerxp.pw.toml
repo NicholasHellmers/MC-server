@@ -1,0 +1,12 @@
+name = "playerxp"
+filename = "playerxp-fabric-1.0.9+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "34804e9a9d39dc741dbf4952ddab0223e92820cd"
+
+[update]
+[update.modrinth]
+mod-id = "playerxp"
+version = "9e310afa737eab74"

@@ -1,0 +1,12 @@
+name = "roughlyenoughitems"
+filename = "RoughlyEnoughItems-16.0.799-fabric.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "ea0efe8b13a52e9d8d5a18d062810117a7efec0f"
+
+[update]
+[update.modrinth]
+mod-id = "roughlyenoughitems"
+version = "e4b16c69dc3cc4f7"

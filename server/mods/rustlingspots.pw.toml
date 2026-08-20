@@ -1,0 +1,12 @@
+name = "rustlingspots"
+filename = "rustlingspots-fabric-4.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b992e207eebe73dcb0c0be43e8cbffedade9bf5c"
+
+[update]
+[update.modrinth]
+mod-id = "rustlingspots"
+version = "a1f6e2b33ee1cbf7"

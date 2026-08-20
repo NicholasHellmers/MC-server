@@ -1,0 +1,9 @@
+{
+  "maxPokemonSelected": 10,
+  "chancePerPokemon": 10.0,
+  "allowLegendary": false,
+  "allowMythical": false,
+  "allowUltraBeast": false,
+  "allowParadox": false,
+  "allowUnimplemented": false
+}

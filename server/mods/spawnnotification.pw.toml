@@ -1,0 +1,12 @@
+name = "spawnnotification"
+filename = "spawnnotification-fabric-1.7.3-2.3.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9dd176d13b4fcfc23491ab1c7ad361485fa33a7a"
+
+[update]
+[update.modrinth]
+mod-id = "spawnnotification"
+version = "b40fd364b85ff175"

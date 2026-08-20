@@ -1,0 +1,52 @@
+# Python / UV virtual environments
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+coverage.json
+htmlcov/
+
+# Secrets & Environment variables
+.env
+.env.local
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+
+# Minecraft Server data & binaries
+*.jar
+*.jar.disabled
+server/data/
+server/world/
+server/logs/
+server/crash-reports/
+server/.fabric/
+server/.mixin.out/
+server/libraries/
+server/versions/
+server/usercache.json
+server/ops.json
+server/whitelist.json
+server/banned-ips.json
+server/banned-players.json
+server/fancymenu_data/
+server/legendary-monuments-data/
+server/stackdeobf_mappings/
+server/fabricloader.log
+
+# Backups & Archives
+*.tar.gz
+*.zip
+*.mrpack
+backups/
+
+# OS / Editor Files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

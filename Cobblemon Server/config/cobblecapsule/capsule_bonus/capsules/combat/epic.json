@@ -1,0 +1,42 @@
+{
+  "entries": [
+    {
+      "required_mod": "cobblemon_utility",
+      "rolls": { "min": 1, "max": 2 },
+      "allow_duplicates": false,
+      "items": [
+        { "id": "cobblemon_utility:goldencap", "weight": 2, "stack": [1, 1] },
+        { "id": "cobblemon_utility:atksilvercap", "weight": 3, "stack": [1, 1] },
+        { "id": "cobblemon_utility:spatksilvercap", "weight": 3, "stack": [1, 1] },
+        { "id": "cobblemon_utility:spdefsilvercap", "weight": 3, "stack": [1, 1] },
+        { "id": "cobblemon_utility:speedsilvercap", "weight": 3, "stack": [1, 1] },
+        { "id": "cobblemon_utility:defsilvercap", "weight": 3, "stack": [1, 1] },
+        { "id": "cobblemon_utility:hpsilvercap", "weight": 3, "stack": [1, 1] },
+        { "id": "cobblemon_utility:woodencap", "weight": 5, "stack": [1, 1] },
+        { "id": "cobblemon_utility:voidcap", "weight": 4, "stack": [1, 1] },
+        { "id": "cobblemon_utility:voidfeather", "weight": 4, "stack": [1, 1] },
+        { "id": "cobblemon_utility:atkobsidiancap", "weight": 4, "stack": [1, 1] },
+        { "id": "cobblemon_utility:spatkobsidiancap", "weight": 4, "stack": [1, 1] },
+        { "id": "cobblemon_utility:defobsidiancap", "weight": 4, "stack": [1, 1] },
+        { "id": "cobblemon_utility:spdefobsidiancap", "weight": 4, "stack": [1, 1] },
+        { "id": "cobblemon_utility:speedobsidiancap", "weight": 4, "stack": [1, 1] },
+        { "id": "cobblemon_utility:hpobsidiancap", "weight": 4, "stack": [1, 1] },
+        { "id": "cobblemon_utility:devolutionrelic", "weight": 5, "stack": [1, 2] },
+        { "id": "cobblemon_utility:stalepoketreat", "weight": 7, "stack": [1, 3] },
+        { "id": "cobblemon_utility:commoncandy", "weight": 7, "stack": [1, 3] },
+        { "id": "cobblemon_utility:poketreat", "weight": 7, "stack": [1, 3] }
+      ]
+    },
+    {
+      "required_mod": "mega_showdown",
+      "rolls": { "min": 1, "max": 1 },
+      "allow_duplicates": false,
+      "items": [
+        { "id": "mega_showdown:z_ring", "weight": 1, "stack": [1, 1] },
+        { "id": "mega_showdown:tera_orb", "weight": 1, "stack": [1, 1] },
+        { "id": "mega_showdown:mega_bracelet", "weight": 1, "stack": [1, 1] },
+        { "id": "mega_showdown:dynamax_band", "weight": 1, "stack": [1, 1] }
+      ]
+    }
+  ]
+}

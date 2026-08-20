@@ -1,0 +1,12 @@
+name = "cobeffectiveness"
+filename = "cobeffectiveness-fabric-0.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6ddc3aef5266df8c509955846e75bbd6810fdeb0"
+
+[update]
+[update.modrinth]
+mod-id = "cobeffectiveness"
+version = "91961d2b10a8af0b"

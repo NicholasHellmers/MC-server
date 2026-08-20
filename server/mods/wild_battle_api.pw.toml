@@ -1,0 +1,12 @@
+name = "wild_battle_api"
+filename = "wild_battle_api-fabric-1.1.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "ca156e0cc210162f30b3a4a0d5179984a5ceb242"
+
+[update]
+[update.modrinth]
+mod-id = "wild_battle_api"
+version = "1154c26f932ff8a2"

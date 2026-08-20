@@ -1,0 +1,63 @@
+{
+  "general": {
+    "jobSearchRadius": 10,
+    "enableSafetyTeleport": true,
+    "safetyTeleportDistance": 30,
+    "enableUnstickTeleport": true,
+    "keepEntitiesAlive": false,
+    "enforceVersionCheck": false,
+    "enableConsoleLogging": false,
+    "mainButtonCorner": "BOTTOM_RIGHT"
+  },
+  "cry": {
+    "cryEnabled": true,
+    "cryVolume": 30
+  },
+  "skills": {
+    "harvestingEnabled": true,
+    "fishingEnabled": true,
+    "guardEnabled": true,
+    "healingEnabled": true,
+    "recruitingEnabled": true,
+    "generationEnabled": true,
+    "utilityEnabled": true,
+    "gathererEnabled": true,
+    "gathererPickupPlayerDrops": true,
+    "gathererCooldownSeconds": 10
+  },
+  "passiveXp": {
+    "enabled": true,
+    "xpPercent": 5,
+    "intervalSeconds": 60
+  },
+  "mentor": {
+    "mentorEnabled": true,
+    "mentorMaxBoost": 1.0
+  },
+  "recruiterRates": {
+    "commonRate": 93.8,
+    "uncommonRate": 5.0,
+    "rareRate": 1.0,
+    "ultraRareRate": 0.2,
+    "spawnCooldownSeconds": 300
+  },
+  "irrigator": {
+    "irrigatorEnabled": true,
+    "irrigatorCooldownSeconds": 3,
+    "irrigatorRadius": 1
+  },
+  "finder": {
+    "finderCooldownSeconds": 240
+  },
+  "buffs": {
+    "speedBoostEnabled": true,
+    "strengthBoostEnabled": true,
+    "resistanceBoostEnabled": true,
+    "nightVisionEnabled": true,
+    "waterBreathingEnabled": true,
+    "jumpBoostEnabled": true,
+    "hasteBoostEnabled": true,
+    "saturationBoostEnabled": true,
+    "auraEnabled": true
+  }
+}

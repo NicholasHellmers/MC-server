@@ -1,0 +1,12 @@
+name = "traineraccessories"
+filename = "TrainerAccessories-1.7.2-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "bf264a653bc09e379c631268d66def656f0c9181"
+
+[update]
+[update.modrinth]
+mod-id = "traineraccessories"
+version = "06b067c6de6c59d9"

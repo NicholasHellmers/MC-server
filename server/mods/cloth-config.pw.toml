@@ -1,0 +1,12 @@
+name = "cloth-config"
+filename = "cloth-config-15.0.140-fabric.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5d82342a2df53fd6df712bfdd583a811572918a4"
+
+[update]
+[update.modrinth]
+mod-id = "cloth-config"
+version = "1b3f5db4fc1d4817"

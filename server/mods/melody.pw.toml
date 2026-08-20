@@ -1,0 +1,12 @@
+name = "melody"
+filename = "melody_fabric_1.0.10_MC_1.21.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "5624eea73f251c70a9489192d326f9b4aab3b13c"
+
+[update]
+[update.modrinth]
+mod-id = "melody"
+version = "a7e13e66d3d406b2"

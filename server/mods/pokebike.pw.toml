@@ -1,0 +1,12 @@
+name = "pokebike"
+filename = "pokebike-fabric-3.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "93b844d695d171da4d41c6afeb08ba476538a930"
+
+[update]
+[update.modrinth]
+mod-id = "pokebike"
+version = "17ba78110a26f044"

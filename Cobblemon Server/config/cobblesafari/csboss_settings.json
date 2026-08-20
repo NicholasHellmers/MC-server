@@ -1,0 +1,16 @@
+{
+  "uniqueLootCommunism": false,
+  "maximumConcurrentFights": 5,
+  "maximumFightDuration": 900,
+  "defaultPlayerRadius": 24,
+  "defaultBlockRadius": 2,
+  "maxConcurrentBulletsPerSession": 256,
+  "maxPlayerRadius": 64,
+  "maxBlockRadius": 8,
+  "arenaYTolerance": 16,
+  "deathReasonCowardice": "death.attack.csboss_cowardice",
+  "balmDispenserRechargeSeconds": 30,
+  "balmDispenserBalmsPerDispense": 1,
+  "balmBossDamagePercent": 5,
+  "showFightingPokemons": true
+}

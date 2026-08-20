@@ -1,0 +1,12 @@
+name = "entityculling"
+filename = "entityculling-fabric-1.10.5-mc1.21.1.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "7e8c9c44049e6575e75d1fe38d6006306b8d5623"
+
+[update]
+[update.modrinth]
+mod-id = "entityculling"
+version = "5072ddbfc8dbbef4"

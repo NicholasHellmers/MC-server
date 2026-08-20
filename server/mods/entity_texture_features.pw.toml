@@ -1,0 +1,12 @@
+name = "entity_texture_features"
+filename = "entity_texture_features_1.21-fabric-7.1.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "2020e3884ada68d7aba1d54f182d32d511c40e5f"
+
+[update]
+[update.modrinth]
+mod-id = "entity_texture_features"
+version = "ee8ef05dab35287e"

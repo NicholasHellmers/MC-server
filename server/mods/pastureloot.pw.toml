@@ -1,0 +1,12 @@
+name = "pastureloot"
+filename = "pastureLoot-1.0.5+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "cc6bbf60b6a08d5b4f5c6416aa0279d92f761c73"
+
+[update]
+[update.modrinth]
+mod-id = "pastureloot"
+version = "23ca054e7f3808e5"

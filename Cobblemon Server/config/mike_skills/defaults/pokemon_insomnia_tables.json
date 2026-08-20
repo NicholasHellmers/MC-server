@@ -1,0 +1,574 @@
+{
+  "_README": [
+    "════════════════════════════════════════════════════════════════════════",
+    "CobblemonMikeSkills — Spawn Table",
+    "Edit this file to customise encounters. Reload in-game with:",
+    "  /pokeskill config → Reload Tables",
+    "A read-only backup of the original defaults is always kept in the",
+    "  defaults/ sub-folder next to this file.",
+    "════════════════════════════════════════════════════════════════════════",
+    "",
+    "FILE STRUCTURE",
+    "  Top-level keys are biome selectors (e.g. \"is_forest\", \"is_desert\", \"any\").",
+    "  The key \"any\" matches every biome and is merged with biome-specific groups.",
+    "  Each key maps to an ARRAY of Spawn Groups.",
+    "",
+    "SPAWN GROUP FIELDS",
+    "  rarity      Display label only (COMMON | UNCOMMON | RARE | VERY_RARE | ULTRA_RARE | LEGENDARY).",
+    "              Does not affect logic — purely cosmetic in GUIs and logs.",
+    "  weight      Relative selection probability for this group vs. other eligible groups.",
+    "              Higher \u003d more likely to be chosen. Groups are NOT cumulative.",
+    "              Exactly ONE group is selected per encounter roll.",
+    "              Recommended ranges: COMMON\u003d60 | UNCOMMON\u003d25 | RARE\u003d15 | EPIC\u003d10 | LEGENDARY\u003d0.2",
+    "  conditions  All fields are optional. Omitting a field means \u0027no restriction\u0027.",
+    "  rewards     Array of possible rewards inside this group. One reward is picked",
+    "              via its own weighted random among the group\u0027s entries.",
+    "",
+    "CONDITIONS FIELDS (all optional)",
+    "  minSkillLevel / maxSkillLevel   Player skill level required (integer, 0–100).",
+    "  minWaterPool  / maxWaterPool    Adjacent water blocks at the bobber (fishing only).",
+    "  blockMinedAny                   Array of block registry keys (digging only).",
+    "                                  Example: [\"minecraft:gravel\", \"minecraft:red_sand\"]",
+    "                                  Empty array \u003d any block accepted.",
+    "  weather       \"clear\" | \"raining\" | \"thundering\"   (\"raining\" also matches thundering)",
+    "  timeOfDay     \"day\" | \"night\"",
+    "  minY / maxY   Y-coordinate of the action (bobber for fishing, target block for dig/cut).",
+    "  minExcavationScore / maxExcavationScore   Cumulative score from the excavation action.",
+    "  minAttentionRequired   Minimum TypeAttention value; use for sustained-play gating.",
+    "  dimension     Full registry key, e.g. \"minecraft:overworld\" or \"minecraft:the_nether\".",
+    "  maxLightLevel Light level ceiling (0-15). Default 15 \u003d no restriction.",
+    "                Set to e.g. 7 to restrict this group to dark areas.",
+    "",
+    "REWARD TYPES",
+    "  type: \"pokemon\"",
+    "    pokemon    Cobblemon species name (e.g. \"magikarp\", \"charizard\").",
+    "    minLevel / maxLevel   Spawn level range (integers).",
+    "    nbt        Extra Cobblemon property tokens appended to the property string.",
+    "               Supports: form, ability, held_item, nature, gender, moves, etc.",
+    "               Example: \"form\u003dalola ability\u003dsnow_warning held_item\u003doran_berry\"",
+    "    weight     Relative probability within this group\u0027s reward pool.",
+    "",
+    "  type: \"mob\"",
+    "    entityId   Full entity registry key — vanilla OR any installed mod.",
+    "               Example: \"minecraft:zombie\"  |  \"alexsmobs:grizzly_bear\"",
+    "               The entity must extend Mob (standard hostile/passive mob). Decorative",
+    "               entities (boats, minecarts) are not supported.",
+    "    nbt        SNBT compound applied after spawn (Health, CustomName, AI flags, etc.).",
+    "               Positional / identity keys (UUID, Pos, Rotation) are stripped automatically.",
+    "               Example: \"{Health:80.0f,CustomName:\u0027{\\\"text\\\":\\\"Boss\\\"}\u0027,CustomNameVisible:1b}\"",
+    "    weight     Relative probability within this group\u0027s reward pool.",
+    "",
+    "  type: \"item\"",
+    "    item       Full item registry key — vanilla OR any installed mod.",
+    "               Example: \"minecraft:emerald\"  |  \"farmersdelight:tomato_seeds\"",
+    "    nbt        DataComponentPatch SNBT (Minecraft 1.21+ format) for enchantments,",
+    "               custom names, lore, durability, etc.",
+    "               Example: \"{changed:{\\\"minecraft:enchantments\\\":{levels:{\\\"minecraft:sharpness\\\":5}}}}\"",
+    "    entityId   Optional bearer mob. If set, this mob spawns holding the item and",
+    "               drops it at 100% chance. Accepts any Mob subclass (vanilla or modded).",
+    "    minAmount / maxAmount   Stack size range (integers). Default: 1.",
+    "    weight     Relative probability within this group\u0027s reward pool.",
+    "",
+    "HOW TO FIND MOD REGISTRY KEYS",
+    "  Items: press F3+H in-game, then hover over the item — the ID appears in the tooltip.",
+    "  Mobs:  check the mod\u0027s wiki, or look in its lang/ files for entity translation keys.",
+    "         The registry key is typically modid:entity_name (snake_case).",
+    "",
+    "════════════════════════════════════════════════════════════════════════"
+  ],
+  "any": [
+    {
+      "rarity": "COMMON",
+      "weight": 100.0,
+      "conditions": {
+        "maxSkillLevel": 20
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "gastly",
+          "minLevel": 5,
+          "maxLevel": 15
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "shuppet",
+          "minLevel": 5,
+          "maxLevel": 15
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "duskull",
+          "minLevel": 5,
+          "maxLevel": 15
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.15,
+          "pokemon": "litwick",
+          "minLevel": 5,
+          "maxLevel": 15
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.15,
+          "pokemon": "misdreavus",
+          "minLevel": 5,
+          "maxLevel": 15
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.1,
+          "pokemon": "drowzee",
+          "minLevel": 5,
+          "maxLevel": 15
+        },
+        {
+          "type": "item",
+          "weight": 0.05,
+          "item": "cobblemon:protein",
+          "entityId": "minecraft:zombie",
+          "minAmount": 1,
+          "maxAmount": 1
+        },
+        {
+          "type": "mob",
+          "weight": 0.1,
+          "entityId": "minecraft:zombie"
+        }
+      ]
+    },
+    {
+      "rarity": "COMMON",
+      "weight": 80.0,
+      "conditions": {
+        "minSkillLevel": 21,
+        "maxSkillLevel": 30
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.15,
+          "pokemon": "gastly",
+          "minLevel": 10,
+          "maxLevel": 20
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.15,
+          "pokemon": "shuppet",
+          "minLevel": 10,
+          "maxLevel": 20
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.15,
+          "pokemon": "misdreavus",
+          "minLevel": 10,
+          "maxLevel": 20
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.15,
+          "pokemon": "duskull",
+          "minLevel": 10,
+          "maxLevel": 20
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.15,
+          "pokemon": "litwick",
+          "minLevel": 10,
+          "maxLevel": 20
+        },
+        {
+          "type": "mob",
+          "weight": 0.1,
+          "entityId": "minecraft:phantom"
+        }
+      ]
+    },
+    {
+      "rarity": "UNCOMMON",
+      "weight": 20.0,
+      "conditions": {
+        "minSkillLevel": 21,
+        "maxSkillLevel": 30
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.3,
+          "pokemon": "haunter",
+          "minLevel": 20,
+          "maxLevel": 30
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.25,
+          "pokemon": "banette",
+          "minLevel": 20,
+          "maxLevel": 30
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.25,
+          "pokemon": "dusclops",
+          "minLevel": 20,
+          "maxLevel": 30
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "lampent",
+          "minLevel": 20,
+          "maxLevel": 30
+        }
+      ]
+    },
+    {
+      "rarity": "COMMON",
+      "weight": 60.0,
+      "conditions": {
+        "minSkillLevel": 31,
+        "maxSkillLevel": 40
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "haunter",
+          "minLevel": 25,
+          "maxLevel": 35
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "banette",
+          "minLevel": 25,
+          "maxLevel": 35
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "dusclops",
+          "minLevel": 25,
+          "maxLevel": 35
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "lampent",
+          "minLevel": 25,
+          "maxLevel": 35
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "phantump",
+          "minLevel": 25,
+          "maxLevel": 35
+        }
+      ]
+    },
+    {
+      "rarity": "RARE",
+      "weight": 40.0,
+      "conditions": {
+        "minSkillLevel": 31,
+        "maxSkillLevel": 40
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "gengar",
+          "minLevel": 35,
+          "maxLevel": 45
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "mismagius",
+          "minLevel": 35,
+          "maxLevel": 45
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "dusknoir",
+          "minLevel": 35,
+          "maxLevel": 45
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "chandelure",
+          "minLevel": 35,
+          "maxLevel": 45
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "trevenant",
+          "minLevel": 35,
+          "maxLevel": 45
+        }
+      ]
+    },
+    {
+      "rarity": "COMMON",
+      "weight": 50.0,
+      "conditions": {
+        "minSkillLevel": 41,
+        "maxSkillLevel": 50
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "gengar",
+          "minLevel": 40,
+          "maxLevel": 55
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "chandelure",
+          "minLevel": 40,
+          "maxLevel": 55
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "trevenant",
+          "minLevel": 40,
+          "maxLevel": 55
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "mimikyu",
+          "minLevel": 40,
+          "maxLevel": 55
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "spiritomb",
+          "minLevel": 40,
+          "maxLevel": 55
+        }
+      ]
+    },
+    {
+      "rarity": "EPIC",
+      "weight": 49.0,
+      "conditions": {
+        "minSkillLevel": 41,
+        "maxSkillLevel": 50
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "tyranitar",
+          "minLevel": 50,
+          "maxLevel": 65
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "hydreigon",
+          "minLevel": 50,
+          "maxLevel": 65
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "dragapult",
+          "minLevel": 50,
+          "maxLevel": 65
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "spectrier",
+          "minLevel": 55,
+          "maxLevel": 70
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "marshadow",
+          "minLevel": 55,
+          "maxLevel": 70
+        }
+      ]
+    },
+    {
+      "rarity": "LEGENDARY",
+      "weight": 0.01,
+      "conditions": {
+        "minSkillLevel": 50,
+        "maxSkillLevel": 59
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.5,
+          "pokemon": "darkrai",
+          "minLevel": 60,
+          "maxLevel": 80
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.5,
+          "pokemon": "lunala",
+          "minLevel": 60,
+          "maxLevel": 80
+        }
+      ]
+    },
+    {
+      "rarity": "EPIC",
+      "weight": 99.0,
+      "conditions": {
+        "minSkillLevel": 51,
+        "maxSkillLevel": 60
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "tyranitar",
+          "minLevel": 55,
+          "maxLevel": 70
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "hydreigon",
+          "minLevel": 55,
+          "maxLevel": 70
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "dragapult",
+          "minLevel": 55,
+          "maxLevel": 70
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "spectrier",
+          "minLevel": 60,
+          "maxLevel": 75
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.2,
+          "pokemon": "marshadow",
+          "minLevel": 60,
+          "maxLevel": 75
+        }
+      ]
+    },
+    {
+      "rarity": "LEGENDARY",
+      "weight": 0.02,
+      "conditions": {
+        "minSkillLevel": 60,
+        "maxSkillLevel": 79
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.5,
+          "pokemon": "darkrai",
+          "minLevel": 65,
+          "maxLevel": 85
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.5,
+          "pokemon": "lunala",
+          "minLevel": 65,
+          "maxLevel": 85
+        }
+      ]
+    },
+    {
+      "rarity": "EPIC",
+      "weight": 99.0,
+      "conditions": {
+        "minSkillLevel": 61
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.25,
+          "pokemon": "spectrier",
+          "minLevel": 70,
+          "maxLevel": 90
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.25,
+          "pokemon": "marshadow",
+          "minLevel": 70,
+          "maxLevel": 90
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.25,
+          "pokemon": "tyranitar",
+          "minLevel": 70,
+          "maxLevel": 90
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.25,
+          "pokemon": "hydreigon",
+          "minLevel": 70,
+          "maxLevel": 90
+        },
+        {
+          "type": "item",
+          "weight": 0.1,
+          "item": "cobblemon:ability_patch",
+          "entityId": "minecraft:zombie",
+          "minAmount": 1,
+          "maxAmount": 1
+        }
+      ]
+    },
+    {
+      "rarity": "LEGENDARY",
+      "weight": 0.033,
+      "conditions": {
+        "minSkillLevel": 80
+      },
+      "rewards": [
+        {
+          "type": "pokemon",
+          "weight": 0.5,
+          "pokemon": "darkrai",
+          "minLevel": 70,
+          "maxLevel": 100
+        },
+        {
+          "type": "pokemon",
+          "weight": 0.5,
+          "pokemon": "lunala",
+          "minLevel": 70,
+          "maxLevel": 100
+        }
+      ]
+    }
+  ]
+}

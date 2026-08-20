@@ -1,0 +1,12 @@
+name = "cobbledex"
+filename = "cobbledex-1.21.1-fabric-1.2.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "77f7b4dbc4318fcd1405dd83d7ecbe395b6dea47"
+
+[update]
+[update.modrinth]
+mod-id = "cobbledex"
+version = "47852cfb769c6610"

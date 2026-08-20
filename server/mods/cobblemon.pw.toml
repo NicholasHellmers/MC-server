@@ -1,0 +1,12 @@
+name = "cobblemon"
+filename = "Cobblemon-fabric-1.7.3+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f192cda3fdfec0f20d1dee1887ec1b9e77b1618c"
+
+[update]
+[update.modrinth]
+mod-id = "cobblemon"
+version = "7b5376f5f48177db"

@@ -1,0 +1,12 @@
+name = "cobblesafari"
+filename = "cobblesafari-fabric-1.21.1-0.3.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6fc9415d38fe0888c98d5005b1cd9a3efc28eb67"
+
+[update]
+[update.modrinth]
+mod-id = "cobblesafari"
+version = "e7dd81f361985b90"

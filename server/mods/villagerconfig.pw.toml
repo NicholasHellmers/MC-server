@@ -1,0 +1,12 @@
+name = "villagerconfig"
+filename = "villagerconfig-fabric-4.5.4+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0b9c27925a041b3dee88bd10aa5e06ef7ee4f08d"
+
+[update]
+[update.modrinth]
+mod-id = "villagerconfig"
+version = "b68155517a6e68ab"

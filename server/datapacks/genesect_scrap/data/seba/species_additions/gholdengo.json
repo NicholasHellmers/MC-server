@@ -1,0 +1,12 @@
+{
+  "target": "cobblemon:gholdengo",
+  "drops": {
+    "amount": "1",
+    "entries": [
+      {
+        "item": "minecraft:gold_ingot",
+        "quantityRange": "1-2"
+      }
+    ]
+  }
+}

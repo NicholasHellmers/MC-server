@@ -1,0 +1,12 @@
+name = "lumyrei"
+filename = "LumyREI-1.1.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "072739522438162a2d30f120a0415b5def96cd4b"
+
+[update]
+[update.modrinth]
+mod-id = "lumyrei"
+version = "6433ffe3a37e6069"

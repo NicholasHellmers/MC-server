@@ -1,0 +1,21 @@
+{
+  "entries": [
+    {
+      "required_mod": "cobblemon_utility",
+      "rolls": { "min": 1, "max": 2 },
+      "allow_duplicates": false,
+      "items": [
+        { "id": "cobblemon_utility:woodencap", "weight": 3, "stack": [1, 1] },
+        { "id": "cobblemon_utility:devolutionrelic", "weight": 5, "stack": [1, 1] },
+        { "id": "cobblemon_utility:voidcap", "weight": 1, "stack": [1, 1] },
+        { "id": "cobblemon_utility:voidfeather", "weight": 1, "stack": [1, 1] },
+        { "id": "cobblemon_utility:atkobsidiancap", "weight": 2, "stack": [1, 1] },
+        { "id": "cobblemon_utility:spatkobsidiancap", "weight": 2, "stack": [1, 1] },
+        { "id": "cobblemon_utility:defobsidiancap", "weight": 2, "stack": [1, 1] },
+        { "id": "cobblemon_utility:spdefobsidiancap", "weight": 2, "stack": [1, 1] },
+        { "id": "cobblemon_utility:speedobsidiancap", "weight": 2, "stack": [1, 1] },
+        { "id": "cobblemon_utility:hpobsidiancap", "weight": 2, "stack": [1, 1] }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,452 @@
+[
+  {
+    "species": "scatterbug",
+    "weight": 12,
+    "min_level": 1,
+    "max_level": 15
+  },
+  {
+    "species": "grubbin",
+    "weight": 11,
+    "min_level": 1,
+    "max_level": 18
+  },
+  {
+    "species": "combee",
+    "weight": 11,
+    "min_level": 1,
+    "max_level": 16
+  },
+  {
+    "species": "hoppip",
+    "weight": 10,
+    "min_level": 1,
+    "max_level": 16
+  },
+  {
+    "species": "pidgey",
+    "weight": 10,
+    "min_level": 1,
+    "max_level": 18
+  },
+  {
+    "species": "starly",
+    "weight": 10,
+    "min_level": 1,
+    "max_level": 18
+  },
+  {
+    "species": "fletchling",
+    "weight": 10,
+    "min_level": 1,
+    "max_level": 18
+  },
+  {
+    "species": "hoothoot",
+    "weight": 9,
+    "min_level": 1,
+    "max_level": 18
+  },
+  {
+    "species": "natu",
+    "weight": 9,
+    "min_level": 1,
+    "max_level": 18
+  },
+  {
+    "species": "skwovet",
+    "weight": 10,
+    "min_level": 1,
+    "max_level": 16
+  },
+  {
+    "species": "zigzagoon",
+    "weight": 10,
+    "min_level": 1,
+    "max_level": 16
+  },
+  {
+    "species": "buneary",
+    "weight": 9,
+    "min_level": 1,
+    "max_level": 16
+  },
+  {
+    "species": "minccino",
+    "weight": 9,
+    "min_level": 1,
+    "max_level": 16
+  },
+  {
+    "species": "pachirisu",
+    "weight": 9,
+    "min_level": 1,
+    "max_level": 18
+  },
+  {
+    "species": "teddiursa",
+    "weight": 8,
+    "min_level": 1,
+    "max_level": 20
+  },
+  {
+    "species": "applin",
+    "weight": 8,
+    "min_level": 5,
+    "max_level": 22
+  },
+  {
+    "species": "smoliv",
+    "weight": 8,
+    "min_level": 1,
+    "max_level": 16
+  },
+  {
+    "species": "charjabug",
+    "weight": 5,
+    "min_level": 18,
+    "max_level": 35
+  },
+  {
+    "species": "spewpa",
+    "weight": 5,
+    "min_level": 15,
+    "max_level": 30
+  },
+  {
+    "species": "vespiquen",
+    "weight": 3,
+    "min_level": 20,
+    "max_level": 45
+  },
+  {
+    "species": "pidgeotto",
+    "weight": 5,
+    "min_level": 16,
+    "max_level": 35
+  },
+  {
+    "species": "staravia",
+    "weight": 5,
+    "min_level": 16,
+    "max_level": 35
+  },
+  {
+    "species": "fletchinder",
+    "weight": 5,
+    "min_level": 16,
+    "max_level": 35
+  },
+  {
+    "species": "noctowl",
+    "weight": 4,
+    "min_level": 18,
+    "max_level": 40
+  },
+  {
+    "species": "xatu",
+    "weight": 4,
+    "min_level": 18,
+    "max_level": 40
+  },
+  {
+    "species": "aipom",
+    "weight": 6,
+    "min_level": 10,
+    "max_level": 30
+  },
+  {
+    "species": "ambipom",
+    "weight": 3,
+    "min_level": 25,
+    "max_level": 50
+  },
+  {
+    "species": "leavanny",
+    "weight": 2,
+    "min_level": 30,
+    "max_level": 55
+  },
+  {
+    "species": "vikavolt",
+    "weight": 2,
+    "min_level": 30,
+    "max_level": 55
+  },
+  {
+    "species": "beautifly",
+    "weight": 3,
+    "min_level": 20,
+    "max_level": 45
+  },
+  {
+    "species": "swablu",
+    "weight": 4,
+    "min_level": 10,
+    "max_level": 30
+  },
+  {
+    "species": "altaria",
+    "weight": 2,
+    "min_level": 35,
+    "max_level": 55
+  },
+  {
+    "species": "heracross",
+    "weight": 2,
+    "min_level": 20,
+    "max_level": 50
+  },
+  {
+    "species": "pinsir",
+    "weight": 2,
+    "min_level": 20,
+    "max_level": 50
+  },
+  {
+    "species": "rowlet",
+    "weight": 3,
+    "min_level": 5,
+    "max_level": 20
+  },
+  {
+    "species": "eevee",
+    "weight": 2,
+    "min_level": 10,
+    "max_level": 25
+  },
+  {
+    "species": "caterpie",
+    "weight": 10,
+    "min_level": 1,
+    "max_level": 15
+  },
+  {
+    "species": "metapod",
+    "weight": 5,
+    "min_level": 7,
+    "max_level": 20
+  },
+  {
+    "species": "butterfree",
+    "weight": 3,
+    "min_level": 18,
+    "max_level": 45
+  },
+  {
+    "species": "weedle",
+    "weight": 10,
+    "min_level": 1,
+    "max_level": 15
+  },
+  {
+    "species": "kakuna",
+    "weight": 5,
+    "min_level": 7,
+    "max_level": 20
+  },
+  {
+    "species": "beedrill",
+    "weight": 3,
+    "min_level": 18,
+    "max_level": 45
+  },
+  {
+    "species": "wurmple",
+    "weight": 10,
+    "min_level": 1,
+    "max_level": 15
+  },
+  {
+    "species": "silcoon",
+    "weight": 5,
+    "min_level": 7,
+    "max_level": 20
+  },
+  {
+    "species": "cascoon",
+    "weight": 5,
+    "min_level": 7,
+    "max_level": 20
+  },
+  {
+    "species": "dustox",
+    "weight": 3,
+    "min_level": 18,
+    "max_level": 45
+  },
+  {
+    "species": "sewaddle",
+    "weight": 9,
+    "min_level": 1,
+    "max_level": 18
+  },
+  {
+    "species": "swadloon",
+    "weight": 5,
+    "min_level": 18,
+    "max_level": 35
+  },
+  {
+    "species": "burmy",
+    "weight": 8,
+    "min_level": 1,
+    "max_level": 20
+  },
+  {
+    "species": "wormadam",
+    "weight": 3,
+    "min_level": 20,
+    "max_level": 45
+  },
+  {
+    "species": "mothim",
+    "weight": 3,
+    "min_level": 20,
+    "max_level": 45
+  },
+  {
+    "species": "cherubi",
+    "weight": 8,
+    "min_level": 1,
+    "max_level": 20
+  },
+  {
+    "species": "cherrim",
+    "weight": 3,
+    "min_level": 20,
+    "max_level": 45
+  },
+  {
+    "species": "foongus",
+    "weight": 8,
+    "min_level": 1,
+    "max_level": 24
+  },
+  {
+    "species": "amoonguss",
+    "weight": 3,
+    "min_level": 25,
+    "max_level": 55
+  },
+  {
+    "species": "morelull",
+    "weight": 8,
+    "min_level": 1,
+    "max_level": 24
+  },
+  {
+    "species": "shiinotic",
+    "weight": 3,
+    "min_level": 25,
+    "max_level": 55
+  },
+  {
+    "species": "fomantis",
+    "weight": 8,
+    "min_level": 1,
+    "max_level": 24
+  },
+  {
+    "species": "lurantis",
+    "weight": 3,
+    "min_level": 25,
+    "max_level": 55
+  },
+  {
+    "species": "tarountula",
+    "weight": 9,
+    "min_level": 1,
+    "max_level": 18
+  },
+  {
+    "species": "spidops",
+    "weight": 4,
+    "min_level": 18,
+    "max_level": 45
+  },
+  {
+    "species": "nymble",
+    "weight": 9,
+    "min_level": 1,
+    "max_level": 20
+  },
+  {
+    "species": "lokix",
+    "weight": 4,
+    "min_level": 20,
+    "max_level": 50
+  },
+  {
+    "species": "blipbug",
+    "weight": 9,
+    "min_level": 1,
+    "max_level": 18
+  },
+  {
+    "species": "dottler",
+    "weight": 5,
+    "min_level": 18,
+    "max_level": 35
+  },
+  {
+    "species": "orbeetle",
+    "weight": 2,
+    "min_level": 30,
+    "max_level": 60
+  },
+  {
+    "species": "seedot",
+    "weight": 7,
+    "min_level": 1,
+    "max_level": 20
+  },
+  {
+    "species": "nuzleaf",
+    "weight": 4,
+    "min_level": 18,
+    "max_level": 40
+  },
+  {
+    "species": "shiftry",
+    "weight": 2,
+    "min_level": 30,
+    "max_level": 60
+  },
+  {
+    "species": "dipplin",
+    "weight": 2,
+    "min_level": 30,
+    "max_level": 60
+  },
+  {
+    "species": "dartrix",
+    "weight": 3,
+    "min_level": 18,
+    "max_level": 40
+  },
+  {
+    "species": "decidueye",
+    "weight": 1,
+    "min_level": 40,
+    "max_level": 70
+  },
+  {
+    "species": "trumbeak",
+    "weight": 5,
+    "min_level": 18,
+    "max_level": 42
+  },
+  {
+    "species": "toucannon",
+    "weight": 3,
+    "min_level": 36,
+    "max_level": 70
+  },
+  {
+    "species": "greedent",
+    "weight": 4,
+    "min_level": 20,
+    "max_level": 45
+  }
+]

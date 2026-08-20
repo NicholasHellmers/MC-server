@@ -1,0 +1,12 @@
+name = "cobblemonextrastructures"
+filename = "cobblemonextrastructures-1.21.1-1.3.0-fabric.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0ec56be1046c3cb786fdb8ac988a7b8b01508aee"
+
+[update]
+[update.modrinth]
+mod-id = "cobblemonextrastructures"
+version = "5819e2b4e136e743"

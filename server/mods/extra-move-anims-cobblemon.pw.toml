@@ -1,0 +1,12 @@
+name = "extra-move-anims-cobblemon"
+filename = "extra-move-anims-cobblemon-1.7v1.0.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "88f5f5290a98311bed5e9ce68553f4447d18af9f"
+
+[update]
+[update.modrinth]
+mod-id = "extra-move-anims-cobblemon"
+version = "7a22b35fde7f19a8"

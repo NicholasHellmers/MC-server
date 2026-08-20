@@ -1,0 +1,12 @@
+name = "polymer-bundled"
+filename = "polymer-bundled-0.9.19+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "15a58f43a672ed486bee4f7983ae8ff566a6b5e7"
+
+[update]
+[update.modrinth]
+mod-id = "polymer-bundled"
+version = "6a804059be62ed31"

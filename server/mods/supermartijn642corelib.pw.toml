@@ -1,0 +1,12 @@
+name = "supermartijn642corelib"
+filename = "supermartijn642corelib-1.1.21-fabric-mc1.21.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0091085edb9435f6eefc2ff562fcc8cffbc05981"
+
+[update]
+[update.modrinth]
+mod-id = "supermartijn642corelib"
+version = "845981e2819e80b9"

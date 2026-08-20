@@ -1,0 +1,12 @@
+name = "continuity"
+filename = "continuity-3.0.0+1.21.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "c7f09b53512604c2ba6803b1247bc70e4d0f8f8c"
+
+[update]
+[update.modrinth]
+mod-id = "continuity"
+version = "3601ddb50f19142c"

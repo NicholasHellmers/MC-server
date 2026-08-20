@@ -1,0 +1,12 @@
+name = "cobblemon-expeditions"
+filename = "cobblemon-expeditions-fabric-1.6.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9ee487b3589555fceb55c892c1aa3c4abe2d0ba7"
+
+[update]
+[update.modrinth]
+mod-id = "cobblemon-expeditions"
+version = "284be1781e2e19fd"

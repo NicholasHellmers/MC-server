@@ -1,0 +1,12 @@
+name = "libjf"
+filename = "libjf-3.17.5.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "67c0111a22b4b058e6f08c1e607d8e9605612716"
+
+[update]
+[update.modrinth]
+mod-id = "libjf"
+version = "8e209148c313ecab"

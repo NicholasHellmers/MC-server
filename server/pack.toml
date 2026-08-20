@@ -1,0 +1,13 @@
+name = "Cobblemon Adventure"
+author = "Cobbleverse Team"
+version = "1.0.0"
+description = "Cobblemon 1.21.1 Fabric Modpack Single Source of Truth"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "6687cde95efa84a88aa11676c68c5369804ecabe5a572076f8cf500186ddfe26"
+
+[versions]
+fabric = "0.19.3"
+minecraft = "1.21.1"

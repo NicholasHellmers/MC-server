@@ -1,0 +1,12 @@
+name = "trainerattributeslib"
+filename = "trainerattributeslib-1.7.2-1.0.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9b4e14a73bb7ec95d0840fd55b53db17dd7c3966"
+
+[update]
+[update.modrinth]
+mod-id = "trainerattributeslib"
+version = "d57e397f8e986ea2"

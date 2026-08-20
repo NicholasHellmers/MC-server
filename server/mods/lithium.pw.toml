@@ -1,0 +1,12 @@
+name = "lithium"
+filename = "lithium-fabric-0.15.4+mc1.21.1.jar"
+side = "server"
+
+[download]
+hash-format = "sha1"
+hash = "7d82a004403b7780d4443d8e40361a55cfd0ae63"
+
+[update]
+[update.modrinth]
+mod-id = "lithium"
+version = "182064b00e6315e2"

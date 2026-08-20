@@ -1,0 +1,12 @@
+name = "cobbledollars-villagers-overhaul-rca"
+filename = "cobbledollars-villagers-overhaul-rca-fabric-0.3.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "38f202224a3ba0671cb94229ccf0412e936b5e2a"
+
+[update]
+[update.modrinth]
+mod-id = "cobbledollars-villagers-overhaul-rca"
+version = "1f1fe229ec291f5f"

@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:nether_wastes",
+    "minecraft:crimson_forest",
+    "minecraft:basalt_deltas",
+    "byg:brimstone_caverns",
+    "byg:embur_bog",
+    "byg:glowstone_gardens",
+    "byg:magma_wastes",
+    "byg:sythian_torrids",
+    "biomesoplenty:crystalline_chasm",
+    "biomesoplenty:infernal_chasm",
+    "biomesoplenty:visceral_heap",
+    "regions_unexplored:infernal_wastes",
+    "regions_unexplored:volcanic_chamber",
+    "regions_unexplored:basalt_barrens",
+    "incendium:ash_barrens",
+    "incendium:infernal_dunes",
+    "incendium:volcanic_deltas",
+    "incendium:blazing_chasm"
+  ]
+}

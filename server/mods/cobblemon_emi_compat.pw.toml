@@ -1,0 +1,12 @@
+name = "cobblemon_emi_compat"
+filename = "cobblemon_emi_compat-fabric-1.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e993a3c2a390501a1c94b0c0767cd7d71d713345"
+
+[update]
+[update.modrinth]
+mod-id = "cobblemon_emi_compat"
+version = "3bc7f12d59021d9b"

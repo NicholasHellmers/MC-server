@@ -1,0 +1,19 @@
+[
+  { "item": "minecraft:prismarine_shard", "min": 1, "max": 3, "weight": 1 },
+  { "item": "minecraft:cod", "min": 2, "max": 5, "weight": 4 },
+  { "item": "minecraft:salmon", "min": 2, "max": 5, "weight": 4 },
+  { "item": "minecraft:tropical_fish", "min": 1, "max": 3, "weight": 3 },
+  { "item": "minecraft:kelp", "min": 2, "max": 6, "weight": 4 },
+  { "item": "minecraft:seagrass", "min": 1, "max": 4, "weight": 3 },
+  { "item": "minecraft:ink_sac", "min": 1, "max": 4, "weight": 3 },
+  { "item": "cobblemon:razz_berry", "min": 1, "max": 3, "weight": 3 },
+  { "item": "cobblemon:passho_berry", "min": 1, "max": 2, "weight": 2 },
+  { "item": "cobblemon:water_gem", "min": 1, "max": 1, "weight": 2 },
+  { "item": "cobblemon:poke_ball", "min": 1, "max": 2, "weight": 3 },
+  { "item": "cobblemon:net_ball", "min": 1, "max": 2, "weight": 2 },
+  { "item": "cobblemon:dive_ball", "min": 1, "max": 1, "weight": 1 },
+  { "item": "cobblemon:potion", "min": 1, "max": 2, "weight": 2 },
+  { "item": "cobblemon:antidote", "min": 1, "max": 2, "weight": 2 },
+  { "item": "cobblemon:fossilized_fish", "min": 1, "max": 1, "weight": 1 },
+  { "item": "cobblemon:nautilus_shell", "min": 1, "max": 1, "weight": 1 }
+]

@@ -1,0 +1,12 @@
+name = "cobblecapsule"
+filename = "cobblecapsule-fabric-2.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0c7da24fc983ec960da8b822630a098d913149eb"
+
+[update]
+[update.modrinth]
+mod-id = "cobblecapsule"
+version = "6afa397f6df2c4fd"

@@ -1,0 +1,87 @@
+{
+  "CONFIG_VERSION": 1,
+  "dimensions": {
+    "cobblesafari:dungeon_jump": {
+      "bannedItems": [],
+      "bannedBlocks": [],
+      "allowBattle": false,
+      "allowBlockBreaking": true,
+      "allowBlockPlacing": false,
+      "forbidMounting": false
+    },
+    "cobblesafari:unionroom": {
+      "bannedItems": [],
+      "bannedBlocks": [],
+      "allowBattle": true,
+      "allowBlockBreaking": false,
+      "allowBlockPlacing": false,
+      "forbidMounting": false
+    },
+    "cobblesafari:dungeon_underground": {
+      "bannedItems": [
+        "minecraft:bone_meal"
+      ],
+      "bannedBlocks": [],
+      "allowBattle": true,
+      "allowBlockBreaking": false,
+      "allowBlockPlacing": false,
+      "forbidMounting": false
+    },
+    "cobblesafari:domedimension": {
+      "bannedItems": [
+        "cobblemon:poke_ball",
+        "cobblemon:great_ball",
+        "cobblemon:ultra_ball",
+        "cobblemon:master_ball",
+        "cobblemon:premier_ball",
+        "cobblemon:cherish_ball",
+        "cobblemon:dive_ball",
+        "cobblemon:dusk_ball",
+        "cobblemon:fast_ball",
+        "cobblemon:friend_ball",
+        "cobblemon:heal_ball",
+        "cobblemon:heavy_ball",
+        "cobblemon:level_ball",
+        "cobblemon:love_ball",
+        "cobblemon:lure_ball",
+        "cobblemon:luxury_ball",
+        "cobblemon:moon_ball",
+        "cobblemon:nest_ball",
+        "cobblemon:net_ball",
+        "cobblemon:park_ball",
+        "cobblemon:quick_ball",
+        "cobblemon:repeat_ball",
+        "cobblemon:sport_ball",
+        "cobblemon:timer_ball",
+        "cobblemon:dream_ball",
+        "cobblemon:beast_ball",
+        "cobblemon:ancient_poke_ball",
+        "cobblemon:ancient_great_ball",
+        "cobblemon:ancient_ultra_ball",
+        "cobblemon:ancient_heavy_ball",
+        "cobblemon:ancient_leaden_ball",
+        "cobblemon:ancient_gigaton_ball",
+        "cobblemon:ancient_feather_ball",
+        "cobblemon:ancient_wing_ball",
+        "cobblemon:ancient_jet_ball",
+        "cobblemon:ancient_origin_ball",
+        "cobblemon:ancient_strange_ball"
+      ],
+      "bannedBlocks": [],
+      "allowBattle": false,
+      "allowBlockBreaking": true,
+      "allowBlockPlacing": true,
+      "forbidMounting": false
+    },
+    "cobblesafari:dungeon_distortion": {
+      "bannedItems": [
+        "minecraft:firework_rocket"
+      ],
+      "bannedBlocks": [],
+      "allowBattle": true,
+      "allowBlockBreaking": false,
+      "allowBlockPlacing": false,
+      "forbidMounting": true
+    }
+  }
+}

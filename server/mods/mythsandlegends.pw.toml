@@ -1,0 +1,12 @@
+name = "mythsandlegends"
+filename = "MythsAndLegends-fabric-1.9.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9acdd403a8c1a5544d7f779f301c5f3630d0a211"
+
+[update]
+[update.modrinth]
+mod-id = "mythsandlegends"
+version = "0203aa357f430a56"

@@ -1,0 +1,500 @@
+{
+  "enabled": true,
+  "spawnChance": 0.15,
+  "spawnOnLayerClear": false,
+  "layerSpawnBonus": 1.15,
+  "shinyChance": 0.05,
+  "minLevel": 10,
+  "maxLevel": 50,
+  "targetLevel": 30,
+  "blockBlacklist": [
+    "minecraft:budding_amethyst",
+    "minecraft:amethyst_cluster",
+    "minecraft:large_amethyst_bud",
+    "minecraft:medium_amethyst_bud",
+    "minecraft:small_amethyst_bud"
+  ],
+  "spawns": [
+    {
+      "pokemon": "geodude",
+      "weight": 20,
+      "worlds": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "pokemon": "roggenrola",
+      "weight": 20,
+      "worlds": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "pokemon": "diglett",
+      "weight": 15,
+      "worlds": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "pokemon": "drilbur",
+      "weight": 15,
+      "worlds": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "pokemon": "aron",
+      "weight": 12,
+      "worlds": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "pokemon": "nosepass",
+      "weight": 10,
+      "worlds": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "pokemon": "onix",
+      "weight": 8,
+      "minGridSize": "LARGE",
+      "worlds": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "pokemon": "larvitar",
+      "weight": 5,
+      "minGridSize": "LARGE",
+      "worlds": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "pokemon": "beldum",
+      "weight": 3,
+      "minGridSize": "VERY_LARGE",
+      "worlds": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "pokemon": "gible",
+      "weight": 3,
+      "minGridSize": "VERY_LARGE",
+      "worlds": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "pokemon": "dratini",
+      "weight": 2,
+      "minGridSize": "HUGE",
+      "worlds": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "pokemon": "bagon",
+      "weight": 2,
+      "minGridSize": "HUGE",
+      "worlds": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "pokemon": "magby",
+      "weight": 20,
+      "worlds": [
+        "minecraft:the_nether"
+      ]
+    },
+    {
+      "pokemon": "slugma",
+      "weight": 20,
+      "worlds": [
+        "minecraft:the_nether"
+      ]
+    },
+    {
+      "pokemon": "numel",
+      "weight": 15,
+      "worlds": [
+        "minecraft:the_nether"
+      ]
+    },
+    {
+      "pokemon": "houndour",
+      "weight": 15,
+      "worlds": [
+        "minecraft:the_nether"
+      ]
+    },
+    {
+      "pokemon": "litwick",
+      "weight": 12,
+      "worlds": [
+        "minecraft:the_nether"
+      ]
+    },
+    {
+      "pokemon": "salandit",
+      "weight": 10,
+      "worlds": [
+        "minecraft:the_nether"
+      ]
+    },
+    {
+      "pokemon": "magmar",
+      "weight": 8,
+      "minGridSize": "LARGE",
+      "worlds": [
+        "minecraft:the_nether"
+      ]
+    },
+    {
+      "pokemon": "houndoom",
+      "weight": 5,
+      "minGridSize": "LARGE",
+      "worlds": [
+        "minecraft:the_nether"
+      ]
+    },
+    {
+      "pokemon": "camerupt",
+      "weight": 3,
+      "minGridSize": "VERY_LARGE",
+      "worlds": [
+        "minecraft:the_nether"
+      ]
+    },
+    {
+      "pokemon": "chandelure",
+      "weight": 2,
+      "minGridSize": "HUGE",
+      "worlds": [
+        "minecraft:the_nether"
+      ]
+    },
+    {
+      "pokemon": "elgyem",
+      "weight": 20,
+      "worlds": [
+        "minecraft:the_end"
+      ]
+    },
+    {
+      "pokemon": "baltoy",
+      "weight": 20,
+      "worlds": [
+        "minecraft:the_end"
+      ]
+    },
+    {
+      "pokemon": "solrock",
+      "weight": 15,
+      "worlds": [
+        "minecraft:the_end"
+      ]
+    },
+    {
+      "pokemon": "lunatone",
+      "weight": 15,
+      "worlds": [
+        "minecraft:the_end"
+      ]
+    },
+    {
+      "pokemon": "sigilyph",
+      "weight": 12,
+      "worlds": [
+        "minecraft:the_end"
+      ]
+    },
+    {
+      "pokemon": "staryu",
+      "weight": 10,
+      "worlds": [
+        "minecraft:the_end"
+      ]
+    },
+    {
+      "pokemon": "beheeyem",
+      "weight": 8,
+      "minGridSize": "LARGE",
+      "worlds": [
+        "minecraft:the_end"
+      ]
+    },
+    {
+      "pokemon": "claydol",
+      "weight": 5,
+      "minGridSize": "LARGE",
+      "worlds": [
+        "minecraft:the_end"
+      ]
+    },
+    {
+      "pokemon": "starmie",
+      "weight": 3,
+      "minGridSize": "VERY_LARGE",
+      "worlds": [
+        "minecraft:the_end"
+      ]
+    },
+    {
+      "pokemon": "deoxys",
+      "weight": 1,
+      "minGridSize": "HUGE",
+      "worlds": [
+        "minecraft:the_end"
+      ]
+    },
+    {
+      "pokemon": "sandshrew",
+      "weight": 8,
+      "worlds": [
+        "minecraft:overworld"
+      ],
+      "biomes": [
+        "minecraft:desert",
+        "minecraft:badlands",
+        "minecraft:eroded_badlands"
+      ]
+    },
+    {
+      "pokemon": "trapinch",
+      "weight": 5,
+      "minGridSize": "LARGE",
+      "worlds": [
+        "minecraft:overworld"
+      ],
+      "biomes": [
+        "minecraft:desert",
+        "minecraft:badlands"
+      ]
+    },
+    {
+      "pokemon": "hippopotas",
+      "weight": 4,
+      "minGridSize": "LARGE",
+      "worlds": [
+        "minecraft:overworld"
+      ],
+      "biomes": [
+        "minecraft:desert"
+      ]
+    },
+    {
+      "pokemon": "flygon",
+      "weight": 1,
+      "minGridSize": "HUGE",
+      "worlds": [
+        "minecraft:overworld"
+      ],
+      "biomes": [
+        "minecraft:desert",
+        "minecraft:badlands"
+      ]
+    },
+    {
+      "pokemon": "swinub",
+      "weight": 8,
+      "worlds": [
+        "minecraft:overworld"
+      ],
+      "biomes": [
+        "minecraft:snowy_slopes",
+        "minecraft:frozen_peaks",
+        "minecraft:jagged_peaks",
+        "minecraft:stony_peaks"
+      ]
+    },
+    {
+      "pokemon": "snorunt",
+      "weight": 6,
+      "worlds": [
+        "minecraft:overworld"
+      ],
+      "biomes": [
+        "minecraft:snowy_slopes",
+        "minecraft:frozen_peaks",
+        "minecraft:ice_spikes"
+      ]
+    },
+    {
+      "pokemon": "absol",
+      "weight": 2,
+      "minGridSize": "VERY_LARGE",
+      "worlds": [
+        "minecraft:overworld"
+      ],
+      "biomes": [
+        "minecraft:jagged_peaks",
+        "minecraft:frozen_peaks",
+        "minecraft:stony_peaks"
+      ]
+    },
+    {
+      "pokemon": "zubat",
+      "weight": 10,
+      "worlds": [
+        "minecraft:overworld"
+      ],
+      "biomes": [
+        "minecraft:deep_dark",
+        "minecraft:dripstone_caves",
+        "minecraft:lush_caves"
+      ]
+    },
+    {
+      "pokemon": "woobat",
+      "weight": 8,
+      "worlds": [
+        "minecraft:overworld"
+      ],
+      "biomes": [
+        "minecraft:deep_dark",
+        "minecraft:dripstone_caves"
+      ]
+    },
+    {
+      "pokemon": "carbink",
+      "weight": 3,
+      "minGridSize": "LARGE",
+      "worlds": [
+        "minecraft:overworld"
+      ],
+      "biomes": [
+        "minecraft:deep_dark",
+        "minecraft:dripstone_caves"
+      ]
+    },
+    {
+      "pokemon": "diancie",
+      "weight": 1,
+      "minGridSize": "HUGE",
+      "worlds": [
+        "minecraft:overworld"
+      ],
+      "biomes": [
+        "minecraft:deep_dark"
+      ]
+    },
+    {
+      "pokemon": "shroomish",
+      "weight": 8,
+      "worlds": [
+        "minecraft:overworld"
+      ],
+      "biomes": [
+        "minecraft:lush_caves"
+      ]
+    },
+    {
+      "pokemon": "paras",
+      "weight": 6,
+      "worlds": [
+        "minecraft:overworld"
+      ],
+      "biomes": [
+        "minecraft:lush_caves"
+      ]
+    },
+    {
+      "pokemon": "morelull",
+      "weight": 4,
+      "minGridSize": "LARGE",
+      "worlds": [
+        "minecraft:overworld"
+      ],
+      "biomes": [
+        "minecraft:lush_caves"
+      ]
+    },
+    {
+      "pokemon": "shellder",
+      "weight": 8,
+      "worlds": [
+        "minecraft:overworld"
+      ],
+      "biomes": [
+        "minecraft:beach",
+        "minecraft:stony_shore"
+      ]
+    },
+    {
+      "pokemon": "clamperl",
+      "weight": 5,
+      "minGridSize": "LARGE",
+      "worlds": [
+        "minecraft:overworld"
+      ],
+      "biomes": [
+        "minecraft:beach",
+        "minecraft:ocean",
+        "minecraft:deep_ocean"
+      ]
+    },
+    {
+      "pokemon": "durant",
+      "weight": 6,
+      "worlds": [
+        "minecraft:overworld"
+      ],
+      "biomes": [
+        "minecraft:jungle",
+        "minecraft:sparse_jungle",
+        "minecraft:bamboo_jungle"
+      ]
+    },
+    {
+      "pokemon": "heatmor",
+      "weight": 4,
+      "minGridSize": "LARGE",
+      "worlds": [
+        "minecraft:overworld"
+      ],
+      "biomes": [
+        "minecraft:jungle",
+        "minecraft:sparse_jungle"
+      ]
+    },
+    {
+      "pokemon": "grimer",
+      "weight": 8,
+      "worlds": [
+        "minecraft:overworld"
+      ],
+      "biomes": [
+        "minecraft:swamp",
+        "minecraft:mangrove_swamp"
+      ]
+    },
+    {
+      "pokemon": "stunky",
+      "weight": 6,
+      "worlds": [
+        "minecraft:overworld"
+      ],
+      "biomes": [
+        "minecraft:swamp",
+        "minecraft:mangrove_swamp"
+      ]
+    },
+    {
+      "pokemon": "shiny_stone",
+      "weight": 5,
+      "minGridSize": "LARGE",
+      "worlds": [
+        "minecraft:overworld"
+      ],
+      "biomes": [
+        "minecraft:mushroom_fields"
+      ]
+    }
+  ]
+}

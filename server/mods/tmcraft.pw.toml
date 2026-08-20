@@ -1,0 +1,12 @@
+name = "tmcraft"
+filename = "tmcraft-1.4.18+1.7.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f423155efb2a99370fe838a6603c5f33c947946e"
+
+[update]
+[update.modrinth]
+mod-id = "tmcraft"
+version = "39fdb210d5a822ef"

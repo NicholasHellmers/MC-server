@@ -1,0 +1,25 @@
+["Better Campfire Pot Speed"]
+	#Speed of copper tier campfire pot per tick
+	# Default: 5
+	# Range: 1 ~ 200
+	copper = 5
+	#Speed of iron tier campfire pot per tick
+	# Default: 10
+	# Range: 1 ~ 200
+	iron = 10
+	#Speed of gold tier campfire pot per tick
+	# Default: 20
+	# Range: 1 ~ 200
+	gold = 20
+	#Speed of diamond tier campfire pot per tick
+	# Default: 40
+	# Range: 1 ~ 200
+	diamond = 40
+	#Speed of emerald tier campfire pot per tick
+	# Default: 60
+	# Range: 1 ~ 200
+	emerald = 60
+	#Speed of netherite tier campfire pot per tick
+	# Default: 80
+	# Range: 1 ~ 200
+	netherite = 80

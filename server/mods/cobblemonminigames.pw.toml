@@ -1,0 +1,12 @@
+name = "cobblemonminigames"
+filename = "cobblemonminigames-fabric-3.0.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "03b8a99c2fef2a98fc6c8dec6ad292ed9778748e"
+
+[update]
+[update.modrinth]
+mod-id = "cobblemonminigames"
+version = "3dfefbda3aca5020"

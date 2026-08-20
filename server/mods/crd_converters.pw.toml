@@ -1,0 +1,12 @@
+name = "crd_converters"
+filename = "crd_converters-fabric-1.1.0+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5f04809a26a4d873099008b23f3389198651e3ec"
+
+[update]
+[update.modrinth]
+mod-id = "crd_converters"
+version = "369018126b153ffd"

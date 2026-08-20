@@ -1,0 +1,13 @@
+{
+  "baseCobblemonLootEnabled": true,
+  "checkDiagonal": false,
+  "chanceToDrop": 1.0,
+  "pastureDropTargets": [
+    "pasturecollector:pasture_collector_storage"
+  ],
+  "tickType": "RANDOM_TICK",
+  "targetMon": "ALL",
+  "blockTickInterval": 0,
+  "playCryOnDrop": false,
+  "debug": false
+}

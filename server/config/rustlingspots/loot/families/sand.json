@@ -1,0 +1,21 @@
+[
+  { "item": "minecraft:feather", "min": 1, "max": 2, "weight": 1 },
+  { "item": "minecraft:flint", "min": 1, "max": 2, "weight": 2 },
+  { "item": "minecraft:gunpowder", "min": 1, "max": 2, "weight": 2 },
+  { "item": "minecraft:glass_bottle", "min": 1, "max": 2, "weight": 1 },
+  { "item": "minecraft:sand", "min": 3, "max": 8, "weight": 4 },
+  { "item": "minecraft:red_sand", "min": 2, "max": 6, "weight": 3 },
+  { "item": "minecraft:cactus", "min": 1, "max": 3, "weight": 3 },
+  { "item": "minecraft:dead_bush", "min": 1, "max": 2, "weight": 3 },
+  { "item": "minecraft:bone", "min": 1, "max": 3, "weight": 3 },
+  { "item": "cobblemon:razz_berry", "min": 1, "max": 2, "weight": 2 },
+  { "item": "cobblemon:figy_berry", "min": 1, "max": 2, "weight": 2 },
+  { "item": "cobblemon:fire_gem", "min": 1, "max": 1, "weight": 2 },
+  { "item": "cobblemon:ground_gem", "min": 1, "max": 1, "weight": 2 },
+  { "item": "cobblemon:rock_gem", "min": 1, "max": 1, "weight": 2 },
+  { "item": "cobblemon:poke_ball", "min": 1, "max": 2, "weight": 3 },
+  { "item": "cobblemon:quick_ball", "min": 1, "max": 1, "weight": 1 },
+  { "item": "cobblemon:root_fossil", "min": 1, "max": 1, "weight": 1 },
+  { "item": "cobblemon:claw_fossil", "min": 1, "max": 1, "weight": 1 },
+  { "item": "cobblemon:jaw_fossil", "min": 1, "max": 1, "weight": 1 }
+]

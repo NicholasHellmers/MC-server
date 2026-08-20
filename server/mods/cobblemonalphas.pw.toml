@@ -1,0 +1,12 @@
+name = "cobblemonalphas"
+filename = "cobblemonalphas-1.4.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "10cb391a4bbf2a2ca342dad214c1230f175ce817"
+
+[update]
+[update.modrinth]
+mod-id = "cobblemonalphas"
+version = "5404c8d8cb19f09b"

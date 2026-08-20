@@ -1,0 +1,12 @@
+name = "fabric-language-kotlin"
+filename = "fabric-language-kotlin-1.13.13+kotlin.2.4.10.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "620cb137a9dc69ce86f3114f19d9eedab16366f5"
+
+[update]
+[update.modrinth]
+mod-id = "fabric-language-kotlin"
+version = "9a63c35a550b0362"

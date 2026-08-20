@@ -1,0 +1,12 @@
+name = "cobblecuisine"
+filename = "cobblecuisine-2.0.1-1.7.rc1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "31cf544fe61bb9c21fa8dafe5c03a428049a0f37"
+
+[update]
+[update.modrinth]
+mod-id = "cobblecuisine"
+version = "7fe69d9a90a4f1f1"

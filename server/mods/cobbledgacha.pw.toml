@@ -1,0 +1,12 @@
+name = "cobbledgacha"
+filename = "cobbledgacha-fabric-1.21.1-3.0.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "333a38b02471dddc0a3efc03dc70a82a23a6d2d7"
+
+[update]
+[update.modrinth]
+mod-id = "cobbledgacha"
+version = "dab64d6273532add"

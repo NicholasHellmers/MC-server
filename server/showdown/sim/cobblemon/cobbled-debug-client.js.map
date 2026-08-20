@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../sim/cobblemon/cobbled-debug-client.ts"],
+  "sourcesContent": ["import * as Net from \"net\";\nimport * as readline from \"readline\";\n\nexport function startClient(port: number) {\n\tconst client = new Net.Socket();\n\n\tclient.on('data', (data) => {\n\t\tconsole.log(data.toString());\n\t});\n\n\tclient.on('close', (data) => {\n\t\tconsole.log('Connection closed.');\n\t\tclient.destroy();\n\t});\n\n\tclient.connect(port, 'localhost', () => {\n\t\tconsole.log('Connected');\n\t});\n\n\tconst rl = readline.createInterface({\n\t\tinput: process.stdin,\n\t\toutput: process.stdout,\n\t});\n\n\trl.on('line', (line) => {\n\t\tclient.write(line);\n\t});\n}\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,UAAqB;AACrB,eAA0B;AAEnB,SAAS,YAAY,MAAc;AACzC,QAAM,SAAS,IAAI,IAAI,OAAO;AAE9B,SAAO,GAAG,QAAQ,CAAC,SAAS;AAC3B,YAAQ,IAAI,KAAK,SAAS,CAAC;AAAA,EAC5B,CAAC;AAED,SAAO,GAAG,SAAS,CAAC,SAAS;AAC5B,YAAQ,IAAI,oBAAoB;AAChC,WAAO,QAAQ;AAAA,EAChB,CAAC;AAED,SAAO,QAAQ,MAAM,aAAa,MAAM;AACvC,YAAQ,IAAI,WAAW;AAAA,EACxB,CAAC;AAED,QAAM,KAAK,SAAS,gBAAgB;AAAA,IACnC,OAAO,QAAQ;AAAA,IACf,QAAQ,QAAQ;AAAA,EACjB,CAAC;AAED,KAAG,GAAG,QAAQ,CAAC,SAAS;AACvB,WAAO,MAAM,IAAI;AAAA,EAClB,CAAC;AACF;",
+  "names": []
+}

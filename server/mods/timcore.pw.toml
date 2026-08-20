@@ -1,0 +1,12 @@
+name = "timcore"
+filename = "timcore-fabric-1.7.3-1.32.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3a791c747a4beb4debf691c168f6e6b84efacd15"
+
+[update]
+[update.modrinth]
+mod-id = "timcore"
+version = "5c127832e7a8dd19"

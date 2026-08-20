@@ -1,0 +1,12 @@
+name = "tsfitemcore"
+filename = "tsfitemcore-1.0.0-fabric.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d3556f05ce7865911ed2afceb2a968b9dd02c96b"
+
+[update]
+[update.modrinth]
+mod-id = "tsfitemcore"
+version = "3e592ba44b9553c7"

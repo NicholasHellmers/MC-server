@@ -1,0 +1,12 @@
+name = "krypton"
+filename = "krypton-0.2.8.jar"
+side = "server"
+
+[download]
+hash-format = "sha1"
+hash = "73e792eb5f120787becda4b87b6ff18b26caea50"
+
+[update]
+[update.modrinth]
+mod-id = "krypton"
+version = "5f8cf96c79bfd4d8"

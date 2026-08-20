@@ -1,0 +1,12 @@
+name = "geckolib"
+filename = "geckolib-fabric-1.21.1-4.9.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b95b1d631baeada54c6773ca8f6ede40d57fea46"
+
+[update]
+[update.modrinth]
+mod-id = "geckolib"
+version = "2442ebe35e84ab9d"

@@ -1,0 +1,12 @@
+name = "cobblemon-picnic"
+filename = "cobblemon-picnic-fabric-1.28.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "85806c6a62ab056e335beaf11121e352a9083cd6"
+
+[update]
+[update.modrinth]
+mod-id = "cobblemon-picnic"
+version = "f3290d408aab38cd"

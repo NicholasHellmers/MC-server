@@ -1,0 +1,12 @@
+name = "safepastures"
+filename = "SafePastures-1.1.1+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "da4ca736f1390553380dd1f8b596f17d35fafded"
+
+[update]
+[update.modrinth]
+mod-id = "safepastures"
+version = "c5bffd438c3e0267"

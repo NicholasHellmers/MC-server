@@ -1,0 +1,60 @@
+version: "3.8"
+
+services:
+  minecraft:
+    image: itzg/minecraft-server:java21
+    container_name: mc-cobblemon
+    restart: unless-stopped
+    ports:
+      - "25565:25565/tcp"
+      - "25565:25565/udp"
+    environment:
+      EULA: "TRUE"
+      TYPE: "FABRIC"
+      VERSION: "1.21.1"
+      FABRIC_LOADER_VERSION: "0.19.3"
+      MEMORY: "${SERVER_MEMORY:-10G}"
+      JVM_XX_OPTS: "-XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1"
+      
+      # Declarative Server Properties
+      MOTD: "${SERVER_MOTD:-§6Cobblemon Adventure §7| §aLatAm Server}"
+      MAX_PLAYERS: "${MAX_PLAYERS:-16}"
+      VIEW_DISTANCE: "${VIEW_DISTANCE:-10}"
+      SIMULATION_DISTANCE: "${SIMULATION_DISTANCE:-8}"
+      DIFFICULTY: "${DIFFICULTY:-easy}"
+      ONLINE_MODE: "${ONLINE_MODE:-true}"
+      PVP: "${PVP:-true}"
+      ALLOW_FLIGHT: "${ALLOW_FLIGHT:-true}"
+      SYNC_CHUNK_WRITES: "true"
+      
+      # RCON Administration
+      ENABLE_RCON: "true"
+      RCON_PASSWORD: "${RCON_PASSWORD}"
+      RCON_PORT: "25575"
+    volumes:
+      - ./data:/data
+      - ./datapacks:/data/world/datapacks
+      - ./config:/data/config
+      - ./showdown:/data/showdown
+
+  backup:
+    image: itzg/mc-backup
+    container_name: mc-backup
+    restart: unless-stopped
+    depends_on:
+      - minecraft
+    environment:
+      BACKUP_INTERVAL: "6h"
+      RCON_HOST: "minecraft"
+      RCON_PASSWORD: "${RCON_PASSWORD}"
+      BACKUP_METHOD: "rcon"
+      PRUNE_BACKUPS_DAYS: "14"
+      INITIAL_DELAY: "5m"
+      
+      # Cloudflare R2 S3-Compatible Storage Destination
+      DEST_DIR: "s3://${R2_BUCKET_NAME:-mc-cobblemon-backups}/backups"
+      S3_ENDPOINT: "https://${R2_ACCOUNT_ID}.r2.cloudflarestorage.com"
+      AWS_ACCESS_KEY_ID: "${R2_ACCESS_KEY_ID}"
+      AWS_SECRET_ACCESS_KEY: "${R2_SECRET_ACCESS_KEY}"
+    volumes:
+      - ./data:/data:ro

@@ -1,0 +1,12 @@
+name = "zamega"
+filename = "zamega-fabric-1.7.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "cefe9c25fc69f5c5da95a89225f7740377b3e58c"
+
+[update]
+[update.modrinth]
+mod-id = "zamega"
+version = "811fcd7b8ad97ab2"

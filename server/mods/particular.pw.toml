@@ -1,0 +1,12 @@
+name = "particular"
+filename = "particular-1.21.1-Fabric-1.5.5.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "de3740c49c41a32c6034d2cdc817f3aea96b4bb1"
+
+[update]
+[update.modrinth]
+mod-id = "particular"
+version = "182ce2f586af8100"

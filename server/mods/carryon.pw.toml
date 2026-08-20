@@ -1,0 +1,12 @@
+name = "carryon"
+filename = "carryon-fabric-1.21.1-2.2.6.13.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "db8b128f68588fca639310e1ad84ce61c3d2ae53"
+
+[update]
+[update.modrinth]
+mod-id = "carryon"
+version = "5d415137d9f1dd7f"

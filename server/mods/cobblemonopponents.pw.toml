@@ -1,0 +1,12 @@
+name = "cobblemonopponents"
+filename = "cobblemonopponents-fabric-1.7.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a3adc766e7fb3ea0c512263dcdfb923a61d9f826"
+
+[update]
+[update.modrinth]
+mod-id = "cobblemonopponents"
+version = "c00a54acdf70261f"

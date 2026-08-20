@@ -1,0 +1,12 @@
+name = "virtualloot"
+filename = "VirtualLoot-fabric-0.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7ff42f9257aadb052b38ab8772dd4ee8abad0486"
+
+[update]
+[update.modrinth]
+mod-id = "virtualloot"
+version = "808611ebbda508f6"

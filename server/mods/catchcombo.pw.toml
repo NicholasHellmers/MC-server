@@ -1,0 +1,12 @@
+name = "catchcombo"
+filename = "catchcombo-2.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7c150619ef0b7718f97319e73fd776a3d17757e8"
+
+[update]
+[update.modrinth]
+mod-id = "catchcombo"
+version = "1107dfd04f48238e"

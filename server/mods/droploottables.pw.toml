@@ -1,0 +1,12 @@
+name = "droploottables"
+filename = "droploottables-fabric-1.7.3-1.9.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0c5f21c64d68d6c39b956bb86e6f77b819d87ab9"
+
+[update]
+[update.modrinth]
+mod-id = "droploottables"
+version = "c9158f9b85463761"
