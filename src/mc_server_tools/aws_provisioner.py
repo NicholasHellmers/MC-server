@@ -33,8 +33,9 @@ def load_env_file(env_path: Path | str = ".env") -> dict[str, str]:
         key, val = clean_line.split("=", 1)
         key = key.strip()
         val = val.strip().strip('"').strip("'")
-        if key and key not in os.environ:
-            os.environ[key] = val
+        if key:
+            if key not in os.environ:
+                os.environ[key] = val
             loaded[key] = val
     return loaded
 

@@ -16,15 +16,19 @@ def test_load_env_file(tmp_path: Path):
     # Nonexistent custom path
     assert load_env_file(tmp_path / "nonexistent.env") == {}
 
-    # Valid env file
+    # Valid env file with new key, already existing key, and empty key
+    import os
+    os.environ["ALREADY_SET_TEST_KEY"] = "original"
     env_file = tmp_path / ".env"
     env_file.write_text(
-        "# Comment line\n\nTEST_KEY_ONE=value1\nTEST_KEY_TWO='value2'\nINVALID_LINE\n",
+        "# Comment line\n\nTEST_KEY_ONE=value1\nTEST_KEY_TWO='value2'\nALREADY_SET_TEST_KEY=new_val\n=empty_key\nINVALID_LINE\n",
         encoding="utf-8",
     )
     loaded = load_env_file(env_file)
     assert loaded.get("TEST_KEY_ONE") == "value1"
     assert loaded.get("TEST_KEY_TWO") == "value2"
+    assert loaded.get("ALREADY_SET_TEST_KEY") == "new_val"
+    assert os.environ["ALREADY_SET_TEST_KEY"] == "original"
 
     # Default .env when root .env exists
     with patch("pathlib.Path.is_file") as mock_is_file:

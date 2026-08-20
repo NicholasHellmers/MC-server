@@ -26,7 +26,7 @@ jobs:
         run: uv sync --all-extras
 
       - name: Run Pytest Suite with 100% Coverage Check
-        run: uv run pytest --cov=src --cov=cicd --cov-report=term-missing --cov-report=json --cov-fail-under=100
+        run: uv run --all-extras pytest --cov=src --cov=cicd --cov-report=term-missing --cov-report=json --cov-fail-under=100
 
       - name: Verify Coverage with Skill Tool
-        run: uv run python .agents/skills/code-coverage-report/scripts/check_coverage.py coverage.json
+        run: uv run --all-extras python .agents/skills/code-coverage-report/scripts/check_coverage.py coverage.json

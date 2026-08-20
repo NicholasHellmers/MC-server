@@ -6,6 +6,9 @@ on:
       - "v*"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -26,7 +29,7 @@ jobs:
 
       - name: Validate Modpack & Export .mrpack
         run: |
-          uv run python cicd/build_modpack.py --server-dir server --output Cobblemon-Modpack.mrpack
+          uv run --all-extras python cicd/build_modpack.py --server-dir server --output Cobblemon-Modpack.mrpack
 
       - name: Create GitHub Release
         id: create_release
@@ -40,22 +43,34 @@ jobs:
 
       - name: Post Discord Announcement
         if: startsWith(github.ref, 'refs/tags/v')
-        run: |
-          uv run python cicd/discord_notify.py \
-            --version "${{ github.ref_name }}" \
-            --release-url "https://github.com/${{ github.repository }}/releases/tag/${{ github.ref_name }}" \
-            --server-ip "${{ secrets.SERVER_HOST || 'play.cobblemon.xyz' }}"
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          SERVER_HOST: ${{ secrets.SERVER_HOST }}
+        run: |
+          if [ -n "$DISCORD_WEBHOOK" ]; then
+            uv run --all-extras python cicd/discord_notify.py \
+              --version "${{ github.ref_name }}" \
+              --release-url "https://github.com/${{ github.repository }}/releases/tag/${{ github.ref_name }}" \
+              --server-ip "${SERVER_HOST:-56.124.88.206}"
+          else
+            echo "DISCORD_WEBHOOK secret not set; skipping Discord announcement."
+          fi
 
       - name: Deploy to Remote AWS Server
-        if: ${{ secrets.SERVER_HOST != '' && secrets.SERVER_SSH_KEY != '' }}
+        env:
+          SERVER_HOST: ${{ secrets.SERVER_HOST }}
+          SERVER_SSH_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          SERVER_USER: ${{ secrets.SERVER_USER }}
         run: |
-          echo "${{ secrets.SERVER_SSH_KEY }}" > server_key.pem
-          chmod 600 server_key.pem
-          uv run python cicd/deploy_server.py \
-            --host "${{ secrets.SERVER_HOST }}" \
-            --user "${{ secrets.SERVER_USER || 'ubuntu' }}" \
-            --key server_key.pem \
-            --remote-dir "/opt/mc-server"
-          rm -f server_key.pem
+          if [ -n "$SERVER_HOST" ] && [ -n "$SERVER_SSH_KEY" ]; then
+            echo "$SERVER_SSH_KEY" > server_key.pem
+            chmod 600 server_key.pem
+            uv run --all-extras python cicd/deploy_server.py \
+              --host "$SERVER_HOST" \
+              --user "${SERVER_USER:-ubuntu}" \
+              --key server_key.pem \
+              --remote-dir "/opt/mc-server"
+            rm -f server_key.pem
+          else
+            echo "SERVER_HOST or SERVER_SSH_KEY secrets not set; skipping automated SSH deployment."
+          fi
