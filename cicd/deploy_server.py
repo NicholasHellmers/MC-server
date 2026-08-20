@@ -53,8 +53,12 @@ def execute_remote_deploy(
         return {"status": "error", "message": str(e)}
 
 
+from mc_server_tools.aws_provisioner import load_env_file
+
+
 def main() -> int:
     """CLI entrypoint."""
+    load_env_file()
     parser = argparse.ArgumentParser(description="Deploy updates to remote Minecraft server.")
     parser.add_argument("--host", default=os.getenv("SERVER_HOST", ""), help="Remote server IP/hostname")
     parser.add_argument("--user", default=os.getenv("SERVER_USER", "ubuntu"), help="Remote SSH user")

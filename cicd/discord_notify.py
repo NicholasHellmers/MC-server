@@ -53,8 +53,12 @@ def send_discord_notification(
         return {"status": "error", "message": str(e)}
 
 
+from mc_server_tools.aws_provisioner import load_env_file
+
+
 def main() -> int:
     """CLI entrypoint."""
+    load_env_file()
     parser = argparse.ArgumentParser(description="Send Discord release notification.")
     parser.add_argument("--version", default="v1.0.0", help="Release version tag")
     parser.add_argument("--release-url", default="", help="GitHub release URL")
