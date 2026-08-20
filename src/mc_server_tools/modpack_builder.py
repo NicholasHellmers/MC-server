@@ -103,12 +103,19 @@ class ModpackBuilder:
         pw_files = list(self.mods_dir.glob("*.pw.toml")) if self.mods_dir.is_dir() else []
 
         modrinth_files: list[dict[str, Any]] = []
+        override_jars: list[tuple[Path, str]] = []
+        search_dirs = [
+            self.mods_dir,
+            self.server_dir.parent / "Cobblemon Server" / "mods",
+            self.server_dir / "mods",
+        ]
+
         for pw in pw_files:
             content = pw.read_text(encoding="utf-8")
-            # Parse simple fields
             filename = ""
             side = "both"
             sha1_hash = ""
+            sha512_hash = ""
             url = ""
 
             for line in content.splitlines():
@@ -118,22 +125,34 @@ class ModpackBuilder:
                     side = line.split("=", 1)[1].strip().strip('"')
                 elif line.startswith("hash ="):
                     sha1_hash = line.split("=", 1)[1].strip().strip('"')
+                elif line.startswith("sha512 ="):
+                    sha512_hash = line.split("=", 1)[1].strip().strip('"')
                 elif line.startswith("url ="):
                     url = line.split("=", 1)[1].strip().strip('"')
 
-            if not filename:
+            if not filename or side == "server":
                 continue
 
-            env_client = "required" if side in ("client", "both") else "unsupported"
-            env_server = "required" if side in ("server", "both") else "unsupported"
+            env_client = "required"
+            env_server = "required" if side == "both" else "unsupported"
 
-            modrinth_files.append({
-                "path": f"mods/{filename}",
-                "hashes": {"sha1": sha1_hash},
-                "env": {"client": env_client, "server": env_server},
-                "downloads": [url] if url else [],
-                "fileSize": 1000,
-            })
+            if url:
+                file_entry: dict[str, Any] = {
+                    "path": f"mods/{filename}",
+                    "hashes": {"sha1": sha1_hash},
+                    "env": {"client": env_client, "server": env_server},
+                    "downloads": [url],
+                    "fileSize": 1000,
+                }
+                if sha512_hash:
+                    file_entry["hashes"]["sha512"] = sha512_hash
+                modrinth_files.append(file_entry)
+            else:
+                for s_dir in search_dirs:
+                    candidate = s_dir / filename
+                    if candidate.is_file():
+                        override_jars.append((candidate, filename))
+                        break
 
         index_manifest = {
             "formatVersion": 1,
@@ -164,6 +183,9 @@ class ModpackBuilder:
                     if dp.is_file():
                         rel = dp.relative_to(self.server_dir)
                         zf.write(dp, f"overrides/{rel.as_posix()}")
+
+            for jar_file, fname in override_jars:
+                zf.write(jar_file, f"overrides/mods/{fname}")
 
         return out
 

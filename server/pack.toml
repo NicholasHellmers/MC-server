@@ -6,7 +6,7 @@ description = "Cobblemon 1.21.1 Fabric Modpack Single Source of Truth"
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "6687cde95efa84a88aa11676c68c5369804ecabe5a572076f8cf500186ddfe26"
+hash = "98bf854c9bb6c4af4eb7a3abb873587999858bd749c0c760de1431f5b9266859"
 
 [versions]
 fabric = "0.19.3"

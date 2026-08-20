@@ -75,9 +75,32 @@ def test_export_mrpack(tmp_path: Path):
     (datapacks / "subdir").mkdir()  # directory inside datapacks to test is_file() == False
 
     (mods / "test.pw.toml").write_text(
-        'name = "test"\nfilename = "test-1.0.jar"\nside = "both"\nhash = "12345"\nurl = "https://cdn.example.com/test.jar"\n',
+        'name = "test"\nfilename = "test-1.0.jar"\nside = "both"\nhash = "12345"\nsha512 = "abcde"\nurl = "https://cdn.example.com/test.jar"\n',
         encoding="utf-8",
     )
+    # Mod with URL and no sha512
+    (mods / "url_no_sha512.pw.toml").write_text(
+        'name = "url_no_sha512"\nfilename = "url_no_sha512.jar"\nside = "both"\nhash = "12345"\nurl = "https://cdn.example.com/other.jar"\n',
+        encoding="utf-8",
+    )
+    # Server only mod (should be skipped)
+    (mods / "server_only.pw.toml").write_text(
+        'name = "server_only"\nfilename = "server.jar"\nside = "server"\nhash = "12345"\n',
+        encoding="utf-8",
+    )
+    # Mod with no URL but with local JAR file
+    (mods / "local_mod.pw.toml").write_text(
+        'name = "local"\nfilename = "local.jar"\nside = "client"\nhash = "12345"\n',
+        encoding="utf-8",
+    )
+    (mods / "local.jar").write_bytes(b"dummy jar content")
+
+    # Mod with no URL and no local JAR file
+    (mods / "no_jar.pw.toml").write_text(
+        'name = "no_jar"\nfilename = "missing.jar"\nside = "client"\nhash = "12345"\n',
+        encoding="utf-8",
+    )
+
     # Add a .pw.toml with no filename to hit line 125
     (mods / "empty_filename.pw.toml").write_text(
         'name = "empty"\nside = "both"\nhash = "12345"\n',
@@ -96,6 +119,7 @@ def test_export_mrpack(tmp_path: Path):
         assert "modrinth.index.json" in namelist
         assert "overrides/config/test.cfg" in namelist
         assert "overrides/datapacks/pack.zip" in namelist
+        assert "overrides/mods/local.jar" in namelist
 
     # Test export when mods_dir, config_dir, datapacks_dir do not exist
     empty_server = tmp_path / "empty_srv"
